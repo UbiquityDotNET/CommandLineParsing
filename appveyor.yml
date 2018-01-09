@@ -32,7 +32,7 @@ configuration: Release
 
 before_build:
   - cmd: msbuild /t:Restore CommandlineParsing.sln
-  - ps: Clone-Docs.ps1
+  - ps: .\Clone-Docs.ps1
 
 build:
   project: CommandlineParsing.sln
