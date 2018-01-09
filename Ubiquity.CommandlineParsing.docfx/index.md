@@ -71,7 +71,7 @@ implementation to do the binding.
 The following example comes from the unit tests for the CommandlineParsing library and shows many of the capabilities for handling complex options
 parsing and binding to an options class the application can use.
 
-[!code-csharp[Test](../CommandlineParsing.Monad.UT/BinderTests.cs)]
+[!code-csharp[Test](../Ubiquity.CommandlineParsing.Monad.UT/BinderTests.cs)]
 
 >[!NOTE]
 >This example treats `-`, `--` and `/` as equivalent, though other behavior is possible

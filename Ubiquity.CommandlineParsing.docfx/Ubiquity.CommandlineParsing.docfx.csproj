@@ -6,8 +6,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\CommandlineParsing.Monad\Ubiquity.CommandlineParsing.Monad.csproj" />
-        <ProjectReference Include="..\CommandlineParsing\Ubiquity.CommandlineParsing.csproj" />
+        <ProjectReference Include="..\Ubiquity.CommandlineParsing.Monad\Ubiquity.CommandlineParsing.Monad.csproj" />
+        <ProjectReference Include="..\Ubiquity.CommandlineParsing\Ubiquity.CommandlineParsing.csproj" />
     </ItemGroup>
 
     <ItemGroup>
@@ -37,7 +37,6 @@
             <LogLevel>Info</LogLevel>
             <LogFile>$(IntermediateOutputPath)Docfx-Metadata.log</LogFile>
             <MetadataOutputFolder>$(BaseBuildOutputPath.TrimEnd('\'))</MetadataOutputFolder>
-            <DocParameters>$(DocParameters) --disableGitFeatures</DocParameters>
             <DocParameters>$(DocParameters) --cleanupCacheHistory</DocParameters>
             <DocParameters>$(DocParameters) --lruSize=0</DocParameters>
             <DocParameters>$(DocParameters) --intermediateFolder="$(IntermediateOutputPath.TrimEnd('\'))"</DocParameters>
