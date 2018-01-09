@@ -104,17 +104,17 @@ variations and leaves the correctness to the application or binder. That is, the
 lines and some that are not valid for a given application. This, helps keep the application logic simpler and
 allows for defining common semantic processing and object binding for specific scenarios.</p>
 <h3 id="flexible-binding">Flexible Binding</h3>
-<p>Parsing arguments produces an immutable list of <a class="xref" href="api/CommandlineParsing.ICommandlineArgument.html">ICommandlineArgument</a>
-which is a common interface for either <a class="xref" href="api/CommandlineParsing.CommandlineOption.html">CommandlineOption</a> or
-<a class="xref" href="api/CommandlineParsing.CommandlineValue.html">CommandlineValue</a>. The application can work with that list directly or
-use a binder to bind the parsed arguments to properties of an object instance. The <a class="xref" href="api/CommandlineParsing.CommandlineBinder.html">CommandlineBinder</a>
+<p>Parsing arguments produces an immutable list of <a class="xref" href="api/Ubiquity.CommandlineParsing.ICommandlineArgument.html">ICommandlineArgument</a>
+which is a common interface for either <a class="xref" href="api/Ubiquity.CommandlineParsing.CommandlineOption.html">CommandlineOption</a> or
+<a class="xref" href="api/Ubiquity.CommandlineParsing.CommandlineValue.html">CommandlineValue</a>. The application can work with that list directly or
+use a binder to bind the parsed arguments to properties of an object instance. The <a class="xref" href="api/Ubiquity.CommandlineParsing.CommandlineBinder.html">CommandlineBinder</a>
 class provides common logic for walking the list of arguments to bind the properties to an object instance. The
-actual binding of the value to the property is performed by an implementation of <a class="xref" href="api/CommandlineParsing.IOptionProperty.html">IOptionProperty</a>.
-Instances of IOptionProperty are provided by an implementation of another interface <a class="xref" href="api/CommandlineParsing.IOptionPropertyProvider.html">IOptionPropertyProvider</a>
+actual binding of the value to the property is performed by an implementation of <a class="xref" href="api/Ubiquity.CommandlineParsing.IOptionProperty.html">IOptionProperty</a>.
+Instances of IOptionProperty are provided by an implementation of another interface <a class="xref" href="api/Ubiquity.CommandlineParsing.IOptionPropertyProvider.html">IOptionPropertyProvider</a>
 which, given a CommandlineOption, will look up the property for the object to bind to and provides the IOptionProperty
 implementation to do the binding.</p>
 <div class="NOTE"><h5>Note</h5><p>The design the IOPtionPropertyProvider and IOptionProperty interfaces intentionally <strong>does not require</strong> the use of refelction, though it is allowed.
-In fact the default provider is <a class="xref" href="api/CommandlineParsing.ReflectionOptionPropertyProvider.html">ReflectionOptionPropertyProvider</a>. The reflection provider
+In fact the default provider is <a class="xref" href="api/Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider.html">ReflectionOptionPropertyProvider</a>. The reflection provider
 covers the large majority of cases. However it isn&#39;t the only possible implementation. It is plausible to use some form of compile time reflection/AOP
 Weaver to generate an implementation of IOptionPropertyProvider for a given options class that does not require any run-time reflection.</p>
 </div>
@@ -185,12 +185,13 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
     }
 }
 </code></pre><div class="NOTE"><h5>Note</h5><p>This example treats <code>-</code>, <code>--</code> and <code>/</code> as equivalent, though other behavior is possible
-by providing an instance of <a class="xref" href="api/CommandlineParsing.ReflectionOptionPropertyProvider.html">ReflectionOptionPropertyProvider</a>, or some other implementation
+by providing an instance of <a class="xref" href="api/Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider.html">ReflectionOptionPropertyProvider</a>, or some other implementation
 of IOptionPropertyProvider, to the binder that will select the appropriate property or reject the parsed arguments as appropriate.</p>
 </div>
 </article>
           </div>
           <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/Ubiquity.CommandlineParsing.docfx/index.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

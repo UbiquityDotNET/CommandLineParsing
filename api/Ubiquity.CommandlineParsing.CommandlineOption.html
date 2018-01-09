@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CommandlineParsing | Command line parsing </title>
+    <title>Class CommandlineOption
+   | Command line parsing </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="CommandlineParsing | Command line parsing ">
+    <meta name="title" content="Class CommandlineOption
+   | Command line parsing ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -115,9 +117,9 @@
                                   <a href="Ubiquity.CommandlineParsing.CommandLineBinderExtensions.BindArguments.html" title="BindArguments" class="">BindArguments</a>
                                 </li>
                               </ul>  </li>
-                          <li class="">
+                          <li class="active">
                             <span class="expand-stub"></span>
-                            <a href="Ubiquity.CommandlineParsing.CommandlineOption.html" title="CommandlineOption" class="">CommandlineOption</a>
+                            <a href="Ubiquity.CommandlineParsing.CommandlineOption.html" title="CommandlineOption" class="active">CommandlineOption</a>
                               
                               <ul class="nav level3">
                                 <li class="">
@@ -357,34 +359,146 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="commandlineparsing">CommandlineParsing</h1>
+            <article class="content wrap" id="_content" data-uid="Ubiquity.CommandlineParsing.CommandlineOption">
+  
+  <h1 id="Ubiquity_CommandlineParsing_CommandlineOption" data-uid="Ubiquity.CommandlineParsing.CommandlineOption">Class CommandlineOption
+  </h1>
+  <div class="markdown level0 summary"><p>Result of a single parsed command line option</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
 
-<p>When processing command line arguments applications commonly perform the following basic conceptual steps.</p>
-<ol>
-<li>Parse the arguments into an analyzable form including identifying options/switches with values</li>
-<li>Bind the results of the parse to a data structure that is then used by the application to adapt
-behavior based on the command line arguments.</li>
-</ol>
-<p>The command line parsing library splits the argument processing into these two basic steps. Furthermore,
-the actual parsing is isolated by an interface so that multiple implementations are allowed. The first
-implementation uses the <a href="https://github.com/sprache/Sprache">Sprache Parser Combinator Library</a>, which
-is a light weight (&lt;50KB) parsing library useful for many applications. Other parsers are possible if
-an application already needs to use a more traditional parser engine but given the size of the Sprache
-library it isn&#39;t likely to save much.</p>
-<p>The parsing stage produces an ordered list of arguments that are either switches/options with a possible
-value and general positional arguments that may be quoted to include whitespace. For some applications
-the list is all that is needed. However, for others an object model is desired. This is where the binding
-comes in. The binding stage takes the list of arguments and, with the aid of .NET attributes binds the
-values from the command line to properties of an object instance. To allow for greater flexibility, the
-actual property binding is isolated behind an interface to allow multiple implementations. The library
-includes a standard .NET Reflection based property provider which is likely to serve for most uses. Though,
-it is plausible to implement a compile time code generator that created a property provider that didn&#39;t need
-reflection, making it suitable for .NET Native AOT compilation scenarios where minimizing reflection is desired.</p>
+  <div class="inheritance">
+    <h5 id="inheritance-Ubiquity_CommandlineParsing_CommandlineOption"><a href="#collapsible-inheritance-Ubiquity_CommandlineParsing_CommandlineOption" class="expander collapsed" data-toggle="collapse" aria-expanded="false">Inheritance</a></h5>
+    <div id="collapsible-inheritance-Ubiquity_CommandlineParsing_CommandlineOption" class="collapse collapsed" aria-expanded="false">
+      <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+      <div class="level1"><span class="xref">CommandlineOption</span></div>
+    </div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+      <h5 id="inheritedMembers-Ubiquity_CommandlineParsing_CommandlineOption">
+          <a href="#collapsible-inheritedMembers-Ubiquity_CommandlineParsing_CommandlineOption" class="expander collapsed" data-toggle="collapse" aria-expanded="false">Inherited Members</a>
+      </h5>
+      <div id="collapsible-inheritedMembers-Ubiquity_CommandlineParsing_CommandlineOption" class="collapse collapsed" aria-expanded="false">
+          <div>
+              <span class="xref">System.Object.Equals(System.Object)</span>
+          </div>
+          <div>
+              <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+          </div>
+          <div>
+              <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+          </div>
+          <div>
+              <span class="xref">System.Object.GetHashCode()</span>
+          </div>
+          <div>
+              <span class="xref">System.Object.GetType()</span>
+          </div>
+          <div>
+              <span class="xref">System.Object.MemberwiseClone()</span>
+          </div>
+      </div>
+  </div>
+  
+  <div class="inheritance">
+  <h5 id="implements-Ubiquity_CommandlineParsing_CommandlineOption">
+      <a href="#collapsible-implements-Ubiquity_CommandlineParsing_CommandlineOption" class="expander collapsed" data-toggle="collapse" aria-expanded="false">Implements</a>
+  </h5>
+  <div id="collapsible-implements-Ubiquity_CommandlineParsing_CommandlineOption" class="collapse collapsed" aria-expanded="false">
+      <div class="level"><a class="xref" href="Ubiquity.CommandlineParsing.ICommandlineArgument.html">ICommandlineArgument</a></div>
+  </div>
+  </div>
+  
+  <h5><strong>Namespace</strong>: <a class="xref" href="Ubiquity.CommandlineParsing.html">Ubiquity.CommandlineParsing</a></h5>
+  <h5><strong>Assembly</strong>: Ubiquity.CommandlineParsing.dll</h5>
+  
+  <h3 id="Ubiquity_CommandlineParsing_CommandlineOption_syntax"><strong>Syntax</strong></h3>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CommandlineOption : ICommandlineArgument</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_CommandlineOption__ctor_System_String_System_String_System_String_System_String_Ubiquity_CommandlineParsing_CommandlineValue_" data-uid="Ubiquity.CommandlineParsing.CommandlineOption.#ctor(System.String,System.String,System.String,System.String,Ubiquity.CommandlineParsing.CommandlineValue)">
+          <a class="xref" href="Ubiquity.CommandlineParsing.CommandlineOption.-ctor.html#Ubiquity_CommandlineParsing_CommandlineOption__ctor_System_String_System_String_System_String_System_String_Ubiquity_CommandlineParsing_CommandlineValue_">CommandlineOption(String, String, String, String, CommandlineValue)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Ubiquity.CommandlineParsing.CommandlineOption.html">CommandlineOption</a> class.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_CommandlineOption__ctor_System_String_System_String_System_String_Ubiquity_CommandlineParsing_CommandlineValue_" data-uid="Ubiquity.CommandlineParsing.CommandlineOption.#ctor(System.String,System.String,System.String,Ubiquity.CommandlineParsing.CommandlineValue)">
+          <a class="xref" href="Ubiquity.CommandlineParsing.CommandlineOption.-ctor.html#Ubiquity_CommandlineParsing_CommandlineOption__ctor_System_String_System_String_System_String_Ubiquity_CommandlineParsing_CommandlineValue_">CommandlineOption(String, String, String, CommandlineValue)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Ubiquity.CommandlineParsing.CommandlineOption.html">CommandlineOption</a> class.</p>
+</td>
+      </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_CommandlineOption_Delimiter" data-uid="Ubiquity.CommandlineParsing.CommandlineOption.Delimiter">
+          <a class="xref" href="Ubiquity.CommandlineParsing.CommandlineOption.Delimiter.html#Ubiquity_CommandlineParsing_CommandlineOption_Delimiter">Delimiter</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the value delimiter, if any</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_CommandlineOption_Name" data-uid="Ubiquity.CommandlineParsing.CommandlineOption.Name">
+          <a class="xref" href="Ubiquity.CommandlineParsing.CommandlineOption.Name.html#Ubiquity_CommandlineParsing_CommandlineOption_Name">Name</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the name of the option this may be an empty string for parsers that allow that</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_CommandlineOption_SwitchLeader" data-uid="Ubiquity.CommandlineParsing.CommandlineOption.SwitchLeader">
+          <a class="xref" href="Ubiquity.CommandlineParsing.CommandlineOption.SwitchLeader.html#Ubiquity_CommandlineParsing_CommandlineOption_SwitchLeader">SwitchLeader</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the switch that introduced this option</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_CommandlineOption_Text" data-uid="Ubiquity.CommandlineParsing.CommandlineOption.Text">
+          <a class="xref" href="Ubiquity.CommandlineParsing.CommandlineOption.Text.html#Ubiquity_CommandlineParsing_CommandlineOption_Text">Text</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the full text of argument</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_CommandlineOption_Value" data-uid="Ubiquity.CommandlineParsing.CommandlineOption.Value">
+          <a class="xref" href="Ubiquity.CommandlineParsing.CommandlineOption.Value.html#Ubiquity_CommandlineParsing_CommandlineOption_Value">Value</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the value of the option</p>
+</td>
+      </tr>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_CommandlineOption_ToString" data-uid="Ubiquity.CommandlineParsing.CommandlineOption.ToString">
+          <a class="xref" href="Ubiquity.CommandlineParsing.CommandlineOption.ToString.html#Ubiquity_CommandlineParsing_CommandlineOption_ToString">ToString()</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Ubiquity.CommandlineParsing.CommandLineBinderExtensions.BindArguments.html#Ubiquity_CommandlineParsing_CommandLineBinderExtensions_BindArguments__1___0_System_Collections_Immutable_IImmutableList_Ubiquity_CommandlineParsing_ICommandlineArgument__">CommandLineBinderExtensions.BindArguments&lt;TResult&gt;(TResult, IImmutableList&lt;ICommandlineArgument&gt;)</a>
+  </div>
 </article>
           </div>
           <div class="contribution-panel mobile-hide">
-              <a href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/Ubiquity.CommandlineParsing.docfx/api/index.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/UbiquityDotNET/CommandLineParsing/new/master/apiSpec/new?filename=Ubiquity_CommandlineParsing_CommandlineOption.md&amp;value=---%0Auid%3A%20Ubiquity.CommandlineParsing.CommandlineOption%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/Ubiquity.CommandlineParsing/CommandlineOption.cs/#L7" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

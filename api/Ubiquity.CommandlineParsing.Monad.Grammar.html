@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CommandlineParsing | Command line parsing </title>
+    <title>Class Grammar
+   | Command line parsing </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="CommandlineParsing | Command line parsing ">
+    <meta name="title" content="Class Grammar
+   | Command line parsing ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -265,9 +267,9 @@
                       <a href="Ubiquity.CommandlineParsing.Monad.html" title="Ubiquity.CommandlineParsing.Monad" class="">Ubiquity.CommandlineParsing.Monad</a>
                         
                         <ul class="nav level2">
-                          <li class="">
+                          <li class="active">
                             <span class="expand-stub"></span>
-                            <a href="Ubiquity.CommandlineParsing.Monad.Grammar.html" title="Grammar" class="">Grammar</a>
+                            <a href="Ubiquity.CommandlineParsing.Monad.Grammar.html" title="Grammar" class="active">Grammar</a>
                               
                               <ul class="nav level3">
                                 <li class="">
@@ -357,34 +359,255 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="commandlineparsing">CommandlineParsing</h1>
+            <article class="content wrap" id="_content" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar">
+  
+  <h1 id="Ubiquity_CommandlineParsing_Monad_Grammar" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar">Class Grammar
+  </h1>
+  <div class="markdown level0 summary"><p>Static class to provide parser monads for parsing a command line</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
 
-<p>When processing command line arguments applications commonly perform the following basic conceptual steps.</p>
-<ol>
-<li>Parse the arguments into an analyzable form including identifying options/switches with values</li>
-<li>Bind the results of the parse to a data structure that is then used by the application to adapt
-behavior based on the command line arguments.</li>
-</ol>
-<p>The command line parsing library splits the argument processing into these two basic steps. Furthermore,
-the actual parsing is isolated by an interface so that multiple implementations are allowed. The first
-implementation uses the <a href="https://github.com/sprache/Sprache">Sprache Parser Combinator Library</a>, which
-is a light weight (&lt;50KB) parsing library useful for many applications. Other parsers are possible if
-an application already needs to use a more traditional parser engine but given the size of the Sprache
-library it isn&#39;t likely to save much.</p>
-<p>The parsing stage produces an ordered list of arguments that are either switches/options with a possible
-value and general positional arguments that may be quoted to include whitespace. For some applications
-the list is all that is needed. However, for others an object model is desired. This is where the binding
-comes in. The binding stage takes the list of arguments and, with the aid of .NET attributes binds the
-values from the command line to properties of an object instance. To allow for greater flexibility, the
-actual property binding is isolated behind an interface to allow multiple implementations. The library
-includes a standard .NET Reflection based property provider which is likely to serve for most uses. Though,
-it is plausible to implement a compile time code generator that created a property provider that didn&#39;t need
-reflection, making it suitable for .NET Native AOT compilation scenarios where minimizing reflection is desired.</p>
+  <div class="inheritance">
+    <h5 id="inheritance-Ubiquity_CommandlineParsing_Monad_Grammar"><a href="#collapsible-inheritance-Ubiquity_CommandlineParsing_Monad_Grammar" class="expander collapsed" data-toggle="collapse" aria-expanded="false">Inheritance</a></h5>
+    <div id="collapsible-inheritance-Ubiquity_CommandlineParsing_Monad_Grammar" class="collapse collapsed" aria-expanded="false">
+      <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
+      <div class="level1"><span class="xref">Grammar</span></div>
+    </div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+      <h5 id="inheritedMembers-Ubiquity_CommandlineParsing_Monad_Grammar">
+          <a href="#collapsible-inheritedMembers-Ubiquity_CommandlineParsing_Monad_Grammar" class="expander collapsed" data-toggle="collapse" aria-expanded="false">Inherited Members</a>
+      </h5>
+      <div id="collapsible-inheritedMembers-Ubiquity_CommandlineParsing_Monad_Grammar" class="collapse collapsed" aria-expanded="false">
+          <div>
+              <span class="xref">System.Object.ToString()</span>
+          </div>
+          <div>
+              <span class="xref">System.Object.Equals(System.Object)</span>
+          </div>
+          <div>
+              <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+          </div>
+          <div>
+              <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+          </div>
+          <div>
+              <span class="xref">System.Object.GetHashCode()</span>
+          </div>
+          <div>
+              <span class="xref">System.Object.GetType()</span>
+          </div>
+          <div>
+              <span class="xref">System.Object.MemberwiseClone()</span>
+          </div>
+      </div>
+  </div>
+  
+  
+  <h5><strong>Namespace</strong>: <a class="xref" href="Ubiquity.CommandlineParsing.Monad.html">Ubiquity.CommandlineParsing.Monad</a></h5>
+  <h5><strong>Assembly</strong>: Ubiquity.CommandlineParsing.Monad.dll</h5>
+  
+  <h3 id="Ubiquity_CommandlineParsing_Monad_Grammar_syntax"><strong>Syntax</strong></h3>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Grammar</code></pre>
+  </div>
+
+  
+  
+  
+  <h3 id="Ubiquity_CommandlineParsing_Monad_Grammar_remarks"><strong>Remarks</strong></h3>
+  <div class="markdown level0 remarks"><p>The fields of this class are the lexer rules, while the Properties are the
+parser rules. The methods are utility combinators used to build the other
+rules.</p>
+</div>
+  
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_Colon" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.Colon">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.Colon.html#Ubiquity_CommandlineParsing_Monad_Grammar_Colon">Colon</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser monad for the &apos;:&apos; symbol</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_CommonOptionStart" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.CommonOptionStart">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.CommonOptionStart.html#Ubiquity_CommandlineParsing_Monad_Grammar_CommonOptionStart">CommonOptionStart</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser monad for common command line option start (e.g. &apos;/&apos; | &apos;-&apos; | &apos;--&apos; )</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_Dash" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.Dash">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.Dash.html#Ubiquity_CommandlineParsing_Monad_Grammar_Dash">Dash</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser monad for the &apos;-&apos; symbol</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_DoubleDash" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.DoubleDash">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.DoubleDash.html#Ubiquity_CommandlineParsing_Monad_Grammar_DoubleDash">DoubleDash</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser monad for a double dash sequence (e.g. &apos;--&apos;)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_DoubleQuote" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.DoubleQuote">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.DoubleQuote.html#Ubiquity_CommandlineParsing_Monad_Grammar_DoubleQuote">DoubleQuote</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser monad for a double quote character</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_Equal" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.Equal">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.Equal.html#Ubiquity_CommandlineParsing_Monad_Grammar_Equal">Equal</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser monad for the &apos;=&apos; symbol</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_EqualOrColon" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.EqualOrColon">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.EqualOrColon.html#Ubiquity_CommandlineParsing_Monad_Grammar_EqualOrColon">EqualOrColon</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser monad for either the &apos;=&apos; or &apos;:&apos; symbols</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_Identifier" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.Identifier">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.Identifier.html#Ubiquity_CommandlineParsing_Monad_Grammar_Identifier">Identifier</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser monad for a common identifier (e.g. IdentifierChar*)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_IdentifierChar" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.IdentifierChar">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.IdentifierChar.html#Ubiquity_CommandlineParsing_Monad_Grammar_IdentifierChar">IdentifierChar</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser for a single character as part of an identifier</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_NonWhiteSpaceChar" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.NonWhiteSpaceChar">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.NonWhiteSpaceChar.html#Ubiquity_CommandlineParsing_Monad_Grammar_NonWhiteSpaceChar">NonWhiteSpaceChar</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser monad to parse non-whitespace characters</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_Option" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.Option">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.Option.html#Ubiquity_CommandlineParsing_Monad_Grammar_Option">Option</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser monad for a command line option that accepts values</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_QuotedString" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.QuotedString">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.QuotedString.html#Ubiquity_CommandlineParsing_Monad_Grammar_QuotedString">QuotedString</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser monad for a Quoted string (either single or double quotes)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_SingleQuote" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.SingleQuote">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.SingleQuote.html#Ubiquity_CommandlineParsing_Monad_Grammar_SingleQuote">SingleQuote</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser monad for a single quote character</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_Slash" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.Slash">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.Slash.html#Ubiquity_CommandlineParsing_Monad_Grammar_Slash">Slash</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser monad for the &apos;/&apos; symbol</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_UnquotedValue" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.UnquotedValue">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.UnquotedValue.html#Ubiquity_CommandlineParsing_Monad_Grammar_UnquotedValue">UnquotedValue</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser monad for an unquoted positional value</p>
+</td>
+      </tr>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_CommandLine" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.CommandLine">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.CommandLine.html#Ubiquity_CommandlineParsing_Monad_Grammar_CommandLine">CommandLine</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets the Top level parser to parse a command line into a sequence of <a class="xref" href="Ubiquity.CommandlineParsing.ICommandlineArgument.html">ICommandlineArgument</a></p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_PositionalArg" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.PositionalArg">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.PositionalArg.html#Ubiquity_CommandlineParsing_Monad_Grammar_PositionalArg">PositionalArg</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a Parser monad for a position argument that matches the <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.ValueContent.html#Ubiquity_CommandlineParsing_Monad_Grammar_ValueContent">ValueContent</a> parser</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_ValueContent" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.ValueContent">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.ValueContent.html#Ubiquity_CommandlineParsing_Monad_Grammar_ValueContent">ValueContent</a>
+        </td>
+        <td class="markdown level1 summary"><p>Gets a Parser monad for a value (either a positional argument or the value of a switch/option)</p>
+</td>
+      </tr>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_BlockString_Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.BlockString(Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}})">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.BlockString.html#Ubiquity_CommandlineParsing_Monad_Grammar_BlockString_Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___">BlockString(Parser&lt;IEnumerable&lt;Char&gt;&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser combinator for a delimited string</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_BlockString_Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.BlockString(Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}},Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}})">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.BlockString.html#Ubiquity_CommandlineParsing_Monad_Grammar_BlockString_Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___">BlockString(Parser&lt;IEnumerable&lt;Char&gt;&gt;, Parser&lt;IEnumerable&lt;Char&gt;&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Block quoted string, with custom open and closing delimiter parsers</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_OnMatch__1_Sprache_Parser___0__System_Action_Sprache_IResult___0___" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.OnMatch``1(Sprache.Parser{``0},System.Action{Sprache.IResult{``0}})">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.OnMatch.html#Ubiquity_CommandlineParsing_Monad_Grammar_OnMatch__1_Sprache_Parser___0__System_Action_Sprache_IResult___0___">OnMatch&lt;T&gt;(Parser&lt;T&gt;, Action&lt;IResult&lt;T&gt;&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser combinator to provide semantic action support for matched parsers</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_OptionParser_Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.OptionParser(Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}})">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.OptionParser.html#Ubiquity_CommandlineParsing_Monad_Grammar_OptionParser_Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___">OptionParser(Parser&lt;IEnumerable&lt;Char&gt;&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser combinator for a command line switch/option</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_OptionParser_Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.OptionParser(Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}},Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}})">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.OptionParser.html#Ubiquity_CommandlineParsing_Monad_Grammar_OptionParser_Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___">OptionParser(Parser&lt;IEnumerable&lt;Char&gt;&gt;, Parser&lt;IEnumerable&lt;Char&gt;&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser combinator for a command line switch/option</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_Monad_Grammar_SepAndValue_Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.SepAndValue(Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}})">
+          <a class="xref" href="Ubiquity.CommandlineParsing.Monad.Grammar.SepAndValue.html#Ubiquity_CommandlineParsing_Monad_Grammar_SepAndValue_Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___">SepAndValue(Parser&lt;IEnumerable&lt;Char&gt;&gt;)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parser monad to parse a value separator and value</p>
+</td>
+      </tr>
+  </table>
 </article>
           </div>
           <div class="contribution-panel mobile-hide">
-              <a href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/Ubiquity.CommandlineParsing.docfx/api/index.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/UbiquityDotNET/CommandLineParsing/new/master/apiSpec/new?filename=Ubiquity_CommandlineParsing_Monad_Grammar.md&amp;value=---%0Auid%3A%20Ubiquity.CommandlineParsing.Monad.Grammar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/Ubiquity.CommandlineParsing.Monad/Grammar.cs/#L20" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

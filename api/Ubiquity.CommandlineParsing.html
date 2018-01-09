@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CommandlineParsing | Command line parsing </title>
+    <title>Namespace Ubiquity.CommandlineParsing
+   | Command line parsing </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="CommandlineParsing | Command line parsing ">
+    <meta name="title" content="Namespace Ubiquity.CommandlineParsing
+   | Command line parsing ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -68,9 +70,9 @@
                 <div class="toc" id="toc">
                   
                   <ul class="nav level1">
-                    <li class="">
+                    <li class="active">
                       <span class="expand-stub"></span>
-                      <a href="Ubiquity.CommandlineParsing.html" title="Ubiquity.CommandlineParsing" class="">Ubiquity.CommandlineParsing</a>
+                      <a href="Ubiquity.CommandlineParsing.html" title="Ubiquity.CommandlineParsing" class="active">Ubiquity.CommandlineParsing</a>
                         
                         <ul class="nav level2">
                           <li class="">
@@ -357,34 +359,107 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="commandlineparsing">CommandlineParsing</h1>
-
-<p>When processing command line arguments applications commonly perform the following basic conceptual steps.</p>
-<ol>
-<li>Parse the arguments into an analyzable form including identifying options/switches with values</li>
-<li>Bind the results of the parse to a data structure that is then used by the application to adapt
-behavior based on the command line arguments.</li>
-</ol>
-<p>The command line parsing library splits the argument processing into these two basic steps. Furthermore,
-the actual parsing is isolated by an interface so that multiple implementations are allowed. The first
-implementation uses the <a href="https://github.com/sprache/Sprache">Sprache Parser Combinator Library</a>, which
-is a light weight (&lt;50KB) parsing library useful for many applications. Other parsers are possible if
-an application already needs to use a more traditional parser engine but given the size of the Sprache
-library it isn&#39;t likely to save much.</p>
-<p>The parsing stage produces an ordered list of arguments that are either switches/options with a possible
-value and general positional arguments that may be quoted to include whitespace. For some applications
-the list is all that is needed. However, for others an object model is desired. This is where the binding
-comes in. The binding stage takes the list of arguments and, with the aid of .NET attributes binds the
-values from the command line to properties of an object instance. To allow for greater flexibility, the
-actual property binding is isolated behind an interface to allow multiple implementations. The library
-includes a standard .NET Reflection based property provider which is likely to serve for most uses. Though,
-it is plausible to implement a compile time code generator that created a property provider that didn&#39;t need
-reflection, making it suitable for .NET Native AOT compilation scenarios where minimizing reflection is desired.</p>
+            <article class="content wrap" id="_content" data-uid="Ubiquity.CommandlineParsing">
+  <h1 id="Ubiquity_CommandlineParsing" data-uid="Ubiquity.CommandlineParsing">Namespace Ubiquity.CommandlineParsing
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Ubiquity.CommandlineParsing.CommandlineArgAttribute.html">CommandlineArgAttribute</a></p>
+          <p><p>Allows accessing a property via the command line parser with a name that is different from the property name</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Ubiquity.CommandlineParsing.CommandlineBinder.html">CommandlineBinder</a></p>
+          <p><p>Type specific command line argument binder</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Ubiquity.CommandlineParsing.CommandLineBinderExtensions.html">CommandLineBinderExtensions</a></p>
+          <p><p>Utility extension class to simplify parsing/binding operations</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Ubiquity.CommandlineParsing.CommandlineOption.html">CommandlineOption</a></p>
+          <p><p>Result of a single parsed command line option</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Ubiquity.CommandlineParsing.CommandlineParseException.html">CommandlineParseException</a></p>
+          <p><p>Exception for errors in parsing or binding command line arguments</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Ubiquity.CommandlineParsing.CommandlineValue.html">CommandlineValue</a></p>
+          <p><p>Command line argument value</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Ubiquity.CommandlineParsing.OptionPropertyBase.html">OptionPropertyBase</a></p>
+          <p><p>Abstract base class for implementing <a class="xref" href="Ubiquity.CommandlineParsing.IOptionProperty.html">IOptionProperty</a></p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider.html">ReflectionOptionPropertyProvider</a></p>
+          <p><p><a class="xref" href="Ubiquity.CommandlineParsing.IOptionPropertyProvider.html">IOptionPropertyProvider</a> that uses Reflection to find the properties to bind to</p>
+</p>
+        </td>
+      </tr>
+    </table>
+    <h3 id="interfaces">Interfaces
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="Ubiquity.CommandlineParsing.ICommandlineArgument.html">ICommandlineArgument</a></p>
+          <p><p>Interface for a command line argument</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Ubiquity.CommandlineParsing.ICommandlineParser.html">ICommandlineParser</a></p>
+          <p><p>Interface for parsing command line arguments</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Ubiquity.CommandlineParsing.IOptionProperty.html">IOptionProperty</a></p>
+          <p><p>Interface for a property that binds a <a class="xref" href="Ubiquity.CommandlineParsing.CommandlineOption.html">CommandlineOption</a> to a property on an object instance.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="Ubiquity.CommandlineParsing.IOptionPropertyProvider.html">IOptionPropertyProvider</a></p>
+          <p><p>Interface for an option property provider</p>
+</p>
+        </td>
+      </tr>
+    </table>
 </article>
           </div>
           <div class="contribution-panel mobile-hide">
-              <a href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/Ubiquity.CommandlineParsing.docfx/api/index.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

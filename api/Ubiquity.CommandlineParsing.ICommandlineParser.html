@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CommandlineParsing | Command line parsing </title>
+    <title>Interface ICommandlineParser
+   | Command line parsing </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="CommandlineParsing | Command line parsing ">
+    <meta name="title" content="Interface ICommandlineParser
+   | Command line parsing ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -175,9 +177,9 @@
                                   <a href="Ubiquity.CommandlineParsing.ICommandlineArgument.Text.html" title="Text" class="">Text</a>
                                 </li>
                               </ul>  </li>
-                          <li class="">
+                          <li class="active">
                             <span class="expand-stub"></span>
-                            <a href="Ubiquity.CommandlineParsing.ICommandlineParser.html" title="ICommandlineParser" class="">ICommandlineParser</a>
+                            <a href="Ubiquity.CommandlineParsing.ICommandlineParser.html" title="ICommandlineParser" class="active">ICommandlineParser</a>
                               
                               <ul class="nav level3">
                                 <li class="">
@@ -357,34 +359,80 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="commandlineparsing">CommandlineParsing</h1>
+            <article class="content wrap" id="_content" data-uid="Ubiquity.CommandlineParsing.ICommandlineParser">
+  
+  <h1 id="Ubiquity_CommandlineParsing_ICommandlineParser" data-uid="Ubiquity.CommandlineParsing.ICommandlineParser">Interface ICommandlineParser
+  </h1>
+  <div class="markdown level0 summary"><p>Interface for parsing command line arguments</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
 
-<p>When processing command line arguments applications commonly perform the following basic conceptual steps.</p>
-<ol>
-<li>Parse the arguments into an analyzable form including identifying options/switches with values</li>
-<li>Bind the results of the parse to a data structure that is then used by the application to adapt
-behavior based on the command line arguments.</li>
-</ol>
-<p>The command line parsing library splits the argument processing into these two basic steps. Furthermore,
-the actual parsing is isolated by an interface so that multiple implementations are allowed. The first
-implementation uses the <a href="https://github.com/sprache/Sprache">Sprache Parser Combinator Library</a>, which
-is a light weight (&lt;50KB) parsing library useful for many applications. Other parsers are possible if
-an application already needs to use a more traditional parser engine but given the size of the Sprache
-library it isn&#39;t likely to save much.</p>
-<p>The parsing stage produces an ordered list of arguments that are either switches/options with a possible
-value and general positional arguments that may be quoted to include whitespace. For some applications
-the list is all that is needed. However, for others an object model is desired. This is where the binding
-comes in. The binding stage takes the list of arguments and, with the aid of .NET attributes binds the
-values from the command line to properties of an object instance. To allow for greater flexibility, the
-actual property binding is isolated behind an interface to allow multiple implementations. The library
-includes a standard .NET Reflection based property provider which is likely to serve for most uses. Though,
-it is plausible to implement a compile time code generator that created a property provider that didn&#39;t need
-reflection, making it suitable for .NET Native AOT compilation scenarios where minimizing reflection is desired.</p>
+  
+  
+  
+  
+  <h5><strong>Namespace</strong>: <a class="xref" href="Ubiquity.CommandlineParsing.html">Ubiquity.CommandlineParsing</a></h5>
+  <h5><strong>Assembly</strong>: Ubiquity.CommandlineParsing.dll</h5>
+  
+  <h3 id="Ubiquity_CommandlineParsing_ICommandlineParser_syntax"><strong>Syntax</strong></h3>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ICommandlineParser</code></pre>
+  </div>
+
+  
+  
+  
+  <h3 id="Ubiquity_CommandlineParsing_ICommandlineParser_remarks"><strong>Remarks</strong></h3>
+  <div class="markdown level0 remarks"><p><p>This interface allows for different underlying parsing engines,
+depending on the needs of an application. For example there is a
+monad parser available that uses the Sprache parser combinator
+library. However, if the app already has a full featured parser,
+like ANTLR, it may not make sense to pull in the dependencies for
+the Sprache parser and instead, just use the ANTLR version instead.</p>
+<p>The parser accepts a superset of all valid command lines. That is,
+it parses and accepts without error all syntactically and semantically valid
+input AND some semantically invalid input. It is then up to the consuming
+application or binder to perform the final semantic evaluation. This helps
+keep the parser implementations generalized enough for re-use as-is while
+supporting a wide variety of command line styles without enforcing any
+one in particular.
+</p>
+<div class="NOTE"><h5>Important</h5><p>
+It is important to note that the result of the parse is intentionally
+<strong>not</strong> necessarily semantically valid for a given application. That is,
+the parser does not implement all the subtle rules of a particular use
+case. Instead it parses the fundamental syntax, and leaves the semantics
+to the consumer of the results. For example, &apos;-a --all&apos; would parse as
+two distinct options. It is up to the application or binder it uses to
+decide if that is an error. (They may represent distinct options or the
+&apos;-a&apos; may be a short form of &apos;--all&apos;. If they represent the same option, it
+is up to the application to decide if the multiple occurrences are valid
+or an error) This helps keep the parser implementation generally reusable
+and simplifies most applications to focusing on the task of validating
+the arguments instead of parsing them.
+</p></div></p>
+</div>
+  
+  <h3 id="methods">Methods
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+      <tr>
+        <td id="Ubiquity_CommandlineParsing_ICommandlineParser_Parse_System_String_" data-uid="Ubiquity.CommandlineParsing.ICommandlineParser.Parse(System.String)">
+          <a class="xref" href="Ubiquity.CommandlineParsing.ICommandlineParser.Parse.html#Ubiquity_CommandlineParsing_ICommandlineParser_Parse_System_String_">Parse(String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Parses the input command line into an immutable list of arguments</p>
+</td>
+      </tr>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Ubiquity.CommandlineParsing.CommandLineBinderExtensions.BindArguments.html#Ubiquity_CommandlineParsing_CommandLineBinderExtensions_BindArguments__1___0_System_Collections_Immutable_IImmutableList_Ubiquity_CommandlineParsing_ICommandlineArgument__">CommandLineBinderExtensions.BindArguments&lt;TResult&gt;(TResult, IImmutableList&lt;ICommandlineArgument&gt;)</a>
+  </div>
 </article>
           </div>
           <div class="contribution-panel mobile-hide">
-              <a href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/Ubiquity.CommandlineParsing.docfx/api/index.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/UbiquityDotNET/CommandLineParsing/new/master/apiSpec/new?filename=Ubiquity_CommandlineParsing_ICommandlineParser.md&amp;value=---%0Auid%3A%20Ubiquity.CommandlineParsing.ICommandlineParser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/Ubiquity.CommandlineParsing/ICommandlineParser.cs/#L39" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

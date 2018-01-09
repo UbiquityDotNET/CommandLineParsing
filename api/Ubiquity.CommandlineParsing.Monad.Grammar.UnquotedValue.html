@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CommandlineParsing | Command line parsing </title>
+    <title>Field UnquotedValue
+   | Command line parsing </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="CommandlineParsing | Command line parsing ">
+    <meta name="title" content="Field UnquotedValue
+   | Command line parsing ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -357,34 +359,44 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="commandlineparsing">CommandlineParsing</h1>
+            <article class="content wrap" id="_content" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.UnquotedValue">
 
-<p>When processing command line arguments applications commonly perform the following basic conceptual steps.</p>
-<ol>
-<li>Parse the arguments into an analyzable form including identifying options/switches with values</li>
-<li>Bind the results of the parse to a data structure that is then used by the application to adapt
-behavior based on the command line arguments.</li>
-</ol>
-<p>The command line parsing library splits the argument processing into these two basic steps. Furthermore,
-the actual parsing is isolated by an interface so that multiple implementations are allowed. The first
-implementation uses the <a href="https://github.com/sprache/Sprache">Sprache Parser Combinator Library</a>, which
-is a light weight (&lt;50KB) parsing library useful for many applications. Other parsers are possible if
-an application already needs to use a more traditional parser engine but given the size of the Sprache
-library it isn&#39;t likely to save much.</p>
-<p>The parsing stage produces an ordered list of arguments that are either switches/options with a possible
-value and general positional arguments that may be quoted to include whitespace. For some applications
-the list is all that is needed. However, for others an object model is desired. This is where the binding
-comes in. The binding stage takes the list of arguments and, with the aid of .NET attributes binds the
-values from the command line to properties of an object instance. To allow for greater flexibility, the
-actual property binding is isolated behind an interface to allow multiple implementations. The library
-includes a standard .NET Reflection based property provider which is likely to serve for most uses. Though,
-it is plausible to implement a compile time code generator that created a property provider that didn&#39;t need
-reflection, making it suitable for .NET Native AOT compilation scenarios where minimizing reflection is desired.</p>
+<h1 id="Ubiquity_CommandlineParsing_Monad_Grammar_UnquotedValue" data-uid="Ubiquity.CommandlineParsing.Monad.Grammar.UnquotedValue">Field UnquotedValue
+</h1>
+<div class="markdown level0 summary"><p>Parser monad for an unquoted positional value</p>
+</div>
+<div class="markdown level0 conceptual"></div>
+
+
+
+
+
+<h5><strong>Namespace</strong>: <a class="xref" href="Ubiquity.CommandlineParsing.Monad.html">Ubiquity.CommandlineParsing.Monad</a></h5>
+<h5><strong>Assembly</strong>: Ubiquity.CommandlineParsing.Monad.dll</h5>
+
+<h3 id="Ubiquity_CommandlineParsing_Monad_Grammar_UnquotedValue_syntax"><strong>Syntax</strong></h3>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static readonly Parser&lt;IEnumerable&lt;char&gt;&gt; UnquotedValue</code></pre>
+</div>
+
+
+<h2 class="returns">Returns</h2>
+<table>
+  <tr>
+    <td>
+      <span class="xref">Sprache.Parser</span>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.char(v=vs.110).aspx">Char</a>&gt;&gt;
+      <p>
+    </td>
+  </tr>
+</table>
+
+
+
 </article>
           </div>
           <div class="contribution-panel mobile-hide">
-              <a href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/Ubiquity.CommandlineParsing.docfx/api/index.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/UbiquityDotNET/CommandLineParsing/new/master/apiSpec/new?filename=Ubiquity_CommandlineParsing_Monad_Grammar_UnquotedValue.md&amp;value=---%0Auid%3A%20Ubiquity.CommandlineParsing.Monad.Grammar.UnquotedValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/Ubiquity.CommandlineParsing.Monad/Grammar.cs/#L90" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
