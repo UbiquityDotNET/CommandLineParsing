@@ -39,3 +39,6 @@ build:
 
 artifacts:
   - path: BuildOutput\NuGet\*.nupkg
+
+deploy_script:
+  - ps: .\Push-Docs.ps1

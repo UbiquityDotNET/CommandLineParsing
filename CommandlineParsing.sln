@@ -13,6 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ubiquity.CommandlineParsing
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repo Items", "Repo Items", "{2CC0C61E-2792-4E92-B72E-0DD1F72A7D05}"
 	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
 		BuildVersion.xml = BuildVersion.xml
 		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
 		Directory.Build.props = Directory.Build.props
@@ -20,6 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repo Items", "Repo Items", 
 		GOVERNANCE.md = GOVERNANCE.md
 		LICENSE.md = LICENSE.md
 		nuget.config = nuget.config
+		Push-Docs.ps1 = Push-Docs.ps1
 		stylecop.json = stylecop.json
 	EndProjectSection
 EndProject
