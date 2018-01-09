@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net47;netcoreapp2.0</TargetFrameworks>
+    <IsPackable>false</IsPackable>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net47|AnyCPU'">
+    <NoWarn>1701;1702;1705</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <Compile Remove="obj\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove="bin\**" />
+    <None Remove="obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.2.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommandlineParsing.Monad\Ubiquity.CommandlineParsing.Monad.csproj" />
+  </ItemGroup>
+
+</Project>

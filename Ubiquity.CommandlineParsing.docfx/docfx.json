@@ -1,0 +1,54 @@
+﻿{
+  "metadata":
+  [
+    {
+      "src":
+      [
+        {
+          "files": [ "**.csproj" ],
+          "exclude": [ "*UT/**","*Docfx/**" ],
+          "src":".."
+        }
+      ],
+      "dest": "api",
+      "properties":
+      {
+          "TargetFramework": "net47"
+      }
+    }
+  ],
+  "build":
+  {
+    "content":
+    [
+      {
+        "files": [ "toc.yml",
+                   "index.md",
+                   "api/**.md",
+                   "api/**.yml",
+                   "articles/**.md",
+                   "articles/**.yml",
+                 ],
+        "exclude": [ "obj/**" ]
+      }
+    ],
+    "overwrite":
+    [
+      {
+        "files": [ "apidoc/**.md" ],
+        "exclude": [ "obj/**" ]
+      }
+    ],
+    "dest": "docs",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "postProcessors": [],
+    "noLangKeyword": false,
+    "globalMetadata":
+    {
+      "_appTitle" : "Command line parsing",
+      "_appFooter" : "Copyright (C) 2017, Ubiquity.NET contributors",
+      "_disableBreadcrumb" : true,
+    },
+  }
+}

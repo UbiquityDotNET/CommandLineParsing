@@ -1,0 +1,55 @@
+<Project>
+    <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+    
+    <PropertyGroup>
+        <TargetFramework>net47</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\CommandlineParsing.Monad\Ubiquity.CommandlineParsing.Monad.csproj" />
+        <ProjectReference Include="..\CommandlineParsing\Ubiquity.CommandlineParsing.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="docfx.console" Version="2.29.1" Condition="'$(TargetFramework)'=='net47'" PrivateAssets="All" />
+        <PackageReference Include="memberpage" Version="2.29.1" Condition="'$(TargetFramework)'=='net47'" PrivateAssets="All" />
+        <PackageReference Include="msdn.4.5.2" Version="0.1.0-alpha-1611021200" Condition="'$(TargetFramework)'=='net47'" PrivateAssets="All" />
+    </ItemGroup>
+
+    <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+    <!--
+    This target dynamically resolves the installed location of the NuGet Packages used and applies
+    appropriate parameters to the docfx command to use them. Otherwise the docfx.json would need to
+    have a hard coded path, which doesn't work with multiple users of a version controlled project.
+    It also removes the need to workaround the hard coded path with relative paths by using a
+    nuget.config to force package installs to a well known location.
+    -->
+    <Target Name="GetDocfxPackagePaths" BeforeTargets="DocBuild">
+        <ItemGroup>
+            <docfxpkg Include="@(PackageDefinitions)" Condition="'%(PackageDefinitions.Name)'=='docfx.console'" />
+            <memberpage Include="@(PackageDefinitions)" Condition="'%(PackageDefinitions.Name)'=='memberpage'" />
+            <Msdn4_5_2 Include="@(PackageDefinitions)" Condition="'%(PackageDefinitions.Name)'=='msdn.4.5.2'" />
+        </ItemGroup>
+        <PropertyGroup>
+            <DocfxConsolePath>%(docfxpkg.ResolvedPath)</DocfxConsolePath>
+            <MemberPagePath>%(memberpage.ResolvedPath)</MemberPagePath>
+            <MsdnXRefPath>%(msdn4_5_2.ResolvedPath)</MsdnXRefPath>
+            <LogLevel>Info</LogLevel>
+            <LogFile>$(IntermediateOutputPath)Docfx-Metadata.log</LogFile>
+            <MetadataOutputFolder>$(BaseBuildOutputPath.TrimEnd('\'))</MetadataOutputFolder>
+            <DocParameters>$(DocParameters) --disableGitFeatures</DocParameters>
+            <DocParameters>$(DocParameters) --cleanupCacheHistory</DocParameters>
+            <DocParameters>$(DocParameters) --lruSize=0</DocParameters>
+            <DocParameters>$(DocParameters) --intermediateFolder="$(IntermediateOutputPath.TrimEnd('\'))"</DocParameters>
+            <DocParameters>$(DocParameters) --xref="$(MsdnXrefPath)\content\msdn.4.5.2.zip,$(MsdnXrefPath)\content\namespaces.4.5.2.zip"</DocParameters>
+            <DocTemplate>statictoc,$(MemberPagePath)\content,templates\Ubiquity</DocTemplate>
+        </PropertyGroup>
+    </Target>
+
+    <!-- Stub the build target as this project only builds the documentation -->
+    <Target Name="CoreCompile" DependsOnTargets="$(CoreCompileDependsOn)">
+    </Target>
+
+    <Target Name="CopyFilesToOutputDirectory">
+    </Target>
+</Project>
