@@ -31,7 +31,7 @@ namespace Ubiquity.CommandlineParsing
         /// <summary>Gets a value indicating whether this property was set</summary>
         /// <remarks>
         /// If <see cref="IsCollection"/> is <see langword="true"/> then this must always be <see langword="false"/>.
-        /// Otherwise, this is <see langword="false"/> until the first call to <see href="xref:CommandlineParsing.IOptionProperty.BindValue*">BindValue</see>,
+        /// Otherwise, this is <see langword="false"/> until the first call to <see href="xref:Ubiquity.CommandlineParsing.IOptionProperty.BindValue*">BindValue</see>,
         /// after which it remains <see langword="true"/>. This is used to prevent setting the value multiple times.
         /// </remarks>
         bool IsSet { get; }

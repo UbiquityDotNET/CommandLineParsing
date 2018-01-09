@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.ComponentModel;
 using System.Globalization;
-using CommandlineParsing.Properties;
+using Ubiquity.CommandlineParsing.Properties;
 
 namespace Ubiquity.CommandlineParsing
 {

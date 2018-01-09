@@ -263,3 +263,5 @@ CommandlineParsing.docfx/docs
 **/api/*.yml
 **/api/.manifest
 /BuildOutput/**
+
+**/*.Designer.cs

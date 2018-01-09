@@ -17,6 +17,7 @@
     </ItemGroup>
 
     <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+    
     <!--
     This target dynamically resolves the installed location of the NuGet Packages used and applies
     appropriate parameters to the docfx command to use them. Otherwise the docfx.json would need to
@@ -36,7 +37,6 @@
             <MsdnXRefPath>%(msdn4_5_2.ResolvedPath)</MsdnXRefPath>
             <LogLevel>Info</LogLevel>
             <LogFile>$(IntermediateOutputPath)Docfx-Metadata.log</LogFile>
-            <MetadataOutputFolder>$(BaseBuildOutputPath.TrimEnd('\'))</MetadataOutputFolder>
             <DocParameters>$(DocParameters) --cleanupCacheHistory</DocParameters>
             <DocParameters>$(DocParameters) --lruSize=0</DocParameters>
             <DocParameters>$(DocParameters) --intermediateFolder="$(IntermediateOutputPath.TrimEnd('\'))"</DocParameters>

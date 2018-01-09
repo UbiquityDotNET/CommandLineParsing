@@ -5,7 +5,7 @@ using System;
 using System.ComponentModel;
 using System.Globalization;
 using System.Reflection;
-using CommandlineParsing.Properties;
+using Ubiquity.CommandlineParsing.Properties;
 
 namespace Ubiquity.CommandlineParsing
 {

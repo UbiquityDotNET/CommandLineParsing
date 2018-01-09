@@ -3,7 +3,7 @@
 
 using System;
 using System.Globalization;
-using CommandlineParsing.Properties;
+using Ubiquity.CommandlineParsing.Properties;
 
 namespace Ubiquity.CommandlineParsing
 {

@@ -51,19 +51,19 @@ lines and some that are not valid for a given application. This, helps keep the 
 allows for defining common semantic processing and object binding for specific scenarios.
 
 ### Flexible Binding
-Parsing arguments produces an immutable list of [ICommandlineArgument](xref:CommandlineParsing.ICommandlineArgument)
-which is a common interface for either [CommandlineOption](xref:CommandlineParsing.CommandlineOption) or
-[CommandlineValue](xref:CommandlineParsing.CommandlineValue). The application can work with that list directly or
-use a binder to bind the parsed arguments to properties of an object instance. The [CommandlineBinder](xref:CommandlineParsing.CommandlineBinder)
+Parsing arguments produces an immutable list of [ICommandlineArgument](xref:Ubiquity.CommandlineParsing.ICommandlineArgument)
+which is a common interface for either [CommandlineOption](xref:Ubiquity.CommandlineParsing.CommandlineOption) or
+[CommandlineValue](xref:Ubiquity.CommandlineParsing.CommandlineValue). The application can work with that list directly or
+use a binder to bind the parsed arguments to properties of an object instance. The [CommandlineBinder](xref:Ubiquity.CommandlineParsing.CommandlineBinder)
 class provides common logic for walking the list of arguments to bind the properties to an object instance. The
-actual binding of the value to the property is performed by an implementation of [IOptionProperty](xref:CommandlineParsing.IOptionProperty).
-Instances of IOptionProperty are provided by an implementation of another interface [IOptionPropertyProvider](xref:CommandlineParsing.IOptionPropertyProvider)
+actual binding of the value to the property is performed by an implementation of [IOptionProperty](xref:Ubiquity.CommandlineParsing.IOptionProperty).
+Instances of IOptionProperty are provided by an implementation of another interface [IOptionPropertyProvider](xref:Ubiquity.CommandlineParsing.IOptionPropertyProvider)
 which, given a CommandlineOption, will look up the property for the object to bind to and provides the IOptionProperty
 implementation to do the binding.
 
 >[!NOTE]
 >The design the IOPtionPropertyProvider and IOptionProperty interfaces intentionally **does not require** the use of refelction, though it is allowed.
->In fact the default provider is [ReflectionOptionPropertyProvider](xref:CommandlineParsing.ReflectionOptionPropertyProvider). The reflection provider
+>In fact the default provider is [ReflectionOptionPropertyProvider](xref:Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider). The reflection provider
 >covers the large majority of cases. However it isn't the only possible implementation. It is plausible to use some form of compile time reflection/AOP
 >Weaver to generate an implementation of IOptionPropertyProvider for a given options class that does not require any run-time reflection.
 
@@ -75,5 +75,5 @@ parsing and binding to an options class the application can use.
 
 >[!NOTE]
 >This example treats `-`, `--` and `/` as equivalent, though other behavior is possible
->by providing an instance of [ReflectionOptionPropertyProvider](xref:CommandlineParsing.ReflectionOptionPropertyProvider), or some other implementation
+>by providing an instance of [ReflectionOptionPropertyProvider](xref:Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider), or some other implementation
 >of IOptionPropertyProvider, to the binder that will select the appropriate property or reject the parsed arguments as appropriate.

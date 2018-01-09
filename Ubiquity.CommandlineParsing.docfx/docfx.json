@@ -29,7 +29,7 @@
                    "articles/**.md",
                    "articles/**.yml",
                  ],
-        "exclude": [ "obj/**" ]
+         "src" : "."
       }
     ],
     "overwrite":
@@ -39,7 +39,7 @@
         "exclude": [ "obj/**" ]
       }
     ],
-    "dest": "docs",
+    "dest": "../BuildOutput/docs",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "postProcessors": [],
