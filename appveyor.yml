@@ -31,10 +31,10 @@ init:
 configuration: Release
 
 before_build:
-  - cmd: msbuild /t:Restore src\CSemVer.Build.Tasks.sln
+  - cmd: msbuild /t:Restore CommandlineParsing.sln
 
 build:
-  project: src\CSemVer.Build.Tasks.sln
+  project: CommandlineParsing.sln
   verbosity: minimal
 
 artifacts:
