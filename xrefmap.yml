@@ -1,6 +1,30 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: SampleArgs
+  name: SampleArgs
+  href: api/SampleArgs.html
+  commentId: N:SampleArgs
+  fullName: SampleArgs
+  nameWithType: SampleArgs
+- uid: SampleArgs.Program
+  name: Program
+  href: api/SampleArgs.Program.html
+  commentId: T:SampleArgs.Program
+  fullName: SampleArgs.Program
+  nameWithType: Program
+- uid: SampleArgs.Program.Main
+  name: Main()
+  href: api/SampleArgs.Program.Main.html#SampleArgs_Program_Main
+  commentId: M:SampleArgs.Program.Main
+  fullName: SampleArgs.Program.Main()
+  nameWithType: Program.Main()
+- uid: SampleArgs.Program.Main*
+  name: Main
+  href: api/SampleArgs.Program.Main.html
+  commentId: Overload:SampleArgs.Program.Main
+  fullName: SampleArgs.Program.Main
+  nameWithType: Program.Main
 - uid: Ubiquity.CommandlineParsing
   name: Ubiquity.CommandlineParsing
   href: api/Ubiquity.CommandlineParsing.html
@@ -334,6 +358,24 @@ references:
   commentId: Overload:Ubiquity.CommandlineParsing.CommandlineValue.ToString
   fullName: Ubiquity.CommandlineParsing.CommandlineValue.ToString
   nameWithType: CommandlineValue.ToString
+- uid: Ubiquity.CommandlineParsing.EnvironmentEx
+  name: EnvironmentEx
+  href: api/Ubiquity.CommandlineParsing.EnvironmentEx.html
+  commentId: T:Ubiquity.CommandlineParsing.EnvironmentEx
+  fullName: Ubiquity.CommandlineParsing.EnvironmentEx
+  nameWithType: EnvironmentEx
+- uid: Ubiquity.CommandlineParsing.EnvironmentEx.CommandLine
+  name: CommandLine
+  href: api/Ubiquity.CommandlineParsing.EnvironmentEx.CommandLine.html#Ubiquity_CommandlineParsing_EnvironmentEx_CommandLine
+  commentId: P:Ubiquity.CommandlineParsing.EnvironmentEx.CommandLine
+  fullName: Ubiquity.CommandlineParsing.EnvironmentEx.CommandLine
+  nameWithType: EnvironmentEx.CommandLine
+- uid: Ubiquity.CommandlineParsing.EnvironmentEx.CommandLine*
+  name: CommandLine
+  href: api/Ubiquity.CommandlineParsing.EnvironmentEx.CommandLine.html
+  commentId: Overload:Ubiquity.CommandlineParsing.EnvironmentEx.CommandLine
+  fullName: Ubiquity.CommandlineParsing.EnvironmentEx.CommandLine
+  nameWithType: EnvironmentEx.CommandLine
 - uid: Ubiquity.CommandlineParsing.ICommandlineArgument
   name: ICommandlineArgument
   href: api/Ubiquity.CommandlineParsing.ICommandlineArgument.html
