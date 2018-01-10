@@ -1,30 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: SampleArgs
-  name: SampleArgs
-  href: api/SampleArgs.html
-  commentId: N:SampleArgs
-  fullName: SampleArgs
-  nameWithType: SampleArgs
-- uid: SampleArgs.Program
-  name: Program
-  href: api/SampleArgs.Program.html
-  commentId: T:SampleArgs.Program
-  fullName: SampleArgs.Program
-  nameWithType: Program
-- uid: SampleArgs.Program.Main
-  name: Main()
-  href: api/SampleArgs.Program.Main.html#SampleArgs_Program_Main
-  commentId: M:SampleArgs.Program.Main
-  fullName: SampleArgs.Program.Main()
-  nameWithType: Program.Main()
-- uid: SampleArgs.Program.Main*
-  name: Main
-  href: api/SampleArgs.Program.Main.html
-  commentId: Overload:SampleArgs.Program.Main
-  fullName: SampleArgs.Program.Main
-  nameWithType: Program.Main
 - uid: Ubiquity.CommandlineParsing
   name: Ubiquity.CommandlineParsing
   href: api/Ubiquity.CommandlineParsing.html
