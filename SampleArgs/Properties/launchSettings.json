@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SampleArgs": {
+      "commandName": "Project",
+      "commandLineArgs": "positionalarg0 -Option1 \"positional arg 1\" -Option2=\"this is a test\" positional2 \"positional\\foo 3\\\\\""
+    }
+  }
+}

@@ -69,14 +69,14 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
 
             Assert.IsInstanceOfType( args[ 2 ], typeof( CommandlineValue ) );
             var arg2 = ( CommandlineValue )args[ 2 ];
-            Assert.AreEqual( "'positional arg 1'", arg2.Text );
+            Assert.AreEqual( "positional arg 1", arg2.Text );
 
             Assert.IsInstanceOfType( args[ 3 ], typeof( CommandlineOption ) );
             var arg3 = ( CommandlineOption )args[ 3 ];
             Assert.AreEqual( "-", arg3.SwitchLeader );
             Assert.AreEqual( "Option2", arg3.Name );
             Assert.AreEqual( "=", arg3.Delimiter );
-            Assert.AreEqual( "'this is a test'", arg3.Value.Text );
+            Assert.AreEqual( "this is a test", arg3.Value.Text );
 
             Assert.IsInstanceOfType( args[ 4 ], typeof( CommandlineOption ) );
             var arg4 = ( CommandlineOption )args[ 4 ];
@@ -91,7 +91,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
 
             Assert.IsInstanceOfType( args[ 6 ], typeof( CommandlineValue ) );
             var arg6 = ( CommandlineValue )args[ 6 ];
-            Assert.AreEqual( @"""positional 3\""", arg6.Text );
+            Assert.AreEqual( @"positional 3\", arg6.Text );
         }
   }
 }

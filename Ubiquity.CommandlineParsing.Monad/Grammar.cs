@@ -67,7 +67,7 @@ namespace Ubiquity.CommandlineParsing.Monad
             return ( from start in openDelimiter
                      from content in Parse.AnyChar.Except( closeDelimiter ).Many()
                      from end in closeDelimiter
-                     select start.Concat( content ).Concat( end )
+                     select content
                    ).Token( );
         }
 

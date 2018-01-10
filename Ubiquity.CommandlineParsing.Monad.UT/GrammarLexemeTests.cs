@@ -203,7 +203,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         public void SingleQuotedStringTest( )
         {
             const string singleQuotedString = " 'asdf \"ghijk\" \u0394' ";
-            Assert.AreEqual( singleQuotedString.Trim( ), QuotedString.Text( ).Parse( singleQuotedString ) );
+            Assert.AreEqual( singleQuotedString.Trim( ).Trim('\''), QuotedString.Text( ).Parse( singleQuotedString ) );
         }
 
         [TestMethod]
@@ -218,7 +218,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         public void DoubleQuotedStringTest( )
         {
             const string doubleQuotedString = "\"asdf ghijk \u0394\"";
-            Assert.AreEqual( doubleQuotedString, QuotedString.Text( ).Parse( doubleQuotedString ) );
+            Assert.AreEqual( doubleQuotedString.Trim( ).Trim( '"' ), QuotedString.Text( ).Parse( doubleQuotedString ) );
         }
 
         [TestMethod]

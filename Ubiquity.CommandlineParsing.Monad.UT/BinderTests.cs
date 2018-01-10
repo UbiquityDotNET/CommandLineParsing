@@ -54,8 +54,8 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
             Assert.IsNotNull( options );
             Assert.AreEqual( 4, options.PositionalArgs.Count );
             Assert.AreEqual( 3, options.MultiOption.Count );
-            Assert.AreEqual( "'space delimited value1'", options.Option1 );
-            Assert.AreEqual( "'this is a test'", options.Option2 );
+            Assert.AreEqual( "space delimited value1", options.Option1 );
+            Assert.AreEqual( "this is a test", options.Option2 );
             Assert.AreEqual( TestOptions.Option3Values.Baz, options.Option3 );
             Assert.IsTrue( options.Option4 );
         }
