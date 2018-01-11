@@ -104,9 +104,6 @@
                                 <li class="">
                                   <a href="Ubiquity.CommandlineParsing.CommandlineBinder.-ctor.html" title="CommandlineBinder" class="">CommandlineBinder</a>
                                 </li>
-                                <li class="">
-                                  <a href="Ubiquity.CommandlineParsing.CommandlineBinder.ParseAndBind.html" title="ParseAndBind" class="">ParseAndBind</a>
-                                </li>
                               </ul>  </li>
                           <li class="">
                             <span class="expand-stub"></span>
@@ -291,6 +288,9 @@
                                   <a href="Ubiquity.CommandlineParsing.Monad.Grammar.CommandLine.html" title="CommandLine" class="">CommandLine</a>
                                 </li>
                                 <li class="">
+                                  <a href="Ubiquity.CommandlineParsing.Monad.Grammar.CommandlineArg.html" title="CommandlineArg" class="">CommandlineArg</a>
+                                </li>
+                                <li class="">
                                   <a href="Ubiquity.CommandlineParsing.Monad.Grammar.CommonOptionStart.html#Ubiquity_CommandlineParsing_Monad_Grammar_CommonOptionStart" title="CommonOptionStart" class="">CommonOptionStart</a>
                                 </li>
                                 <li class="">
@@ -377,26 +377,26 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/UbiquityDotNET/CommandLineParsing/new/master/apiSpec/new?filename=Ubiquity_CommandlineParsing_Monad_Parser_Parse_System_String_.md&amp;value=---%0Auid%3A%20Ubiquity.CommandlineParsing.Monad.Parser.Parse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/UbiquityDotNET/CommandLineParsing/new/master/apiSpec/new?filename=Ubiquity_CommandlineParsing_Monad_Parser_Parse_System_Collections_Generic_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20Ubiquity.CommandlineParsing.Monad.Parser.Parse(System.Collections.Generic.IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/Ubiquity.CommandlineParsing.Monad/Parser.cs/#L16">View Source</a>
 </span>
 <a id="Ubiquity_CommandlineParsing_Monad_Parser_Parse_" data-uid="Ubiquity.CommandlineParsing.Monad.Parser.Parse*"></a>
-<h2 id="Ubiquity_CommandlineParsing_Monad_Parser_Parse_System_String_" data-uid="Ubiquity.CommandlineParsing.Monad.Parser.Parse(System.String)">Parse(String)</h2>
-<div class="markdown level1 summary"><p>Parse a command line into base components</p>
+<h2 id="Ubiquity_CommandlineParsing_Monad_Parser_Parse_System_Collections_Generic_IEnumerable_System_String__" data-uid="Ubiquity.CommandlineParsing.Monad.Parser.Parse(System.Collections.Generic.IEnumerable{System.String})">Parse(IEnumerable&lt;String&gt;)</h2>
+<div class="markdown level1 summary"><p>Parse arguments list from platform provided list of args</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h3 class="decalaration">Declaration
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public IImmutableList&lt;ICommandlineArgument&gt; Parse(string commandLine)</code></pre>
+  <pre><code class="lang-csharp hljs">public IImmutableList&lt;ICommandlineArgument&gt; Parse(IEnumerable&lt;string&gt; args)</code></pre>
 </div>
 <h2 class="parameters">Parameters</h2>
 <table class="table table-bordered table-striped table-condensed">
     <tr>
-      <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-      <td><span class="parametername">commandLine</span></td>
-      <td><p>Command line to parse</p>
+      <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>&gt;</td>
+      <td><span class="parametername">args</span></td>
+      <td><p>Args list provided to Main() or via <a class="xref" href="https://msdn.microsoft.com/en-us/library/sy10ec99(v=vs.110).aspx">GetCommandLineArgs()</a></p>
 </td>
     </tr>
 </table>
@@ -404,12 +404,31 @@
 <table class="table table-bordered table-striped table-condensed">
     <tr>
       <td><span class="xref">System.Collections.Immutable.IImmutableList</span>&lt;<a class="xref" href="Ubiquity.CommandlineParsing.ICommandlineArgument.html">ICommandlineArgument</a>&gt;</td>
-      <td><p>Results of the parse</p>
+      <td><p>The list of parsed arguments in the order they appeared on the command line</p>
 </td>
     </tr>
 </table>
 <h2 class="implements">Implements</h2>
-    <div><a class="xref" href="Ubiquity.CommandlineParsing.ICommandlineParser.Parse.html#Ubiquity_CommandlineParsing_ICommandlineParser_Parse_System_String_">ICommandlineParser.Parse(String)</a></div>
+    <div><a class="xref" href="Ubiquity.CommandlineParsing.ICommandlineParser.Parse.html#Ubiquity_CommandlineParsing_ICommandlineParser_Parse_System_Collections_Generic_IEnumerable_System_String__">ICommandlineParser.Parse(IEnumerable&lt;String&gt;)</a></div>
+<h2 id="Ubiquity_CommandlineParsing_Monad_Parser_Parse_System_Collections_Generic_IEnumerable_System_String___remarks">Remarks</h2>
+<div class="markdown level1 remarks"><p>This will parse the command line into the various components in the order they appeared
+on the command line. The ordering is important as some application may depend on specific
+ordering of the command line. For example git command lines usually take the form:
+<code>git (-o --option)? command (-o --option)*</code>
+Where each command has a different set of options it allows. Thus the first item must always
+be a positional value. (or not, as git itself may have some options too). Thus, the actual
+ordering of the results matters as the options that precede or follow a positional value may
+act as modifiers for the values.</p>
+<p>Another, related, benefit of returning the arguments in the order supplied is to allow
+for applications that desire space delimited values of options. For example the input text
+<code>-optionWithValue optionvalue -optionwithoutvalue positional</code> will return four items in
+the list. Only the application, which understands the semantics, can know that <code>optionvalue</code>
+really is the value to associate with the preceding option <code>-optionWithValue</code></p>
+</div>
+<h2 id="Ubiquity_CommandlineParsing_Monad_Parser_Parse_System_Collections_Generic_IEnumerable_System_String___seealso">See Also</h2>
+<div class="seealso">
+    <div><a class="xref" href="Ubiquity.CommandlineParsing.CommandlineArgAttribute.AllowSpaceDelimitedValue.html#Ubiquity_CommandlineParsing_CommandlineArgAttribute_AllowSpaceDelimitedValue">AllowSpaceDelimitedValue</a></div>
+</div>
 </h3></article>
           </div>
           <div class="contribution-panel mobile-hide">

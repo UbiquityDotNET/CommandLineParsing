@@ -106,21 +106,6 @@ references:
   commentId: Overload:Ubiquity.CommandlineParsing.CommandlineBinder.BindParseResults
   fullName: Ubiquity.CommandlineParsing.CommandlineBinder.BindParseResults
   nameWithType: CommandlineBinder.BindParseResults
-- uid: Ubiquity.CommandlineParsing.CommandlineBinder.ParseAndBind*
-  name: ParseAndBind
-  href: api/Ubiquity.CommandlineParsing.CommandlineBinder.ParseAndBind.html
-  commentId: Overload:Ubiquity.CommandlineParsing.CommandlineBinder.ParseAndBind
-  fullName: Ubiquity.CommandlineParsing.CommandlineBinder.ParseAndBind
-  nameWithType: CommandlineBinder.ParseAndBind
-- uid: Ubiquity.CommandlineParsing.CommandlineBinder.ParseAndBind``1(Ubiquity.CommandlineParsing.ICommandlineParser,System.String)
-  name: ParseAndBind<TResult>(ICommandlineParser, String)
-  href: api/Ubiquity.CommandlineParsing.CommandlineBinder.ParseAndBind.html#Ubiquity_CommandlineParsing_CommandlineBinder_ParseAndBind__1_Ubiquity_CommandlineParsing_ICommandlineParser_System_String_
-  commentId: M:Ubiquity.CommandlineParsing.CommandlineBinder.ParseAndBind``1(Ubiquity.CommandlineParsing.ICommandlineParser,System.String)
-  name.vb: ParseAndBind(Of TResult)(ICommandlineParser, String)
-  fullName: Ubiquity.CommandlineParsing.CommandlineBinder.ParseAndBind<TResult>(Ubiquity.CommandlineParsing.ICommandlineParser, System.String)
-  fullName.vb: Ubiquity.CommandlineParsing.CommandlineBinder.ParseAndBind(Of TResult)(Ubiquity.CommandlineParsing.ICommandlineParser, System.String)
-  nameWithType: CommandlineBinder.ParseAndBind<TResult>(ICommandlineParser, String)
-  nameWithType.vb: CommandlineBinder.ParseAndBind(Of TResult)(ICommandlineParser, String)
 - uid: Ubiquity.CommandlineParsing.CommandLineBinderExtensions
   name: CommandLineBinderExtensions
   href: api/Ubiquity.CommandlineParsing.CommandLineBinderExtensions.html
@@ -376,12 +361,15 @@ references:
   commentId: T:Ubiquity.CommandlineParsing.ICommandlineParser
   fullName: Ubiquity.CommandlineParsing.ICommandlineParser
   nameWithType: ICommandlineParser
-- uid: Ubiquity.CommandlineParsing.ICommandlineParser.Parse(System.String)
-  name: Parse(String)
-  href: api/Ubiquity.CommandlineParsing.ICommandlineParser.Parse.html#Ubiquity_CommandlineParsing_ICommandlineParser_Parse_System_String_
-  commentId: M:Ubiquity.CommandlineParsing.ICommandlineParser.Parse(System.String)
-  fullName: Ubiquity.CommandlineParsing.ICommandlineParser.Parse(System.String)
-  nameWithType: ICommandlineParser.Parse(String)
+- uid: Ubiquity.CommandlineParsing.ICommandlineParser.Parse(System.Collections.Generic.IEnumerable{System.String})
+  name: Parse(IEnumerable<String>)
+  href: api/Ubiquity.CommandlineParsing.ICommandlineParser.Parse.html#Ubiquity_CommandlineParsing_ICommandlineParser_Parse_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Ubiquity.CommandlineParsing.ICommandlineParser.Parse(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Parse(IEnumerable(Of String))
+  fullName: Ubiquity.CommandlineParsing.ICommandlineParser.Parse(System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: Ubiquity.CommandlineParsing.ICommandlineParser.Parse(System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: ICommandlineParser.Parse(IEnumerable<String>)
+  nameWithType.vb: ICommandlineParser.Parse(IEnumerable(Of String))
 - uid: Ubiquity.CommandlineParsing.ICommandlineParser.Parse*
   name: Parse
   href: api/Ubiquity.CommandlineParsing.ICommandlineParser.Parse.html
@@ -544,6 +532,18 @@ references:
   commentId: Overload:Ubiquity.CommandlineParsing.Monad.Grammar.CommandLine
   fullName: Ubiquity.CommandlineParsing.Monad.Grammar.CommandLine
   nameWithType: Grammar.CommandLine
+- uid: Ubiquity.CommandlineParsing.Monad.Grammar.CommandlineArg
+  name: CommandlineArg
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.CommandlineArg.html#Ubiquity_CommandlineParsing_Monad_Grammar_CommandlineArg
+  commentId: P:Ubiquity.CommandlineParsing.Monad.Grammar.CommandlineArg
+  fullName: Ubiquity.CommandlineParsing.Monad.Grammar.CommandlineArg
+  nameWithType: Grammar.CommandlineArg
+- uid: Ubiquity.CommandlineParsing.Monad.Grammar.CommandlineArg*
+  name: CommandlineArg
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.CommandlineArg.html
+  commentId: Overload:Ubiquity.CommandlineParsing.Monad.Grammar.CommandlineArg
+  fullName: Ubiquity.CommandlineParsing.Monad.Grammar.CommandlineArg
+  nameWithType: Grammar.CommandlineArg
 - uid: Ubiquity.CommandlineParsing.Monad.Grammar.CommonOptionStart
   name: CommonOptionStart
   href: api/Ubiquity.CommandlineParsing.Monad.Grammar.CommonOptionStart.html#Ubiquity_CommandlineParsing_Monad_Grammar_CommonOptionStart
@@ -712,12 +712,15 @@ references:
   commentId: T:Ubiquity.CommandlineParsing.Monad.Parser
   fullName: Ubiquity.CommandlineParsing.Monad.Parser
   nameWithType: Parser
-- uid: Ubiquity.CommandlineParsing.Monad.Parser.Parse(System.String)
-  name: Parse(String)
-  href: api/Ubiquity.CommandlineParsing.Monad.Parser.Parse.html#Ubiquity_CommandlineParsing_Monad_Parser_Parse_System_String_
-  commentId: M:Ubiquity.CommandlineParsing.Monad.Parser.Parse(System.String)
-  fullName: Ubiquity.CommandlineParsing.Monad.Parser.Parse(System.String)
-  nameWithType: Parser.Parse(String)
+- uid: Ubiquity.CommandlineParsing.Monad.Parser.Parse(System.Collections.Generic.IEnumerable{System.String})
+  name: Parse(IEnumerable<String>)
+  href: api/Ubiquity.CommandlineParsing.Monad.Parser.Parse.html#Ubiquity_CommandlineParsing_Monad_Parser_Parse_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Ubiquity.CommandlineParsing.Monad.Parser.Parse(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Parse(IEnumerable(Of String))
+  fullName: Ubiquity.CommandlineParsing.Monad.Parser.Parse(System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: Ubiquity.CommandlineParsing.Monad.Parser.Parse(System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: Parser.Parse(IEnumerable<String>)
+  nameWithType.vb: Parser.Parse(IEnumerable(Of String))
 - uid: Ubiquity.CommandlineParsing.Monad.Parser.Parse*
   name: Parse
   href: api/Ubiquity.CommandlineParsing.Monad.Parser.Parse.html

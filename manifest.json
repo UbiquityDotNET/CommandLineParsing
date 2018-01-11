@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandLineBinderExtensions.BindArguments.html",
-          "hash": "s8zsneXKVz31PDJhQntSSg=="
+          "hash": "1g641A6gNv5s65aP/gCfaw=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandLineBinderExtensions.html",
-          "hash": "1fbZJDifb26zZHAP0GlpyQ=="
+          "hash": "m+sWqZb/YpIAKc6g/p4Jow=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineArgAttribute.-ctor.html",
-          "hash": "9cwO0TxCJuY3SNkEbOXk5w=="
+          "hash": "f9DrEDM8hZzXN4/+wRakQw=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineArgAttribute.ShortName.html",
-          "hash": "L+Z1vh75qfdP4kFFoC+1tQ=="
+          "hash": "j3ohZCto481/NVl47N3rjQ=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineArgAttribute.LongName.html",
-          "hash": "SzK5quRy9HsdJ3dNqvmZbg=="
+          "hash": "AzNPQeEclBepg3ZYKyCtgg=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineArgAttribute.AllowSpaceDelimitedValue.html",
-          "hash": "HqY8godlIvNNgxxHULtZTA=="
+          "hash": "JDT2uWQOyqHsNFDryQ5jhQ=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineArgAttribute.html",
-          "hash": "zUvO+TaQqo0pHXSMVbJv6Q=="
+          "hash": "Y8X7OpbFLQl/rbvHUF+SgA=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineBinder.html",
-          "hash": "UGsTjHvJkrUWqtCcp1IcGA=="
+          "hash": "J+hBCI7JM80BEiJMtaOHAg=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineBinder.-ctor.html",
-          "hash": "/bvtcGkrgv2NfEeDXgVIZA=="
+          "hash": "qgzoajG+UutkysqAVCiSrg=="
         }
       },
       "is_incremental": false,
@@ -117,19 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineBinder.BindParseResults.html",
-          "hash": "I2+gIWLaBJDu0wismK9EAQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.CommandlineBinder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineBinder.ParseAndBind.html",
-          "hash": "C1R/ZJa2G/bS7AZL6aEBiQ=="
+          "hash": "vRYSsCuCGHxPC00w74Pduw=="
         }
       },
       "is_incremental": false,
@@ -141,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineOption.html",
-          "hash": "VF79fiPm0I9pXOtoM2kXyw=="
+          "hash": "SETR8f/fZYyknkvntrq4fQ=="
         }
       },
       "is_incremental": false,
@@ -153,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineOption.-ctor.html",
-          "hash": "oRwF3pl22KTNcgjOCy4l4w=="
+          "hash": "E/uJlDO4lxH6Ma8fYE8CNw=="
         }
       },
       "is_incremental": false,
@@ -165,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineOption.Text.html",
-          "hash": "8KmLj/e6yJSDmipfWNIZKA=="
+          "hash": "RNr2/ZuCvpnoT2hxZ3Vr9w=="
         }
       },
       "is_incremental": false,
@@ -177,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineOption.SwitchLeader.html",
-          "hash": "JSJKWdCq9MAq1J6dEWO/ZQ=="
+          "hash": "VXJ1vpjgU1awOSBKwfS4pg=="
         }
       },
       "is_incremental": false,
@@ -189,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineOption.Name.html",
-          "hash": "NwRRO2Ta+50SNypJLiI3KA=="
+          "hash": "aYY9p0QL7EL00QX44VOjQQ=="
         }
       },
       "is_incremental": false,
@@ -201,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineOption.Delimiter.html",
-          "hash": "HNor9x9Wm+m9G+fKvO5q8g=="
+          "hash": "QKIYopNrR1gmPFZOwmnZkA=="
         }
       },
       "is_incremental": false,
@@ -213,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineOption.Value.html",
-          "hash": "QnG+oqlx6AeFjgyUYpu6SA=="
+          "hash": "5lHcpfoTSees5RdCpOJrTA=="
         }
       },
       "is_incremental": false,
@@ -225,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineOption.ToString.html",
-          "hash": "L5XN7ut6duVWyjfGtjphcQ=="
+          "hash": "KnEcjyyRoHfQIwGeKoUNew=="
         }
       },
       "is_incremental": false,
@@ -237,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineParseException.-ctor.html",
-          "hash": "NLTgKJYapA4CyEOZQTyLHg=="
+          "hash": "aMn/5AWMShxPNcPoGADgjQ=="
         }
       },
       "is_incremental": false,
@@ -249,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineParseException.html",
-          "hash": "22ZLCG/lFbPZ8Ky0Ig7FtQ=="
+          "hash": "NuRHaszM5ANkU/dOKLvOQg=="
         }
       },
       "is_incremental": false,
@@ -261,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineValue.html",
-          "hash": "fGTxL/EcJfH7Vo//6ao5RA=="
+          "hash": "rgytLcNuWeQYMNmS9G8L7A=="
         }
       },
       "is_incremental": false,
@@ -273,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineValue.-ctor.html",
-          "hash": "hXpyqHZ4u0Wf9Sjk0JXuKg=="
+          "hash": "IN4lrNNtI3UF2Q4XHpFeTQ=="
         }
       },
       "is_incremental": false,
@@ -285,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineValue.Text.html",
-          "hash": "VFIoj4H5dB1P7JB49jjiAQ=="
+          "hash": "Oek3N9QDcCp1wc3uWVNO+Q=="
         }
       },
       "is_incremental": false,
@@ -297,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.CommandlineValue.ToString.html",
-          "hash": "fc/ThOxvD6WMrj6d8L8wCw=="
+          "hash": "1v77b48CW25hJM6/QDtRtQ=="
         }
       },
       "is_incremental": false,
@@ -309,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.EnvironmentEx.CommandLine.html",
-          "hash": "h4SQawBRpmAjowC3qLtNVQ=="
+          "hash": "ZqiZaEW1NI516hJpT8lWOQ=="
         }
       },
       "is_incremental": false,
@@ -321,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.EnvironmentEx.html",
-          "hash": "KC1W2MelTEbo1Gety/yHYw=="
+          "hash": "yUNY9LsdjRMuYQTTUBerOQ=="
         }
       },
       "is_incremental": false,
@@ -333,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.ICommandlineArgument.html",
-          "hash": "+lHWRol4aql5zz9+skvDUw=="
+          "hash": "WLIl78z9PvtLMXQfHvUgCA=="
         }
       },
       "is_incremental": false,
@@ -345,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.ICommandlineArgument.Text.html",
-          "hash": "TFLdN2p04yw1T16DJwj47w=="
+          "hash": "qaI5wFizBgoGQ5UtiTmiPA=="
         }
       },
       "is_incremental": false,
@@ -357,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.ICommandlineParser.Parse.html",
-          "hash": "/4AxMscdOHIPItPHj6Cb7w=="
+          "hash": "B/hVi2tYOlN4IIce76YQtw=="
         }
       },
       "is_incremental": false,
@@ -369,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.ICommandlineParser.html",
-          "hash": "yfzrZ18bIg6WfJKjBQKwOQ=="
+          "hash": "yAwKmyayiUNNEhqtpwo9Tg=="
         }
       },
       "is_incremental": false,
@@ -381,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.IOptionProperty.html",
-          "hash": "l0B3WXd3w4oW1RK7POukDg=="
+          "hash": "ti2fihdwCMPTI3/0wgWiBg=="
         }
       },
       "is_incremental": false,
@@ -393,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.IOptionProperty.AllowSpaceDelimitedValue.html",
-          "hash": "0aQ2uJCsBNEKyGob5A+K8Q=="
+          "hash": "hcAnzvyXtNbQWYoDShDECA=="
         }
       },
       "is_incremental": false,
@@ -405,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.IOptionProperty.RequiresValue.html",
-          "hash": "3KQszqTkA31juONBVjtz2Q=="
+          "hash": "NZB+gdO9jilLCkI75u202A=="
         }
       },
       "is_incremental": false,
@@ -417,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.IOptionProperty.IsCollection.html",
-          "hash": "9rwuV9Zvw4RG2bx0qXinUw=="
+          "hash": "Yz35ZH9XDo6Zy05aAeStbw=="
         }
       },
       "is_incremental": false,
@@ -429,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.IOptionProperty.IsSet.html",
-          "hash": "Ti4e090niGm486eLo+EOEQ=="
+          "hash": "sqzYHt9d+M4Oq5cLeXG/bg=="
         }
       },
       "is_incremental": false,
@@ -441,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.IOptionProperty.Option.html",
-          "hash": "UqpCQnkiQlLm9Wck9KULbg=="
+          "hash": "RSHAw+DgrGVDZD4c072KCQ=="
         }
       },
       "is_incremental": false,
@@ -453,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.IOptionProperty.BindValue.html",
-          "hash": "Kalp69P9USHPwPdFh3U02w=="
+          "hash": "o9SmVqa7B6f9oVgp7GKaNg=="
         }
       },
       "is_incremental": false,
@@ -465,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.IOptionPropertyProvider.GetPropertyForOption.html",
-          "hash": "0J1TuOUaRM+3mTbC0x5C3A=="
+          "hash": "uCzo/LtHLKYmllqbWSNILA=="
         }
       },
       "is_incremental": false,
@@ -477,235 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.IOptionPropertyProvider.html",
-          "hash": "y/+0FXP1rQp9ajg+sNX4EA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.CommonOptionStart.html",
-          "hash": "jOXstIpZrxDFUf6tcOEPsQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.IdentifierChar.html",
-          "hash": "kk883KAO0C3rVuN18vyPmQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.Identifier.html",
-          "hash": "U4HPrJ+FH5gh469qCKgMHw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.NonWhiteSpaceChar.html",
-          "hash": "hilEsbf8hrOo95pGsygU5g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.QuotedString.html",
-          "hash": "ZES6QbtEO7KZ1ufzHsYZhw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.UnquotedValue.html",
-          "hash": "sWI/7IbjTm+/jWW8YseO7w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.Option.html",
-          "hash": "6mqX7DqZZd9KsY6PHoVK9A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.BlockString.html",
-          "hash": "LsIkoisjsvrjpAy7R1g2SA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.ValueContent.html",
-          "hash": "gnNDybV7l/c57auiKLkoDQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.OptionParser.html",
-          "hash": "kDX2JCWKx3IZgrRGZvmjRA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.SepAndValue.html",
-          "hash": "p0kGGXCYUKoo4qMG63QHCA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.PositionalArg.html",
-          "hash": "1rpbW6hZLp7ObYmk9t/m6Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.CommandLine.html",
-          "hash": "UeOK2/WPJDkOSN6Rh177Fw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.OnMatch.html",
-          "hash": "EtXSZ+z0RkJoKFQZvwp5AQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.DoubleQuote.html",
-          "hash": "wKi6bkZ9sZOBMMyNNWzDgQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.Equal.html",
-          "hash": "yDtY+eybYyOPMnMnR8vq2g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.Colon.html",
-          "hash": "rda10Pr7KOy6Nrp2FrKF4w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.Dash.html",
-          "hash": "/AFqNr6X+xTKAMigjzF8/g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.Slash.html",
-          "hash": "8E/0S70I81kscnZTM8gG3A=="
+          "hash": "Dlhdju382f7ffW4Q+LyQpw=="
         }
       },
       "is_incremental": false,
@@ -717,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.EqualOrColon.html",
-          "hash": "4MBvX97iS5AzCAxi7ghAgg=="
+          "hash": "T/mps7/Fl6qIh3gLXoqJ6g=="
         }
       },
       "is_incremental": false,
@@ -729,7 +489,187 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.DoubleDash.html",
-          "hash": "91qKwDGGURDsc4wgwgXOlA=="
+          "hash": "7A2MeOesREdnn8Rflz1PBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.CommonOptionStart.html",
+          "hash": "T65wQYNr6Veo7RO+OmojzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.IdentifierChar.html",
+          "hash": "OsvL+6jW8RKO6jBSVyQLmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.Identifier.html",
+          "hash": "IB8dMD77fkAt123ZMm1LjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.NonWhiteSpaceChar.html",
+          "hash": "ud0qBJMOuSMmW1bnKrFAdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.QuotedString.html",
+          "hash": "T0/hYvvbfNtCVyaGSzKfbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.UnquotedValue.html",
+          "hash": "knR3d7K8o4cWgNbnA7oNvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.Option.html",
+          "hash": "Yvjqv8OGbZKjgeB3oehfpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.BlockString.html",
+          "hash": "Cwd/9wMfs2XM+UXA/jMFJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.ValueContent.html",
+          "hash": "zM93p+sHZpb0Tl0FuujjkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.OptionParser.html",
+          "hash": "zMPW/FFcsOgUv+YlQhrM6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.SepAndValue.html",
+          "hash": "P71o9b60M8Zyp7c8GCT+nA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.PositionalArg.html",
+          "hash": "HCol1Y7dtDYN5mcJYsrOQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.CommandlineArg.html",
+          "hash": "El6hX4V3gMC4CdrhfqAeTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.CommandLine.html",
+          "hash": "OApVIJNjGWUnTZdtrcH+bQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.OnMatch.html",
+          "hash": "uvs7u4Vpds1YXHwGG/FmBQ=="
         }
       },
       "is_incremental": false,
@@ -741,7 +681,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.html",
-          "hash": "o5S2rM2OMGRDb3zThFatWg=="
+          "hash": "xUaN/L1U/IiodF0ZSodqSg=="
         }
       },
       "is_incremental": false,
@@ -753,7 +693,67 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.SingleQuote.html",
-          "hash": "LhPyoXgiexmjrXJa2HKfQw=="
+          "hash": "bRLx/AIejqohLiB9UTuRiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.DoubleQuote.html",
+          "hash": "/Ed0QWbHhreybu6kjwt3sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.Equal.html",
+          "hash": "/vJJ/0lKqG/NhJe281uTSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.Colon.html",
+          "hash": "LhnX3WHIdlwt4hmmtSHWng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.Dash.html",
+          "hash": "ZhStm3JtfyTmvxfU6BwkAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Grammar.Slash.html",
+          "hash": "6TH3hNLnoz1s4cehHwXsxQ=="
         }
       },
       "is_incremental": false,
@@ -765,7 +765,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Parser.Parse.html",
-          "hash": "dTcb94nmdYJkG7zlqDHvyA=="
+          "hash": "6oAJQqCEPeV5keCjZ6zXaA=="
         }
       },
       "is_incremental": false,
@@ -777,7 +777,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Parser.ParseCommandLine.html",
-          "hash": "xFAzMCITYDzcWx/os8SrZw=="
+          "hash": "qVUiCbuCg8YcCbGW6XESaQ=="
         }
       },
       "is_incremental": false,
@@ -789,7 +789,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.Monad.Parser.html",
-          "hash": "g9/afVYdwX29JBwt/s/B2Q=="
+          "hash": "xCwetYTyPV7agpZknf5d8A=="
         }
       },
       "is_incremental": false,
@@ -801,7 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.Monad.html",
-          "hash": "DUENbPSskgks/QmIK5aGTQ=="
+          "hash": "w2FRM3KzIZfh+NUiXXtHyw=="
         }
       },
       "is_incremental": false,
@@ -813,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.OptionPropertyBase.AllowSpaceDelimitedValue.html",
-          "hash": "fGOllc2ayqsyM9hphKs0WQ=="
+          "hash": "pfFn5q37sBidtvMnS0LVHQ=="
         }
       },
       "is_incremental": false,
@@ -825,7 +825,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.OptionPropertyBase.Option.html",
-          "hash": "Pkwpk60t+bcGsZ6cPbGVvQ=="
+          "hash": "S0alHfaEbG8qy1+XYmsEzg=="
         }
       },
       "is_incremental": false,
@@ -837,7 +837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.OptionPropertyBase.IsCollection.html",
-          "hash": "8+TXnCJt8ZByzGdD6OHoWg=="
+          "hash": "nAzSTQX7iA0fY9U1jgjGuQ=="
         }
       },
       "is_incremental": false,
@@ -849,7 +849,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.OptionPropertyBase.RequiresValue.html",
-          "hash": "RDSUUb1K9Vx/FjRLlNEgeA=="
+          "hash": "CwIe/vbINDcLl+UmBQnDeA=="
         }
       },
       "is_incremental": false,
@@ -861,7 +861,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.OptionPropertyBase.IsSet.html",
-          "hash": "y7NKKOJfcVEWwThk42bpHg=="
+          "hash": "KJiVgOw5eiPs5oRUwTMZOw=="
         }
       },
       "is_incremental": false,
@@ -873,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.OptionPropertyBase.BindValue.html",
-          "hash": "8vRXtaTyKRrJKd9XotNvmA=="
+          "hash": "EM4/monvZxEImtDLocpW1A=="
         }
       },
       "is_incremental": false,
@@ -885,7 +885,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.OptionPropertyBase.-ctor.html",
-          "hash": "KzYnYFxmb2HjDxS0AQ+2rA=="
+          "hash": "JjTfE4vPR/R5jv5qKLYzkw=="
         }
       },
       "is_incremental": false,
@@ -897,7 +897,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.OptionPropertyBase.InternalSetValue.html",
-          "hash": "0BMi2LLNIzNx2q3heKO5Zw=="
+          "hash": "sWi9l5A2SguqipHHEVErwg=="
         }
       },
       "is_incremental": false,
@@ -909,7 +909,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.OptionPropertyBase.html",
-          "hash": "SCfYDXhJwEhfntA5vmiOHA=="
+          "hash": "Ca3YRQ0ftaxZeVGvjc/YSA=="
         }
       },
       "is_incremental": false,
@@ -921,7 +921,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider.-ctor.html",
-          "hash": "TPB449aPzWBchNAPRaswKA=="
+          "hash": "iKTfOWyRA43IMzykT4GrQA=="
         }
       },
       "is_incremental": false,
@@ -933,7 +933,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider.GetPropertyForOption.html",
-          "hash": "ECOQnPKnAxzrpJ/c3SgWBw=="
+          "hash": "Jwmwo7y/EG5ZGkD388oVxw=="
         }
       },
       "is_incremental": false,
@@ -945,7 +945,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider.html",
-          "hash": "ihyHr2F8hHx3Be4bCjM3nQ=="
+          "hash": "E8TkfhEFKQwqxYdSrHiNEQ=="
         }
       },
       "is_incremental": false,
@@ -957,7 +957,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ubiquity.CommandlineParsing.html",
-          "hash": "sL42Nf2ylyCKXnED4pVi7w=="
+          "hash": "Iq/EtOGJUyCwhdDw8QaVog=="
         }
       },
       "is_incremental": false,
@@ -969,7 +969,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "l3LarPGraawGyWFW3tSbyw=="
+          "hash": "cfTIm3o4zZZC/wSRsoIR/A=="
         }
       },
       "is_incremental": false,
@@ -981,7 +981,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "OaKVrfIQZE/cpdnCpbD4lw=="
+          "hash": "jZsBu6zHIMRptIo/dAi4EQ=="
         }
       },
       "is_incremental": false,
@@ -996,17 +996,17 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

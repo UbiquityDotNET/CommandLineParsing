@@ -166,14 +166,27 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         // This includes all forms of option switches quoting and the special problematic case of a trailing \ in a quoted string
         // The trailing \ in a quoted string is a notorious hidden gotcha for .NET apps as the default .NET arg parsing generates
         // a quote character as it implements character escaping, unlike any other runtime.
-        private const string FullCommandLine
-            = @&quot;positionalarg0 -m:&#39;Multi 1&#39;  --o1 &#39;space delimited value1&#39; -MultiOption=&quot;&quot;Multi 2&quot;&quot; positional1 -Option2=&#39;this is a test&#39; /option3:baz -m:multi3 -o4 positional2 &quot;&quot;positional 3\&quot;&quot;&quot;;
+        private readonly string[] FullCommandLine =
+            {
+                @&quot;positionalarg0&quot;,
+                @&quot;-m:&quot;&quot;Multi 1&quot;&quot;&quot;,
+                @&quot;--o1&quot;,
+                @&quot;&quot;&quot;space delimited value1&quot;&quot;&quot;,
+                @&quot;-MultiOption=&quot;&quot;Multi 2&quot;&quot;&quot;,
+                @&quot;positional1&quot;,
+                @&quot;-Option2=&quot;&quot;this is a test&quot;&quot;&quot;,
+                @&quot;/option3:baz&quot;,
+                @&quot;-m:multi3&quot;,
+                @&quot;-o4&quot;,
+                @&quot;positional2&quot;,
+                @&quot;&quot;&quot;positional 3\&quot;&quot;&quot;
+            };
 
         [TestMethod]
         public void CommandLineBinderTest()
         {
             var parser = new Parser( );
-            TestOptions options = CommandlineBinder.ParseAndBind&lt;TestOptions&gt;( parser, FullCommandLine );
+            TestOptions options = new TestOptions( ).BindArguments( parser.Parse( FullCommandLine ) );
             Assert.IsNotNull( options );
             Assert.AreEqual( 4, options.PositionalArgs.Count );
             Assert.AreEqual( 3, options.MultiOption.Count );
