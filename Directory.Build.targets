@@ -13,6 +13,5 @@
         <Message Importance="normal" Text="           FullBuildNumber: $(FullBuildNumber)"/>
         <Message Importance="normal" Text="            PackageVersion: $(PackageVersion)"/>
         <Message Importance="normal" Text="               FileVersion: $(FileVersion)"/>
-        <Message Importance="normal" Text="               LlvmVersion: $(LlvmVersion)"/>
     </Target>
 </Project>
