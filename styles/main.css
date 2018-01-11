@@ -277,6 +277,16 @@ article {
     overflow: visible;
 }
 
+toc .level2 {
+    font-weight: normal;
+    font-size: inherit;
+}
+
+.toc .level1 > li {
+    font-weight: bold;
+    font-size: inherit;
+}
+
 /* Overrides for - Ubiquity DocFX Dark theme */
 body {
     color:#ccc;
