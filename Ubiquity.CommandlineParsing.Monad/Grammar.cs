@@ -83,13 +83,12 @@ namespace Ubiquity.CommandlineParsing.Monad
 
         /// <summary> Parser monad for a Quoted string (either single or double quotes)</summary>
         public static readonly Parser<IEnumerable<char>> QuotedString
-            = BlockString( SingleQuote.Once() )
-            .XOr( BlockString( DoubleQuote.Once() ) );
+            = BlockString( DoubleQuote.Once() );
 
-        /// <summary>Parser monad for an unquoted positional value</summary>
+        /// <summary>Parser monad for an unquoted positional value or the value of an option</summary>
         public static readonly Parser<IEnumerable<char>> UnquotedValue
-            = ( from firstChar in Parse.CharExcept( "-'\"" )
-                from rest in Parse.CharExcept( "'\"" ).Except(Parse.WhiteSpace).Many()
+            = ( from firstChar in Parse.CharExcept( "-\"" )
+                from rest in Parse.CharExcept( "\"" ).Many()
                 select rest.Prepend( firstChar )
               ).Token();
 
@@ -140,9 +139,13 @@ namespace Ubiquity.CommandlineParsing.Monad
             from value in ValueContent.Named( "Positional Argument" ).Text( )
             select new CommandlineValue( value );
 
+        /// <summary>Gets a parser for a single command line argument</summary>
+        public static Parser<ICommandlineArgument> CommandlineArg
+            => Option.Or( PositionalArg );
+
         /// <summary>Gets the Top level parser to parse a command line into a sequence of <see cref="ICommandlineArgument"/></summary>
         public static Parser<IEnumerable<ICommandlineArgument>> CommandLine
-            => ( Option.Or( PositionalArg ) ).DelimitedBy( Parse.WhiteSpace.Many() ).End();
+            => ( CommandlineArg ).DelimitedBy( Parse.WhiteSpace.Many() ).End();
 
         /// <summary>Parser combinator to provide semantic action support for matched parsers</summary>
         /// <typeparam name="T">Type of elements the parser produces</typeparam>

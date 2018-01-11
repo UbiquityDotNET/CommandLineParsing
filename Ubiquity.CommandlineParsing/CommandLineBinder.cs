@@ -68,18 +68,6 @@ namespace Ubiquity.CommandlineParsing
             }
         }
 
-        /// <summary>Parser a command line and binds the results to an options instance object</summary>
-        /// <typeparam name="TResult">Type of object to bind</typeparam>
-        /// <param name="parser">parser to use to parse the command line </param>
-        /// <param name="commandLine">Command line to parse</param>
-        /// <returns> New instance of <typeparamref name="TResult"/> with the parsed command line values set on the instance properties</returns>
-        public static TResult ParseAndBind<TResult>( ICommandlineParser parser, string commandLine )
-            where TResult : new()
-        {
-            var results = parser.Parse( commandLine );
-            return CommandLineBinderExtensions.BindArguments( new TResult( ), results );
-        }
-
         private void BindOptionValue( object instance, IImmutableList<ICommandlineArgument> parsedResults, CommandlineOption option, ref int i )
         {
             var prop = PropertyProvider.GetPropertyForOption( instance, option );

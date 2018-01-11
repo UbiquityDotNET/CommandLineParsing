@@ -19,7 +19,7 @@ namespace Ubiquity.CommandlineParsing
         /// path the user intended to provide. This has always been an annoyance for .NET developers but was easily worked around
         /// by not using the args to Main() and instead getting at the full args via Environment.CommandLine and parsing that using
         /// whatever rules the app wants to support for args.</para>
-        /// <para>Unfortunately with .NET Core things behave very differently. <see cref="Environment.CommandLine"/> is no longer
+        /// <para>Unfortunately, with .NET Core things behave very differently. <see cref="Environment.CommandLine"/> is no longer
         /// the unprocessed command line and instead it is effectively a space delimited join of Environment.GetCommandLineArgs().
         /// Meaning that is has all the .NET Specific escaping applied and there is no platform independent means of getting at
         /// the unprocessed args.</para>
@@ -33,19 +33,9 @@ namespace Ubiquity.CommandlineParsing
                 // On .NET Core - no option exists to get the original command line, it isn't really possible to fully reverse
                 // the escaping as the process is lossy. e.g. `"foo\"` -> `foo"`, and `foo\"`-> `foo"` with no way to know if
                 // the opening quote was present. For a value with whitespace it can be inferred but otherwise it can't be known
-                // which presents a problem as reversing the escaping could creates quotes that are unmatched.
-                return string.Join( " ", Environment.GetCommandLineArgs( ).Skip( 1 ).Select( Requote ) );
+                // which presents a problem as reversing the escaping could create quotes that are unmatched.
+                return string.Join( " ", Environment.GetCommandLineArgs( ).Skip( 1 ) );
             }
-        }
-
-        private static string Requote( string arg )
-        {
-            if( arg.Any( Char.IsWhiteSpace ) )
-            {
-                return $"\"{arg}\"";
-            }
-
-            return arg;
         }
     }
 }

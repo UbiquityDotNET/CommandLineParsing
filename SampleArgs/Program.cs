@@ -10,13 +10,26 @@ namespace SampleArgs
 {
     public static class Program
     {
-        public static void Main( )
+        public static void Main( string[] args )
         {
+            Console.WriteLine( "ARGS:" );
+            for( int i = 0; i< args.Length; ++i )
+            {
+                Console.WriteLine( "{0}: [{1}]", i, args[ i ] );
+            }
+
             // Run with arguments like:
-            // >SampleArgs.exe positionalarg0 -Option1 "positional arg 1" -Option2="this is a test" positional2 "positional\foo 3\\"
+            // >SampleArgs.exe positionalarg0 -Option1 "option1 value" -Option2="this is a test" positional2 "positional\foo 3\\"
             try
             {
-                var options = Options.ParseFrom( EnvironmentEx.CommandLine );
+                var options = Options.ParseFrom( args );
+                Console.WriteLine( "Option1: {0}", options.Option1 );
+                Console.WriteLine( "Option2: {0}", options.Option2 );
+                Console.WriteLine( "PositionalArgs:" );
+                foreach( var positional in options.PositionalArgs )
+                {
+                    Console.WriteLine( positional );
+                }
             }
             catch(CommandlineParseException ex)
             {
@@ -35,9 +48,10 @@ namespace SampleArgs
 
             public string Option2 { get; set; }
 
-            public static Options ParseFrom( string commandLine )
+            public static Options ParseFrom( string[] args )
             {
-                return CommandlineBinder.ParseAndBind<Options>( new Ubiquity.CommandlineParsing.Monad.Parser( ), commandLine );
+                var parser = new Ubiquity.CommandlineParsing.Monad.Parser( );
+                return new Options( ).BindArguments( parser.Parse( args ) );
             }
 
             public static void ShowHelp()

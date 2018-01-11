@@ -1,7 +1,9 @@
 ﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
 // Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
 
+using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Linq;
 using Sprache;
 
 namespace Ubiquity.CommandlineParsing.Monad
@@ -10,12 +12,12 @@ namespace Ubiquity.CommandlineParsing.Monad
     public class Parser
         : ICommandlineParser
     {
-        /// <summary>Parse a command line into base components</summary>
-        /// <param name="commandLine">Command line to parse</param>
-        /// <returns>Results of the parse</returns>
-        public IImmutableList<ICommandlineArgument> Parse( string commandLine )
+        /// <inheritdoc/>
+        public IImmutableList<ICommandlineArgument> Parse( IEnumerable<string> args )
         {
-            return ParseCommandLine( commandLine );
+            return ( from arg in args
+                     select Grammar.Option.Or( Grammar.PositionalArg ).Parse( arg )
+                   ).ToImmutableList( );
         }
 
         /// <summary>Static method to parse a command line</summary>

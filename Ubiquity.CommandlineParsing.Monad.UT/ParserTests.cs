@@ -53,8 +53,17 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         [TestMethod]
         public void CommandLineParserTest( )
         {
-            var args = CommandLine.Parse( @"positionalarg0   --Option1 'positional arg 1' -Option2='this is a test' /option3:foo positional2 ""positional 3\""" )
-                                  .ToList( );
+            string[ ] unparsedArgs =
+            {
+                @"positionalarg0",
+                @"--Option1",
+                @"positional arg 1",
+                @"-Option2=this is a test",
+                @"/option3:foo",
+                @"positional2",
+                @"positional 3\"
+            };
+            var args = unparsedArgs.Select( CommandlineArg.Parse ).ToList( );
 
             Assert.IsInstanceOfType( args[ 0 ], typeof( CommandlineValue ) );
             var arg0 = ( CommandlineValue )args[ 0 ];
@@ -93,5 +102,5 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
             var arg6 = ( CommandlineValue )args[ 6 ];
             Assert.AreEqual( @"positional 3\", arg6.Text );
         }
-  }
+    }
 }

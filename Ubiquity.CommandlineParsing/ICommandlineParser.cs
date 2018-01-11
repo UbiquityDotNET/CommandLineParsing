@@ -1,6 +1,7 @@
 ﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
 // Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
 
+using System.Collections.Generic;
 using System.Collections.Immutable;
 
 namespace Ubiquity.CommandlineParsing
@@ -38,8 +39,8 @@ namespace Ubiquity.CommandlineParsing
     /// </remarks>
     public interface ICommandlineParser
     {
-        /// <summary>Parses the input command line into an immutable list of arguments</summary>
-        /// <param name="commandLine">Command line to parse</param>
+        /// <summary>Parse arguments list from platform provided list of args</summary>
+        /// <param name="args">Args list provided to Main() or via <see cref="System.Environment.GetCommandLineArgs"/></param>
         /// <returns>The list of parsed arguments in the order they appeared on the command line</returns>
         /// <remarks>
         /// <para>This will parse the command line into the various components in the order they appeared
@@ -57,6 +58,6 @@ namespace Ubiquity.CommandlineParsing
         /// really is the value to associate with the preceding option `-optionWithValue`</para>
         /// </remarks>
         /// <seealso cref="CommandlineArgAttribute.AllowSpaceDelimitedValue"/>
-        IImmutableList<ICommandlineArgument> Parse( string commandLine );
+        IImmutableList<ICommandlineArgument> Parse( IEnumerable<string> args );
     }
 }
