@@ -5,7 +5,7 @@ __nor is it intended to be one__.
 This repository is intended to serve a few roles for the Ubiquity.NET set of projects:
 
 1. Acts as a template for new projects
-2. Provides and experimental playground for the Ubiquity DocFX template and general docs build infrastructure.
+2. Provides an experimental playground for the Ubiquity DocFX template and general docs build infrastructure.
 3. Test project for various aspects of cross targeting .NET run-times (.NET Core or desktop) including non-Windows
 target run-times
 
