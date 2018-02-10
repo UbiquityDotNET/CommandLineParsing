@@ -27,7 +27,7 @@
                    "api/**.md",
                    "api/**.yml",
                    "articles/**.md",
-                   "articles/**.yml",
+                   "articles/**.yml"
                  ],
          "src" : "."
       }
@@ -48,7 +48,7 @@
     {
       "_appTitle" : "Command line parsing",
       "_appFooter" : "Copyright (C) 2017, Ubiquity.NET contributors",
-      "_disableBreadcrumb" : true,
-    },
+      "_disableBreadcrumb" : true
+    }
   }
 }

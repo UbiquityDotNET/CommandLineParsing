@@ -11,8 +11,9 @@ target run-times
 
 While the code is functional and even has some tests it isn't maintained or released as
 an actual supported project. New ideas in the way things are built including docs and versioning etc... will
-appear here first before actual projects. To accomplish the goals some reasonable real code was needed so this
-old library originally written to explore the Sprache parse was given a new lease on life as a "test dummy" of sorts.
+appear here first before actual projects. To accomplish the goals some reasonable real code was needed. So this
+old library, originally written to explore the Sprache parser, was given a new lease on life as a "test dummy"
+of sorts.
 
 # OK, But I'm looking for a commandline parser...
 May we suggest [this one]( https://github.com/commandlineparser/commandline ) - it's on GitHub and MUCH more full

@@ -6,6 +6,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using Ubiquity.CommandlineParsing;
 
+// warning SA1652: Enable XML documentation output
+// This is a sample app and not a documented API
+#pragma warning disable SA1652
+
 namespace SampleArgs
 {
     public static class Program
