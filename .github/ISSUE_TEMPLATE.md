@@ -3,7 +3,7 @@ Not that we don't want the feedback! :wink:
 
 We just want to keep the feedback focused and easier to consume by structuring the different kinds of feedback with templates. While GitHub supports multiple templates there is, unfortunately, no UI for a user to create an issue with a sepcific template. You are expected to "just know" that you have to add a query pattern to the URL for the issue... ([Sigh] "Missed it by that much...")
 
-Issues submitted without the use of the templates will almost certainly be closed without further review.
+**Issues submitted without the use of the templates will almost certainly be closed without further review.**
 _[Actually, for this repository, that is pretty much true for all issues as it isn't a real project - it's an experimental test bed for new infastructure (Like issue templates) :grin:]_
 
 # Use an issue template
