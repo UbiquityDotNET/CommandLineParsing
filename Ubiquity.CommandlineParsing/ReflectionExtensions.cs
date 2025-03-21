@@ -1,5 +1,8 @@
-﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
-// Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
+﻿// -----------------------------------------------------------------------
+// <copyright file="ReflectionExtensions.cs" company="Ubiquity.NET Contributors">
+// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 using System;
 

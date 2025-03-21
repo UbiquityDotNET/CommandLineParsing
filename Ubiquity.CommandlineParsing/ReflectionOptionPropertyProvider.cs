@@ -1,5 +1,8 @@
-﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
-// Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
+﻿// -----------------------------------------------------------------------
+// <copyright file="ReflectionOptionPropertyProvider.cs" company="Ubiquity.NET Contributors">
+// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 using System;
 using System.ComponentModel;
@@ -9,7 +12,7 @@ using Ubiquity.CommandlineParsing.Properties;
 
 namespace Ubiquity.CommandlineParsing
 {
-    /// <summary><see cref="IOptionPropertyProvider"/> that uses Reflection to find the properties to bind to</summary>
+    /// <summary><see cref="IOptionPropertyProvider"/> that uses Reflection to find the properties to bind to.</summary>
     public class ReflectionOptionPropertyProvider
         : IOptionPropertyProvider
     {
@@ -20,9 +23,9 @@ namespace Ubiquity.CommandlineParsing
         }
 
         /// <summary>Initializes a new instance of the <see cref="ReflectionOptionPropertyProvider"/> class.</summary>
-        /// <param name="comparer">String comparer to use when matching the properties with an option</param>
-        /// <param name="allowSlash">Flag to indicate if "/" is allowed for options</param>
-        /// <param name="dashesDistinct">Flag to indicate if the "-" and "--" represent distinct short and long namespaces</param>
+        /// <param name="comparer">String comparer to use when matching the properties with an option.</param>
+        /// <param name="allowSlash">Flag to indicate if "/" is allowed for options.</param>
+        /// <param name="dashesDistinct">Flag to indicate if the "-" and "--" represent distinct short and long namespaces.</param>
         public ReflectionOptionPropertyProvider( StringComparer comparer, bool allowSlash, bool dashesDistinct )
         {
             Comparer = comparer;

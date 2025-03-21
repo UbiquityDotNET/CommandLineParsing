@@ -1,14 +1,11 @@
-﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
+﻿
+// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
 // Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
 
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using Ubiquity.CommandlineParsing;
-
-// warning SA1652: Enable XML documentation output
-// This is a sample app and not a documented API
-#pragma warning disable SA1652
 
 namespace SampleArgs
 {
@@ -30,7 +27,7 @@ namespace SampleArgs
                 Console.WriteLine( "Option1: {0}", options.Option1 );
                 Console.WriteLine( "Option2: {0}", options.Option2 );
                 Console.WriteLine( "PositionalArgs:" );
-                foreach( var positional in options.PositionalArgs )
+                foreach( string positional in options.PositionalArgs )
                 {
                     Console.WriteLine( positional );
                 }
@@ -45,7 +42,7 @@ namespace SampleArgs
         [DefaultProperty( "PositionalArgs" )]
         internal class Options
         {
-            public List<string> PositionalArgs { get; } = new List<string>( );
+            public List<string> PositionalArgs { get; } = [];
 
             [CommandlineArg( AllowSpaceDelimitedValue = true )]
             public string Option1 { get; set; }

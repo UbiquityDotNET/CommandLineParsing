@@ -1,5 +1,8 @@
+// -----------------------------------------------------------------------
+// <copyright file="GrammarLexemeTests.cs" company="Ubiquity.NET Contributors">
 // Copyright (c) Ubiquity.NET Contributors. All rights reserved.
-// Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
+// </copyright>
+// -----------------------------------------------------------------------
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sprache;
@@ -22,7 +25,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         [ExpectedException( typeof( ParseException ) )]
         public void SingleQuoteExceptionTest( )
         {
-            char result = SingleQuote.Parse( "\"" );
+            _ = SingleQuote.Parse( "\"" );
         }
 
         [TestMethod]
@@ -36,7 +39,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         [ExpectedException( typeof( ParseException ) )]
         public void DoubleQuoteExceptionTest( )
         {
-            char result = DoubleQuote.Parse( "'" );
+            _ = DoubleQuote.Parse( "'" );
         }
 
         [TestMethod]
@@ -50,7 +53,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         [ExpectedException( typeof( ParseException ) )]
         public void EqualExceptionTest( )
         {
-            char result = Equal.Parse( "+" );
+            _ = Equal.Parse( "+" );
         }
 
         [TestMethod]
@@ -64,7 +67,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         [ExpectedException( typeof( ParseException ) )]
         public void ColonExceptionTest( )
         {
-            char result = Colon.Parse( "+" );
+            _ = Colon.Parse( "+" );
         }
 
         [TestMethod]
@@ -78,7 +81,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         [ExpectedException( typeof( ParseException ) )]
         public void DashExceptionTest( )
         {
-            char result = Dash.Parse( "+" );
+            _ = Dash.Parse( "+" );
         }
 
         [TestMethod]
@@ -92,7 +95,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         [ExpectedException( typeof( ParseException ) )]
         public void SlashExceptionTest( )
         {
-            char result = Slash.Parse( "+" );
+            _ = Slash.Parse( "+" );
         }
 
         [TestMethod]
@@ -108,7 +111,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         [ExpectedException( typeof( ParseException ) )]
         public void EqualOrColonExceptionTest( )
         {
-            char result = EqualOrColon.Parse( "a" );
+            _ = EqualOrColon.Parse( "a" );
         }
 
         [TestMethod]
@@ -122,7 +125,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         [ExpectedException( typeof( ParseException ) )]
         public void DoubleDashExceptionTest( )
         {
-            var result = DoubleDash.Parse( "++" );
+            _ = DoubleDash.Parse( "++" );
         }
 
         [TestMethod]
@@ -137,7 +140,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         [ExpectedException( typeof( ParseException ) )]
         public void CommonOptionStartExceptionTest( )
         {
-            var result = DoubleDash.Parse( "++" );
+            _ = DoubleDash.Parse( "++" );
         }
 
         [TestMethod]
@@ -157,7 +160,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         [ExpectedException( typeof( ParseException ) )]
         public void IdentifierCharExceptionTest( )
         {
-            char result = IdentifierChar.Parse( ":" );
+            _ = IdentifierChar.Parse( ":" );
         }
 
         [TestMethod]
@@ -196,7 +199,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         [ExpectedException( typeof( ParseException ) )]
         public void NonWhitespaceExceptionTest( )
         {
-            char result = NonWhiteSpaceChar.Parse( "\t" );
+            _ = NonWhiteSpaceChar.Parse( "\t" );
         }
 
         [TestMethod]

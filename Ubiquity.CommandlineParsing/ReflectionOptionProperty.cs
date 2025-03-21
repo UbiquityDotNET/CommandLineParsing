@@ -1,5 +1,8 @@
-﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
-// Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
+﻿// -----------------------------------------------------------------------
+// <copyright file="ReflectionOptionProperty.cs" company="Ubiquity.NET Contributors">
+// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 using System;
 using System.ComponentModel;
@@ -37,7 +40,7 @@ namespace Ubiquity.CommandlineParsing
                 if( genericCollectionType != null )
                 {
                     var converter = TypeDescriptor.GetConverter( genericCollectionType.GetGenericArguments( )[ 0 ] );
-                    convertedValue = converter.ConvertFromString( value );
+                    _ = converter.ConvertFromString( value );
                 }
 
                 const BindingFlags bindingFlags = BindingFlags.InvokeMethod | BindingFlags.Instance | BindingFlags.Public;

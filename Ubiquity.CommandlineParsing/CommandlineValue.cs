@@ -1,9 +1,12 @@
-﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
-// Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
+﻿// -----------------------------------------------------------------------
+// <copyright file="CommandlineValue.cs" company="Ubiquity.NET Contributors">
+// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 namespace Ubiquity.CommandlineParsing
 {
-    /// <summary>Command line argument value</summary>
+    /// <summary>Command line argument value.</summary>
     /// <remarks>
     /// A value is either a positional argument (with outer most quoting removed)
     /// or the value of an option.

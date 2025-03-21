@@ -1,12 +1,15 @@
-﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
-// Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
+﻿// -----------------------------------------------------------------------
+// <copyright file="ICommandlineParser.cs" company="Ubiquity.NET Contributors">
+// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 using System.Collections.Generic;
 using System.Collections.Immutable;
 
 namespace Ubiquity.CommandlineParsing
 {
-    /// <summary>Interface for parsing command line arguments</summary>
+    /// <summary>Interface for parsing command line arguments.</summary>
     /// <remarks>
     /// <para>This interface allows for different underlying parsing engines,
     /// depending on the needs of an application. For example there is a
@@ -39,9 +42,9 @@ namespace Ubiquity.CommandlineParsing
     /// </remarks>
     public interface ICommandlineParser
     {
-        /// <summary>Parse arguments list from platform provided list of args</summary>
-        /// <param name="args">Args list provided to Main() or via <see cref="System.Environment.GetCommandLineArgs"/></param>
-        /// <returns>The list of parsed arguments in the order they appeared on the command line</returns>
+        /// <summary>Parse arguments list from platform provided list of args.</summary>
+        /// <param name="args">Args list provided to Main() or via <see cref="System.Environment.GetCommandLineArgs"/>.</param>
+        /// <returns>The list of parsed arguments in the order they appeared on the command line.</returns>
         /// <remarks>
         /// <para>This will parse the command line into the various components in the order they appeared
         /// on the command line. The ordering is important as some application may depend on specific
@@ -55,7 +58,7 @@ namespace Ubiquity.CommandlineParsing
         /// for applications that desire space delimited values of options. For example the input text
         /// `-optionWithValue optionvalue -optionwithoutvalue positional` will return four items in
         /// the list. Only the application, which understands the semantics, can know that `optionvalue`
-        /// really is the value to associate with the preceding option `-optionWithValue`</para>
+        /// really is the value to associate with the preceding option `-optionWithValue`.</para>
         /// </remarks>
         /// <seealso cref="CommandlineArgAttribute.AllowSpaceDelimitedValue"/>
         IImmutableList<ICommandlineArgument> Parse( IEnumerable<string> args );

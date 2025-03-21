@@ -1,5 +1,8 @@
-﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
-// Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
+﻿// -----------------------------------------------------------------------
+// <copyright file="ParserTests.cs" company="Ubiquity.NET Contributors">
+// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -61,7 +64,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
                 @"-Option2=this is a test",
                 @"/option3:foo",
                 @"positional2",
-                @"positional 3\"
+                @"positional 3\",
             };
             var args = unparsedArgs.Select( CommandlineArg.Parse ).ToList( );
 

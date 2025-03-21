@@ -1,5 +1,8 @@
-﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
-// Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
+﻿// -----------------------------------------------------------------------
+// <copyright file="ReflectionOptionPropertyProviderTests.cs" company="Ubiquity.NET Contributors">
+// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -11,7 +14,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         [TestMethod]
         public void ConstructorTest( )
         {
-            var options = new TestOptions( );
+            _ = new TestOptions( );
             var provider = new ReflectionOptionPropertyProvider( );
             Assert.IsNotNull( provider );
         }

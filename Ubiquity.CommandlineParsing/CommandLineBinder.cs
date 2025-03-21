@@ -1,5 +1,8 @@
-﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
-// Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
+﻿// -----------------------------------------------------------------------
+// <copyright file="CommandLineBinder.cs" company="Ubiquity.NET Contributors">
+// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -9,14 +12,14 @@ using Ubiquity.CommandlineParsing.Properties;
 
 namespace Ubiquity.CommandlineParsing
 {
-    /// <summary>Type specific command line argument binder</summary>
+    /// <summary>Type specific command line argument binder.</summary>
     /// <remarks>
     /// <para>Switches are matched against properties by an implementation of
     /// <see cref="IOptionPropertyProvider"/> to provide the properties.
     /// If no property name matches the command line switch, then a property
     /// with a <see cref="CommandlineArgAttribute"/> ShortName or LongName
     /// matching the switch is used. Duplicate switches are allowed if the
-    /// property the option is bound to implements <see cref="System.Collections.Generic.IList{T}"/>
+    /// property the option is bound to implements <see cref="System.Collections.Generic.IList{T}"/>.
     /// </para>
     /// <para>Property values are set by using a TypeConverter
     /// associated with the property. Using converters allows for a class to
@@ -30,22 +33,22 @@ namespace Ubiquity.CommandlineParsing
     /// </remarks>
     public class CommandlineBinder
     {
-        /// <summary>Initializes a new instance of the <see cref="CommandlineBinder"/> class using <see cref="ReflectionOptionPropertyProvider"/>as the property provider</summary>
+        /// <summary>Initializes a new instance of the <see cref="CommandlineBinder"/> class using <see cref="ReflectionOptionPropertyProvider"/>as the property provider.</summary>
         public CommandlineBinder()
             : this( new ReflectionOptionPropertyProvider() )
         {
         }
 
-        /// <summary>Initializes a new instance of the <see cref="CommandlineBinder"/> class for a given object instance</summary>
-        /// <param name="propertyProvider">Property provider for resolving property names</param>
+        /// <summary>Initializes a new instance of the <see cref="CommandlineBinder"/> class for a given object instance.</summary>
+        /// <param name="propertyProvider">Property provider for resolving property names.</param>
         public CommandlineBinder( IOptionPropertyProvider propertyProvider )
         {
             PropertyProvider = propertyProvider;
         }
 
-        /// <summary>Binds a previously parsed list of arguments to an object instance</summary>
-        /// <param name="instance">Instance of object to bind the arguments to</param>
-        /// <param name="parsedResults">Results to bind to the object this binder is for</param>
+        /// <summary>Binds a previously parsed list of arguments to an object instance.</summary>
+        /// <param name="instance">Instance of object to bind the arguments to.</param>
+        /// <param name="parsedResults">Results to bind to the object this binder is for.</param>
         public void BindParseResults( object instance, IImmutableList<ICommandlineArgument> parsedResults )
         {
             for( int i = 0; i < parsedResults.Count; ++i )

@@ -1,15 +1,19 @@
-﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
-// Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
+﻿// -----------------------------------------------------------------------
+// <copyright file="EnvironmentEx.cs" company="Ubiquity.NET Contributors">
+// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 using System;
 using System.Linq;
 
 namespace Ubiquity.CommandlineParsing
 {
-    /// <summary>Provides environment extensions for handling platform differences</summary>
+    /// <summary>Provides environment extensions for handling platform differences.</summary>
+    [System.Diagnostics.CodeAnalysis.SuppressMessage( "Naming", "CA1711:Identifiers should not have incorrect suffix", Justification = "Obvious enough" )]
     public static class EnvironmentEx
     {
-        /// <summary>Gets the raw unparsed command line (or as close to it as is possible for the given runtime/platform</summary>
+        /// <summary>Gets the raw unparsed command line (or as close to it as is possible for the given runtime/platform.</summary>
         /// <remarks>
         /// <para>On Desktop .NET 4.7 and earlier <see cref="Environment.CommandLine"/> provides the full command line without any
         /// funky escape character processing. But the args passed to main or returned from <see cref="Environment.GetCommandLineArgs()"/>
@@ -26,6 +30,7 @@ namespace Ubiquity.CommandlineParsing
         /// <para>Thus, this implementation is forced to implement the only viable cross platform approach by doing a space delimited
         /// join of <see cref="Environment.GetCommandLineArgs()"/> with all it's wonky escaping rules.</para>
         /// </remarks>
+        [System.Diagnostics.CodeAnalysis.SuppressMessage( "Style", "IDE0025:Use expression body for properties", Justification = "Makes a mess with comments" )]
         public static string CommandLine
         {
             get

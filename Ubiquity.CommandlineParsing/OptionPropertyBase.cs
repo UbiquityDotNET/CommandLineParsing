@@ -1,5 +1,8 @@
-﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
-// Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
+﻿// -----------------------------------------------------------------------
+// <copyright file="OptionPropertyBase.cs" company="Ubiquity.NET Contributors">
+// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 using System;
 using System.Globalization;
@@ -7,7 +10,7 @@ using Ubiquity.CommandlineParsing.Properties;
 
 namespace Ubiquity.CommandlineParsing
 {
-    /// <summary>Abstract base class for implementing <see cref="IOptionProperty"/></summary>
+    /// <summary>Abstract base class for implementing <see cref="IOptionProperty"/>.</summary>
     public abstract class OptionPropertyBase
         : IOptionProperty
     {
@@ -44,10 +47,10 @@ namespace Ubiquity.CommandlineParsing
         }
 
         /// <summary>Initializes a new instance of the <see cref="OptionPropertyBase"/> class.</summary>
-        /// <param name="option">Option this property is for</param>
-        /// <param name="allowSpaceDelimitedValue">Flag indicating if this property allows a space delimited value</param>
-        /// <param name="isCollection">Flag to indicate if the property is a collection</param>
-        /// <param name="requiresValue">Flag to indicate if the property requires a value</param>
+        /// <param name="option">Option this property is for.</param>
+        /// <param name="allowSpaceDelimitedValue">Flag indicating if this property allows a space delimited value.</param>
+        /// <param name="isCollection">Flag to indicate if the property is a collection.</param>
+        /// <param name="requiresValue">Flag to indicate if the property requires a value.</param>
         protected OptionPropertyBase( CommandlineOption option, bool allowSpaceDelimitedValue, bool isCollection, bool requiresValue )
         {
             Option = option;
@@ -56,8 +59,8 @@ namespace Ubiquity.CommandlineParsing
             RequiresValue = requiresValue;
         }
 
-        /// <summary>Abstract method to actually set the value of the property</summary>
-        /// <param name="value">value to set on the property</param>
+        /// <summary>Abstract method to actually set the value of the property.</summary>
+        /// <param name="value">value to set on the property.</param>
         /// <remarks>
         /// Implementations should handle value conversion to the proper target type
         /// via a Type converter. This includes converting to the element type of
@@ -74,10 +77,7 @@ namespace Ubiquity.CommandlineParsing
 
             InternalSetValue( value );
 
-            if( !IsCollection )
-            {
-                IsSet = true;
-            }
+            IsSet |= !IsCollection;
         }
     }
 }

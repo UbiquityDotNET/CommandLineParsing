@@ -1,5 +1,8 @@
-﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
-// Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
+﻿// -----------------------------------------------------------------------
+// <copyright file="BinderTests.cs" company="Ubiquity.NET Contributors">
+// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 #pragma warning disable SA1649, SA1402, SA1202, SA1652
 
@@ -16,7 +19,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
         {
             Foo,
             Bar,
-            Baz
+            Baz,
         }
 
         public List<string> PositionalArgs { get; } = new List<string>( );
@@ -56,7 +59,7 @@ namespace Ubiquity.CommandlineParsing.Monad.UT
                 @"-m:multi3",
                 @"-o4",
                 @"positional2",
-                @"""positional 3\"""
+                @"""positional 3\""",
             };
 
         [TestMethod]

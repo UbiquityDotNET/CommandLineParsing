@@ -13,7 +13,7 @@
       "dest": "api",
       "properties":
       {
-          "TargetFramework": "net47"
+          "TargetFramework": "netstandard2.0"
       }
     }
   ],

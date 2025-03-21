@@ -14,15 +14,15 @@
         other projects that might want to set the build outputs etc... into a different place.
     -->
     <PropertyGroup>
-        <!-- Default to x86/Win32 | Debug build if not otherwise specified -->
+        <!-- Default to x64/AnyCPU | Release build if not otherwise specified -->
         <Platform Condition="'$(Platform)'=='' AND '$(MSBuildProjectExtension)'!='.vcxproj'">AnyCPU</Platform>
-        <Platform Condition="'$(Platform)'=='' AND '$(MSBuildProjectExtension)'=='.vcxproj'">Win32</Platform>
+        <Platform Condition="'$(Platform)'=='' AND '$(MSBuildProjectExtension)'=='.vcxproj'">x64</Platform>
         <Platform Condition="$(Platform)=='x86' AND '$(MSBuildProjectExtension)'=='.vcxproj'">Win32</Platform>
         <UnifiedPlatformPathName Condition="'$(UnifiedPlatformPathName)'==''">$(Platform)</UnifiedPlatformPathName>
         <UnifiedPlatformPathName Condition="'$(UnifiedPlatformPathName)'=='Win32'">x86</UnifiedPlatformPathName>
-        <UnifiedPlatformPathName Condition="'$(UnifiedPlatformPathName)'=='AnyCPU'">x86</UnifiedPlatformPathName>
+        <UnifiedPlatformPathName Condition="'$(UnifiedPlatformPathName)'=='AnyCPU'">x64</UnifiedPlatformPathName>
 
-        <Configuration Condition="'$(Configuration)'==''">Debug</Configuration>
+        <Configuration Condition="'$(Configuration)'==''">Release</Configuration>
 
         <!-- Use the location of this file (at the top of the build tree) to define the root directory, if not already set -->
         <BuildRootDir Condition="'$(BuildRootDir)'==''">$(MSBuildThisFileDirectory)</BuildRootDir>
@@ -39,40 +39,29 @@
 
         <BuildOutputPackagesDir Condition="'$(BuildOutputPackagesDir)'==''">$(BaseBuildOutputPath)packages\</BuildOutputPackagesDir>
 
-        <BuildVersionXmlFile Condition="'$(BuildVersionXmlFile)'==''">$(MSBuildThisFileDirectory)BuildVersion.xml</BuildVersionXmlFile>
-        <IsAutomatedBuild Condition="'$(IsAutomatedBuild)'=='' AND '$(APPVEYOR)'!=''">true</IsAutomatedBuild>
+        <BuildVersionXml Condition="'$(BuildVersionXmlFile)'==''">$(MSBuildThisFileDirectory)BuildVersion.xml</BuildVersionXml>
+        <IsAutomatedBuild Condition="'$(IsAutomatedBuild)'=='' AND '$(CI)'!=''">true</IsAutomatedBuild>
         <IsAutomatedBuild Condition="'$(IsAutomatedBuild)'==''">false</IsAutomatedBuild>
 
         <IsPullRequestBuild Condition="'$(IsPullRequestBuild)'=='' AND '$(APPVEYOR_PULL_REQUEST_NUMBER)'!=''">true</IsPullRequestBuild>
         <IsPullRequestBuild Condition="'$(IsPullRequestBuild)'==''">false</IsPullRequestBuild>
 
-        <IsReleaseBuild Condition="'$(IsReleaseBuild)'=='' AND '$(APPVEYOR_REPO_TAG)'=='true' AND '$(APPVEYOR_PULL_REQUEST_NUMBER)'=='' AND '$(APPVEYOR_BRANCH)'=='master'">true</IsReleaseBuild>
+        <IsReleaseBuild Condition="'$(IsReleaseBuild)'=='' AND '$(APPVEYOR_REPO_TAG)'=='true' AND '$(APPVEYOR_PULL_REQUEST_NUMBER)'==''">true</IsReleaseBuild>
         <IsReleaseBuild Condition="'$(IsReleaseBuild)'==''">false</IsReleaseBuild>
-        <BuildVersionXml>$(MSBuildThisFileDirectory)BuildVersion.xml</BuildVersionXml>
-        <BuildTimeStamp Condition="'$(BuildTimeStamp)'=='' AND '$(APPVEYOR_REPO_COMMIT_TIMESTAMP)'!=''">$(APPVEYOR_REPO_COMMIT_TIMESTAMP)</BuildTimeStamp>
+        <BuildTime Condition="'$(BuildTime)'=='' AND '$(APPVEYOR_REPO_COMMIT_TIMESTAMP)'!=''">$(APPVEYOR_REPO_COMMIT_TIMESTAMP)</BuildTime>
+        <!--<RuntimeIdentifiers>win-x64</RuntimeIdentifiers>-->
     </PropertyGroup>
     <Choose>
         <!-- Apply standard analyzers and rule sets for all C# projects -->
-        <When Condition="'$(MSBuildProjectExtension)'=='.csproj'">
+        <When Condition="'$(MSBuildProjectExtension)'=='.csproj' and '$(DisableDirProps)'!='true'">
             <PropertyGroup>
                 <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)Ubiquity.NET.ruleset</CodeAnalysisRuleSet>
                 <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
                 <Determenistic>true</Determenistic>
                 <IsTestProject>$(MSBuildProjectName.Contains('UT'))</IsTestProject>
-                <OutputPath Condition="'$(OutputPath)' == '' and '$(PlatformName)' == 'AnyCPU'">$(BaseOutputPath)$(Configuration)\</OutputPath>
-                <OutputPath Condition="'$(OutputPath)' == '' and '$(PlatformName)' != 'AnyCPU'">$(BaseOutputPath)$(PlatformName)\$(Configuration)\</OutputPath>
-                <OutputPath Condition="!HasTrailingSlash('$(OutputPath)')">$(OutputPath)\</OutputPath>
             </PropertyGroup>
-            <ItemGroup Condition="'$(NoCommonAnalyzers)'!='true' and '$(IsTestProject)' != 'true' and '$(SourceLinkEnabled)' != 'false'">
-                 <PackageReference Include="SourceLink.Create.CommandLine" Version="2.8.0" PrivateAssets="All" />
-            </ItemGroup>
             <ItemGroup Condition="'$(NoCommonAnalyzers)'!='true'">
-                <PackageReference Include="Microsoft.AnalyzerPowerPack" Version="1.1.0" PrivateAssets="All" />
-                <PackageReference Include="RefactoringEssentials" Version="5.6.0" PrivateAssets="All" />
-                <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" PrivateAssets="All" />
                 <AdditionalFiles Include="$(MSBuildThisFileDirectory)stylecop.json" Link="stylecop.json" />
-            </ItemGroup>
-            <ItemGroup Condition="'$(NoCommonAnalyzers)'!='true'">
                 <None Include="$(MSBuildThisFileDirectory)Ubiquity.NET.ruleset" Link="Ubiquity.NET.ruleset" />
             </ItemGroup>
         </When>

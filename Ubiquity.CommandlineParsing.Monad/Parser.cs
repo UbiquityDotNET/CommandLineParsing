@@ -1,5 +1,8 @@
-﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
-// Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
+﻿// -----------------------------------------------------------------------
+// <copyright file="Parser.cs" company="Ubiquity.NET Contributors">
+// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -8,7 +11,7 @@ using Sprache;
 
 namespace Ubiquity.CommandlineParsing.Monad
 {
-    /// <summary>Implementation of <see cref="CommandlineParsing.ICommandlineParser"/> using the Sprache parser combinator library</summary>
+    /// <summary>Implementation of <see cref="CommandlineParsing.ICommandlineParser"/> using the Sprache parser combinator library.</summary>
     public class Parser
         : ICommandlineParser
     {
@@ -20,9 +23,9 @@ namespace Ubiquity.CommandlineParsing.Monad
                    ).ToImmutableList( );
         }
 
-        /// <summary>Static method to parse a command line</summary>
-        /// <param name="commandLine">Command line to parser</param>
-        /// <returns>Results of the parse</returns>
+        /// <summary>Static method to parse a command line.</summary>
+        /// <param name="commandLine">Command line to parser.</param>
+        /// <returns>Results of the parse.</returns>
         public static IImmutableList<ICommandlineArgument> ParseCommandLine( string commandLine )
         {
             try

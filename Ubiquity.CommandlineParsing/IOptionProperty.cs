@@ -1,12 +1,15 @@
-﻿// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
-// Licensed under the MIT license. See the LICENSE.md file in the project root for full license information.
+﻿// -----------------------------------------------------------------------
+// <copyright file="IOptionProperty.cs" company="Ubiquity.NET Contributors">
+// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 namespace Ubiquity.CommandlineParsing
 {
     /// <summary>Interface for a property that binds a <see cref="CommandlineOption"/> to a property on an object instance.</summary>
     public interface IOptionProperty
     {
-        /// <summary>Gets a value indicating whether this property allows a space delimited value</summary>
+        /// <summary>Gets a value indicating whether this property allows a space delimited value.</summary>
         /// <remarks>
         /// The parser, intentionally, doesn't have knowledge of the semantics of an application's
         /// choices for using a space as the delimiter between an option and it's value. This property
@@ -25,10 +28,10 @@ namespace Ubiquity.CommandlineParsing
         /// </remarks>
         bool RequiresValue { get; }
 
-        /// <summary>Gets a value indicating whether this property is a collection that accepts multiple values</summary>
+        /// <summary>Gets a value indicating whether this property is a collection that accepts multiple values.</summary>
         bool IsCollection { get; }
 
-        /// <summary>Gets a value indicating whether this property was set</summary>
+        /// <summary>Gets a value indicating whether this property was set.</summary>
         /// <remarks>
         /// If <see cref="IsCollection"/> is <see langword="true"/> then this must always be <see langword="false"/>.
         /// Otherwise, this is <see langword="false"/> until the first call to <see href="xref:Ubiquity.CommandlineParsing.IOptionProperty.BindValue*">BindValue</see>,
@@ -36,16 +39,16 @@ namespace Ubiquity.CommandlineParsing
         /// </remarks>
         bool IsSet { get; }
 
-        /// <summary>Gets the option to bind to this property</summary>
+        /// <summary>Gets the option to bind to this property.</summary>
         CommandlineOption Option { get; }
 
-        /// <summary>Sets the value of the property from <see cref="Option"/></summary>
+        /// <summary>Sets the value of the property from <see cref="Option"/>.</summary>
         void BindValue( );
 
-        /// <summary>Sets a value for the property when the option didn't have a value</summary>
-        /// <param name="newValue">New value for the property</param>
+        /// <summary>Sets a value for the property when the option didn't have a value.</summary>
+        /// <param name="newValue">New value for the property.</param>
         /// <exception cref="System.InvalidOperationException">
-        /// If the <see cref="CommandlineOption.Value"/> is non-null or <see cref="AllowSpaceDelimitedValue"/> is <see langword="false"/>
+        /// If the <see cref="CommandlineOption.Value"/> is non-null or <see cref="AllowSpaceDelimitedValue"/> is <see langword="false"/>.
         /// </exception>
         void BindValue( string newValue );
     }

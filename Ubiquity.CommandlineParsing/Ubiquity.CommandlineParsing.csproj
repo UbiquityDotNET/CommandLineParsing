@@ -1,20 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
+    <Sdk Name="Microsoft.Build.CentralPackageVersions" />
+
     <PropertyGroup>
-        <TargetFrameworks>net47;netstandard2.0</TargetFrameworks>
+        <TargetFramework>net9.0</TargetFramework>
         <Description>Most user's will not need/want to include this package directly. Using this package requires a parser engine.
         The Ubiquity.CommandlineParsing.Monad package includes this package and support for parsing via the Sprache Parser combinator
         library.
         </Description>
         <Copyright>Copyright (C) Ubiquity.NET Contributors</Copyright>
         <PackageTags>Command line Arguments</PackageTags>
-        <LangVersion>7.1</LangVersion>
         <Authors>Ubiquity.NET</Authors>
         <Company>Ubiquity.NET</Company>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
         <NoPackageAnalysis>true</NoPackageAnalysis>
     </PropertyGroup>
-    
+
     <ItemGroup>
       <Compile Remove="obj\**" />
       <EmbeddedResource Remove="obj\**" />
@@ -22,9 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="CSemVer.Build.Tasks" Version="1.0.3-beta--ci-BLD.431367438" PrivateAssets="All" />
-        <PackageReference Include="Sprache" Version="2.1.0" />
-        <PackageReference Include="System.Collections.Immutable" Version="1.4.0" />
+        <PackageReference Include="Sprache" />
     </ItemGroup>
 
     <ItemGroup>

@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
+    <Sdk Name="Microsoft.Build.CentralPackageVersions" />
 
   <PropertyGroup>
-    <TargetFrameworks>net47;netstandard2.0</TargetFrameworks>
-    <LangVersion>7.1</LangVersion>
+    <TargetFramework>net9.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>This package implements flexible CommandlineParsing support using the Sprache parser combinator library as the underlying parse engine.</Description>
     <Copyright>Copyright (C) Ubiquity.NET Contributors</Copyright>
@@ -18,9 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CSemVer.Build.Tasks" Version="1.0.3-beta--ci-BLD.431367438" PrivateAssets="All" />
-    <PackageReference Include="Sprache" Version="2.1.0" />
-    <PackageReference Include="System.Collections.Immutable" Version="1.4.0" />
+    <PackageReference Include="Sprache" />
   </ItemGroup>
 
   <ItemGroup>
