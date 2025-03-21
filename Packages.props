@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <!--
+    Global references are included in ALL projects in this repository
+    -->
     <ItemGroup>
         <GlobalPackageReference Include="CSemVer.Build.Tasks" Version="2.0.5" />
-        <GlobalPackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.2" Condition="'$(NoCommonAnalyzers)'!='true'" />
-        <GlobalPackageReference Include="RefactoringEssentials" Version="5.6.0" Condition="'$(NoCommonAnalyzers)'!='true'" />
-        <GlobalPackageReference Include="StyleCop.Analyzers" Version="1.1.118" Condition="'$(NoCommonAnalyzers)'!='true'" />
+        <GlobalPackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="9.0.0" Condition="'$(NoCommonAnalyzers)' !=' true'" />
+        <GlobalPackageReference Include="IDisposableAnalyzers" Version="4.0.8" Condition="'$(NoCommonAnalyzers)' !=' true'" />
+        <!--This analyzer is officially archived on GitHub and not actively maintained; and behind the times on language support -->
+        <!--<GlobalPackageReference Include="RefactoringEssentials" Version="5.6.0" Condition="'$(NoCommonAnalyzers)' != 'true'" />-->
+        <GlobalPackageReference Include="StyleCop.Analyzers" Version="1.1.118" Condition="'$(NoCommonAnalyzers)' != 'true'" />
         <GlobalPackageReference Include="SourceLink.Create.CommandLine" Version="2.8.3" Condition="'$(IsTestProject)' != 'true' and '$(SourceLinkEnabled)' != 'false'" />
     </ItemGroup>
+
+    <!--
+    Package versions made consistent across all packages referenced in this repository
+    -->
     <ItemGroup>
-        <PackageReference Update="Ubiquity.ArgValidators" Version="6.0.1" />
         <PackageReference Update="Microsoft.NET.Test.Sdk" Version="17.13.0" />
         <PackageReference Update="MSTest.TestFramework" Version="3.8.3" />
         <PackageReference Update="MSTest.TestAdapter" Version="3.8.3" />
         <PackageReference Update="Sprache" Version="2.3.1"  />
-        <PackageReference Update="docfx.console" Version="2.59.4" />
-        <PackageReference Update="memberpage" Version="2.59.4" />
-        <PackageReference Update="msdn.4.5.2" Version="0.1.0-alpha-1611021200" />
     </ItemGroup>
 </Project>

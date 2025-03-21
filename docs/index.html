@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>CommandLineParsing | Command line parsing </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="CommandLineParsing | Command line parsing ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Docs/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="images/custom-logo.svg" alt="Command Line Parsing">
+            Command Line Parsing
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+        </div>
+
+        <article data-uid="">
+<h1 id="commandlineparsing">CommandLineParsing</h1>
+
+<p>When processing command line arguments applications commonly perform the following basic conceptual steps.</p>
+<ol>
+<li>Parse the arguments into an analyzable form including identifying options/switches with values</li>
+<li>Bind the results of the parse to a data structure that is then used by the application to adapt
+behavior based on the command line arguments.</li>
+</ol>
+<p>The command line parsing library splits the argument processing into these two basic steps. Furthermore,
+the actual parsing is isolated by an interface so that multiple implementations are allowed. The first
+implementation uses the <a href="https://github.com/sprache/Sprache">Sprache Parser Combinator Library</a>, which
+is a light weight (&lt;50KB) parsing library useful for many applications. Other parsers are possible if
+an application already needs to use a more traditional parser engine, but given the size of the Sprache
+library it isn't likely to save much.</p>
+<p>The parsing stage produces an ordered list of arguments that are either switches/options with a possible
+value and general positional arguments that may be quoted to include whitespace. For some applications
+the list is all that is needed. However, for others an object model is desired. This is where the binding
+comes in. The binding stage takes the list of arguments and, with the aid of .NET attributes binds the
+values from the command line to properties of an object instance. To allow for greater flexibility, the
+actual property binding is isolated behind an interface to allow multiple implementations. The library
+includes a standard .NET Reflection based property provider which is likely to serve for most uses. Though,
+it is plausible to implement a compile time code generator that created a property provider that didn't need
+reflection, making it suitable for .NET Native AOT compilation scenarios where minimizing reflection is desired.</p>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li>Flexible parsing</li>
+<li>Flexible binding</li>
+</ul>
+<h3 id="flexible-parsing">Flexible Parsing</h3>
+<p>The CommandLineParsing library takes a generalized approach to parsing command line arguments. While there
+are a large variety of styles for providing arguments they all tend to share some things in common. Generally
+speaking the grammar of command lines looks something like this:</p>
+<pre><code class="lang-EBNF">PositionalArg = QuotedValue | UnquotedValue;
+Option = SWITCH, Identifier [DELIM, (QuotedValue | UnquotedValue ) ];
+args = {PositionalArg | Option };
+</code></pre>
+<p>One challenge with any general library for command line arguments is in determining what to allow for SWITCH
+and DELIM. Generally, SWITCH is either a <code>-</code>, <code>--</code> or <code>/</code> though, for some applications multiple forms are
+allowed and each may have distinct meanings or even namespaces for the options. Furthermore, many command line
+styles use different delimiters for options that accept a value. Common delimiters are <code>:</code> and <code>=</code> though some
+applications use whitespace as a delimiter, which poses a real challenge as the parser doesn't know which options
+even allow a value.</p>
+<p>To support all the variations a generalized parsing library requires some level of abstraction to achieve the
+needed flexibility. The CommandLineParsing library provides this by using a approach that can parse all of the
+variations and leaves the correctness to the application or binder. That is, the parser accepts all valid command
+lines and some that are not valid for a given application. This, helps keep the application logic simpler and
+allows for defining common semantic processing and object binding for specific scenarios.</p>
+<h3 id="flexible-binding">Flexible Binding</h3>
+<p>Parsing arguments produces an immutable list of <a class="xref" href="api/Ubiquity.CommandlineParsing.ICommandlineArgument.html">ICommandLineArgument</a>
+which is a common interface for either <a class="xref" href="api/Ubiquity.CommandlineParsing.CommandlineOption.html">CommandLineOption</a> or
+<a class="xref" href="api/Ubiquity.CommandlineParsing.CommandlineValue.html">CommandLineValue</a>. The application can work with that list directly
+or use a binder to bind the parsed arguments to properties of an object instance. The
+<a class="xref" href="api/Ubiquity.CommandlineParsing.CommandlineBinder.html">CommandLineBinder</a> class provides common logic for walking the list
+of arguments to bind the properties to an object instance. The actual binding of the value to the property is performed
+by an implementation of <a class="xref" href="api/Ubiquity.CommandlineParsing.IOptionProperty.html">IOptionProperty</a>. Instances of IOptionProperty
+are provided by an implementation of another interface
+<a class="xref" href="api/Ubiquity.CommandlineParsing.IOptionPropertyProvider.html">IOptionPropertyProvider</a> which, given a CommandLineOption,
+will look up the property for the object to bind to and provides the IOptionProperty implementation to do the binding.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>The design the IOPtionPropertyProvider and IOptionProperty interfaces intentionally <strong>does not require</strong> the use of
+refelction, though it is allowed. In fact the default provider is
+<a class="xref" href="api/Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider.html">ReflectionOptionPropertyProvider</a>. The reflection
+provider covers the large majority of cases for JIT runtime execution. However it isn't the only possible
+implementation. It is plausible to use some form of compile time reflection/AOP Weaver to generate an implementation
+of IOptionPropertyProvider for a given options class that does not require any run-time reflection.</p>
+</div>
+<h3 id="example">Example</h3>
+<p>The following example comes from the unit tests for the CommandLineParsing library and shows many of the capabilities
+for handling complex options parsing and binding to an options class the application can use.</p>
+<pre><code class="lang-csharp" name="Test">// -----------------------------------------------------------------------
+// &lt;copyright file=&quot;BinderTests.cs&quot; company=&quot;Ubiquity.NET Contributors&quot;&gt;
+// Copyright (c) Ubiquity.NET Contributors. All rights reserved.
+// &lt;/copyright&gt;
+// -----------------------------------------------------------------------
+
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace Ubiquity.CommandLineParsing.Monad.UT
+{
+    [TestClass]
+    public class BinderTests
+    {
+        [TestMethod]
+        public void CommandLineBinderTest()
+        {
+            var parser = new Parser( );
+            TestOptions options = new TestOptions( ).BindArguments( parser.Parse( FullCommandLine ) );
+            Assert.IsNotNull( options );
+            Assert.AreEqual( 4, options.PositionalArgs.Count );
+            Assert.AreEqual( 3, options.MultiOption.Count );
+            Assert.AreEqual( &quot;space delimited value1&quot;, options.Option1 );
+            Assert.AreEqual( &quot;this is a test&quot;, options.Option2 );
+            Assert.AreEqual( TestOptions.Option3Values.Baz, options.Option3 );
+            Assert.IsTrue( options.Option4 );
+        }
+
+        // This includes all forms of option switches quoting and the special problematic case of a trailing \ in a quoted string
+        // The trailing \ in a quoted string is a notorious hidden gotcha for .NET apps as the default .NET arg parsing generates
+        // a quote character as it implements character escaping, unlike any other runtime.
+        private readonly string[] FullCommandLine =
+            [
+                @&quot;positionalarg0&quot;,
+                @&quot;-m:&quot;&quot;Multi 1&quot;&quot;&quot;,
+                @&quot;--o1&quot;,
+                @&quot;&quot;&quot;space delimited value1&quot;&quot;&quot;,
+                @&quot;-MultiOption=&quot;&quot;Multi 2&quot;&quot;&quot;,
+                @&quot;positional1&quot;,
+                @&quot;-Option2=&quot;&quot;this is a test&quot;&quot;&quot;,
+                @&quot;/option3:baz&quot;,
+                @&quot;-m:multi3&quot;,
+                @&quot;-o4&quot;,
+                @&quot;positional2&quot;,
+                @&quot;&quot;&quot;positional 3\&quot;&quot;&quot;,
+            ];
+    }
+}
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This example treats <code>-</code>, <code>--</code> and <code>/</code> as equivalent, though other behavior is possible
+by providing an instance of <a class="xref" href="api/Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider.html">ReflectionOptionPropertyProvider</a>,
+or some other implementation of IOptionPropertyProvider, to the binder that will select the appropriate property or
+reject the parsed arguments as invalid.</p>
+</div>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Docs/index.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (C) 2017-2025, Ubiquity.NET contributors
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

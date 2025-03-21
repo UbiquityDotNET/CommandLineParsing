@@ -1,0 +1,44 @@
+﻿{
+  "metadata":
+  [
+    {
+      "src":
+      [
+        {
+          "files": [ "**/*.csproj" ],
+          "exclude": [ "*UT/**", "Sample*/**" ],
+          "src":".."
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build":
+  {
+    "resource": [ "images/custom-logo.svg" ],
+    "content":
+    [
+      {
+        "files": [ "toc.yml",
+                   "index.md",
+                   "api/**.md",
+                   "api/**.yml",
+                 ],
+         "src" : "."
+      }
+    ],
+    "template": [ "default", "modern" ],
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "postProcessors": [],
+    "noLangKeyword": false,
+    "globalMetadata":
+    {
+      "_appTitle" : "Command line parsing",
+      "_appFooter": "Copyright (C) 2017-2025, Ubiquity.NET contributors",
+      "_appName": "Command Line Parsing",
+      "_appLogoPath": "images/custom-logo.svg",
+      "_disableBreadcrumb" : true
+    }
+  }
+}

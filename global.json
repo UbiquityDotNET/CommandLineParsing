@@ -1,5 +1,6 @@
 {
     "sdk": {
+        "rollForward": "latestMinor",
         "allowPrerelease": false
     },
     "msbuild-sdks": {

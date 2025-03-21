@@ -1,0 +1,43 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Docs/">
+    <File Path="Docs/docfx.json" />
+    <File Path="Docs/index.md" />
+    <File Path="Docs/toc.yml" />
+  </Folder>
+  <Folder Name="/Docs/api/" Id="e4a1c715-23d8-8e7d-ce58-2d79e2a5b3ce">
+    <File Path="Docs/api/index.md" />
+  </Folder>
+  <Folder Name="/Docs/images/" Id="02ea681e-c7d8-13c7-8484-4ac65e1b71e8">
+    <File Path="Docs/images/custom-logo.svg" />
+  </Folder>
+  <Folder Name="/Repo Items/">
+    <File Path="../.editorconfig" />
+    <File Path="../.gitignore" />
+    <File Path="../Build-All.ps1" />
+    <File Path="../Build-Docs.ps1" />
+    <File Path="../Build-Source.ps1" />
+    <File Path="../BuildVersion.proj" />
+    <File Path="../BuildVersion.xml" />
+    <File Path="../CODE_OF_CONDUCT.md" />
+    <File Path="../Directory.Build.props" />
+    <File Path="../Directory.Build.targets" />
+    <File Path="../global.json" />
+    <File Path="../GOVERNANCE.md" />
+    <File Path="../LICENSE.md" />
+    <File Path="../Packages.props" />
+    <File Path="../readme.md" />
+    <File Path="../repo-buildutils.ps1" />
+    <File Path="../stylecop.json" />
+  </Folder>
+  <Folder Name="/Samples/">
+    <Project Path="Samples/SampleArgs.csproj" />
+  </Folder>
+  <Project Path="Ubiquity.CommandlineParsing.Monad.UT/Ubiquity.CommandlineParsing.Monad.UT.csproj" />
+  <Project Path="Ubiquity.CommandlineParsing.Monad/Ubiquity.CommandlineParsing.Monad.csproj" />
+  <Project Path="Ubiquity.CommandlineParsing/Ubiquity.CommandlineParsing.csproj" />
+</Solution>

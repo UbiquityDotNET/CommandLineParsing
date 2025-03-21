@@ -1,0 +1,9 @@
+{
+"FullBuildNumber" : "0.2.0-alpha.0.0.ci-ZZZ.603693828",
+"BuildMajor" : 0,
+"BuildMinor" : 2,
+"BuildPatch" : 0,
+"PreReleaseName" : "alpha",
+"CiBuildName" : "ZZZ",
+"CiBuildIndex" : 603693828,
+}

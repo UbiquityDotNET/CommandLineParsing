@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <Sdk Name="Microsoft.Build.CentralPackageVersions" />
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>This package implements flexible CommandlineParsing support using the Sprache parser combinator library as the underlying parse engine.</Description>
+    <Copyright>Copyright (C) Ubiquity.NET Contributors</Copyright>
+    <PackageTags>Command line Arguments</PackageTags>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Sprache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ubiquity.CommandlineParsing\Ubiquity.CommandlineParsing.csproj" />
+  </ItemGroup>
+
+</Project>
