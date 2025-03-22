@@ -34,7 +34,7 @@ namespace Ubiquity.CommandLineParsing.Monad
             }
             catch( ParseException ex )
             {
-                throw new CommandlineParseException( ex.Message, ex );
+                throw new CommandLineParseException( ex.Message, ex );
             }
         }
     }

@@ -40,7 +40,7 @@ namespace Ubiquity.CommandLineParsing
 
             foreach( PropertyDescriptor prop in TypeDescriptor.GetProperties( instance ) )
             {
-                var argsAttribute = prop.Attributes.OfType<CommandlineArgAttribute>( ).SingleOrDefault( );
+                var argsAttribute = prop.Attributes.OfType<CommandLineArgAttribute>( ).SingleOrDefault( );
                 string longName = argsAttribute?.LongName ?? prop.Name;
                 string shortName = argsAttribute?.ShortName ?? string.Empty;
                 bool isCollection = prop.PropertyType.IsCollection( );
@@ -66,7 +66,7 @@ namespace Ubiquity.CommandLineParsing
             }
 
             // property for the argument wasn't found
-            throw new CommandlineParseException( CultureInfo.CurrentUICulture, Resources.UnknownOption_0, name );
+            throw new CommandLineParseException( CultureInfo.CurrentUICulture, Resources.UnknownOption_0, name );
         }
 
         private readonly StringComparer Comparer;

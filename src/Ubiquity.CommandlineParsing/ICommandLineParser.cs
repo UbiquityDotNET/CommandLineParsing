@@ -60,7 +60,7 @@ namespace Ubiquity.CommandLineParsing
         /// the list. Only the application, which understands the semantics, can know that `optionvalue`
         /// really is the value to associate with the preceding option `-optionWithValue`.</para>
         /// </remarks>
-        /// <seealso cref="CommandlineArgAttribute.AllowSpaceDelimitedValue"/>
+        /// <seealso cref="CommandLineArgAttribute.AllowSpaceDelimitedValue"/>
         IImmutableList<ICommandLineArgument> Parse( IEnumerable<string> args );
     }
 }

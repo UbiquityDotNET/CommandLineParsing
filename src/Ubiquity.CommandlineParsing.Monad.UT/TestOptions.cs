@@ -21,7 +21,7 @@ namespace Ubiquity.CommandLineParsing.Monad.UT
 
         public List<string> PositionalArgs { get; } = [];
 
-        [CommandlineArg( "o1", AllowSpaceDelimitedValue = true )]
+        [CommandLineArg( "o1", AllowSpaceDelimitedValue = true )]
         public string Option1 { get; set; } = string.Empty;
 
         public string Option2 { get; set; } = string.Empty;
@@ -30,10 +30,10 @@ namespace Ubiquity.CommandLineParsing.Monad.UT
         // [TypeConverter(typeof(EnumConverter))]
         public Option3Values Option3 { get; set; }
 
-        [CommandlineArg( "o4" )]
+        [CommandLineArg( "o4" )]
         public bool Option4 { get; set; }
 
-        [CommandlineArg( "m" )]
+        [CommandLineArg( "m" )]
         public IList<string> MultiOption { get; } = new List<string>( );
     }
 }

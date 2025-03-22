@@ -17,7 +17,7 @@ namespace Ubiquity.CommandLineParsing
     /// <para>Switches are matched against properties by an implementation of
     /// <see cref="IOptionPropertyProvider"/> to provide the properties.
     /// If no property name matches the command line switch, then a property
-    /// with a <see cref="CommandlineArgAttribute"/> ShortName or LongName
+    /// with a <see cref="CommandLineArgAttribute"/> ShortName or LongName
     /// matching the switch is used. Duplicate switches are allowed if the
     /// property the option is bound to implements <see cref="System.Collections.Generic.IList{T}"/>.
     /// </para>
@@ -64,7 +64,7 @@ namespace Ubiquity.CommandLineParsing
                     break;
 
                 default:
-                    throw new CommandlineParseException( CultureInfo.CurrentUICulture
+                    throw new CommandLineParseException( CultureInfo.CurrentUICulture
                                                        , Resources.UnknownOption_0
                                                        );
                 }
@@ -92,7 +92,7 @@ namespace Ubiquity.CommandLineParsing
                 }
             }
 
-            throw new CommandlineParseException( CultureInfo.CurrentUICulture, Resources.MissingValueForOption_0, option.Text );
+            throw new CommandLineParseException( CultureInfo.CurrentUICulture, Resources.MissingValueForOption_0, option.Text );
         }
 
         private static void BindPositionalValue( object instance, CommandLineValue value )
@@ -100,7 +100,7 @@ namespace Ubiquity.CommandLineParsing
             // positionalArgs may be null if the type doesn't have a default property
             // with the correct type signature.
             var targetPositionalArgs = GetTargetPositionalArgList( instance )
-                                     ?? throw new CommandlineParseException( CultureInfo.CurrentUICulture
+                                     ?? throw new CommandLineParseException( CultureInfo.CurrentUICulture
                                                                            , Resources.UnknownOption_0
                                                                            , value.Text
                                                                            );

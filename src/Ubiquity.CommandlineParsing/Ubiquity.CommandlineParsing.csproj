@@ -4,7 +4,7 @@
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
         <Description>Most user's will not need/want to include this package directly. Using this package requires a parser engine.
-        The Ubiquity.CommandlineParsing.Monad package includes this package and support for parsing via the Sprache Parser combinator
+        The Ubiquity.CommandLineParsing.Monad package includes this package and support for parsing via the Sprache Parser combinator
         library.
         </Description>
         <Copyright>Copyright (C) Ubiquity.NET Contributors</Copyright>

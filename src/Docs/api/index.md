@@ -1,4 +1,4 @@
-﻿# CommandlineParsing
+﻿# CommandLineParsing
 When processing command line arguments applications commonly perform the following basic conceptual steps.
 
 1. Parse the arguments into an analyzable form including identifying options/switches with values

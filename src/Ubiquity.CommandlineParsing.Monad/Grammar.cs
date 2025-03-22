@@ -144,12 +144,12 @@ namespace Ubiquity.CommandLineParsing.Monad
             select new CommandLineValue( value );
 
         /// <summary>Gets a parser for a single command line argument.</summary>
-        public static Parser<ICommandLineArgument> CommandlineArg
+        public static Parser<ICommandLineArgument> CommandLineArg
             => Option.Or( PositionalArg );
 
         /// <summary>Gets the Top level parser to parse a command line into a sequence of <see cref="ICommandLineArgument"/>.</summary>
         public static Parser<IEnumerable<ICommandLineArgument>> CommandLine
-            => ( CommandlineArg ).DelimitedBy( Parse.WhiteSpace.Many() ).End();
+            => CommandLineArg.DelimitedBy( Parse.WhiteSpace.Many() ).End();
 
         /// <summary>Parser combinator to provide semantic action support for matched parsers.</summary>
         /// <typeparam name="T">Type of elements the parser produces.</typeparam>

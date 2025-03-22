@@ -74,7 +74,7 @@ namespace Ubiquity.CommandLineParsing
         {
             if( IsSet )
             {
-                throw new CommandlineParseException( CultureInfo.CurrentUICulture, Resources.DuplicateOption_0, Option.Text );
+                throw new CommandLineParseException( CultureInfo.CurrentUICulture, Resources.DuplicateOption_0, Option.Text );
             }
 
             InternalSetValue( value );

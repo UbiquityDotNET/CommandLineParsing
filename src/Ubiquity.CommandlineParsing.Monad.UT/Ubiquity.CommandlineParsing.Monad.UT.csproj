@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ubiquity.CommandlineParsing.Monad\Ubiquity.CommandlineParsing.Monad.csproj" />
+    <ProjectReference Include="..\Ubiquity.CommandLineParsing.Monad\Ubiquity.CommandLineParsing.Monad.csproj" />
   </ItemGroup>
 
 </Project>

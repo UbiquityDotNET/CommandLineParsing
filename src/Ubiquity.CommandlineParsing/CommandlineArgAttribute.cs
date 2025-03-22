@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="CommandlineArgAttribute.cs" company="Ubiquity.NET Contributors">
+// <copyright file="CommandLineArgAttribute.cs" company="Ubiquity.NET Contributors">
 // Copyright (c) Ubiquity.NET Contributors. All rights reserved.
 // </copyright>
 // -----------------------------------------------------------------------
@@ -10,23 +10,23 @@ namespace Ubiquity.CommandLineParsing
 {
     /// <summary>Allows accessing a property via the command line parser with a name that is different from the property name.</summary>
     [AttributeUsage( AttributeTargets.Property, Inherited = false, AllowMultiple = false )]
-    public sealed class CommandlineArgAttribute
+    public sealed class CommandLineArgAttribute
         : Attribute
     {
-        /// <summary>Initializes a new instance of the <see cref="CommandlineArgAttribute"/> class.</summary>
+        /// <summary>Initializes a new instance of the <see cref="CommandLineArgAttribute"/> class.</summary>
         /// <remarks>
         /// Marks the attached property for command line argument binding. The name of the
         /// property is the option for the command line. If the LongName property is set
         /// it is used as the option name.
         /// </remarks>
-        public CommandlineArgAttribute( )
+        public CommandLineArgAttribute( )
             : this( string.Empty )
         {
         }
 
-        /// <summary>Initializes a new instance of the <see cref="CommandlineArgAttribute"/> class.</summary>
+        /// <summary>Initializes a new instance of the <see cref="CommandLineArgAttribute"/> class.</summary>
         /// <param name="shortName">Short name for the argument.</param>
-        public CommandlineArgAttribute( string shortName )
+        public CommandLineArgAttribute( string shortName )
         {
             ArgumentNullException.ThrowIfNull(shortName);
 

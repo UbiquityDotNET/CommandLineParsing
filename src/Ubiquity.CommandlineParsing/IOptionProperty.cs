@@ -15,7 +15,7 @@ namespace Ubiquity.CommandLineParsing
         /// choices for using a space as the delimiter between an option and it's value. This property
         /// informs the binder if it is allowed to consume an immediately following <see cref="CommandLineValue"/>
         /// as the value for this option. The implementation of, IOptionPropertyProvider normally retrieves
-        /// this information from the <see cref="CommandlineArgAttribute.AllowSpaceDelimitedValue"/> attribute
+        /// this information from the <see cref="CommandLineArgAttribute.AllowSpaceDelimitedValue"/> attribute
         /// attached to the property this IOptionProperty represents though it can use whatever means is
         /// appropriate to the provider.
         /// </remarks>

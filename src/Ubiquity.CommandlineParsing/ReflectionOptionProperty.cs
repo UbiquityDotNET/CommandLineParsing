@@ -68,7 +68,7 @@ namespace Ubiquity.CommandLineParsing
                     }
                     catch( FormatException ex )
                     {
-                        throw new CommandlineParseException( CultureInfo.CurrentUICulture, Resources.InvalidOptionFormat_0_1, value, ex.Message );
+                        throw new CommandLineParseException( CultureInfo.CurrentUICulture, Resources.InvalidOptionFormat_0_1, value, ex.Message );
                     }
                 }
             }
@@ -76,7 +76,7 @@ namespace Ubiquity.CommandLineParsing
             {
                 if( string.IsNullOrWhiteSpace( value ) )
                 {
-                    throw new CommandlineParseException( CultureInfo.CurrentUICulture, Resources.MissingValueForOption_0, Option.Text );
+                    throw new CommandLineParseException( CultureInfo.CurrentUICulture, Resources.MissingValueForOption_0, Option.Text );
                 }
 
                 if( Prop.Converter != null )
@@ -87,7 +87,7 @@ namespace Ubiquity.CommandLineParsing
                     }
                     catch( NotSupportedException ex )
                     {
-                        throw new CommandlineParseException( CultureInfo.CurrentUICulture, Resources.InvalidOptionFormat_0_1, value, ex.Message );
+                        throw new CommandLineParseException( CultureInfo.CurrentUICulture, Resources.InvalidOptionFormat_0_1, value, ex.Message );
                     }
                 }
             }

@@ -66,7 +66,7 @@ namespace Ubiquity.CommandLineParsing.Monad.UT
                 @"positional2",
                 @"positional 3\",
             };
-            var args = unparsedArgs.Select( CommandlineArg.Parse ).ToList( );
+            var args = unparsedArgs.Select( CommandLineArg.Parse ).ToList( );
 
             Assert.IsInstanceOfType( args[ 0 ], typeof( CommandLineValue ) );
             var arg0 = ( CommandLineValue )args[ 0 ];

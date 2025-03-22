@@ -37,7 +37,7 @@
   <Folder Name="/Samples/">
     <Project Path="Samples/SampleArgs.csproj" />
   </Folder>
-  <Project Path="Ubiquity.CommandlineParsing.Monad.UT/Ubiquity.CommandlineParsing.Monad.UT.csproj" />
-  <Project Path="Ubiquity.CommandlineParsing.Monad/Ubiquity.CommandlineParsing.Monad.csproj" />
-  <Project Path="Ubiquity.CommandlineParsing/Ubiquity.CommandlineParsing.csproj" />
+  <Project Path="Ubiquity.CommandlineParsing.Monad.UT/Ubiquity.CommandlineParsing.Monad.UT.csproj" DisplayName="Ubiquity.CommandLineParsing.Monad.UT" />
+  <Project Path="Ubiquity.CommandlineParsing.Monad/Ubiquity.CommandlineParsing.Monad.csproj" DisplayName="Ubiquity.CommandLineParsing.Monad" />
+  <Project Path="Ubiquity.CommandlineParsing/Ubiquity.CommandlineParsing.csproj" DisplayName="Ubiquity.CommandLineParsing" />
 </Solution>

@@ -32,7 +32,7 @@ namespace SampleArgs
                     Console.WriteLine( positional );
                 }
             }
-            catch(CommandlineParseException ex)
+            catch(CommandLineParseException ex)
             {
                 Console.Error.WriteLine( ex.Message );
                 Options.ShowHelp( );
@@ -44,7 +44,7 @@ namespace SampleArgs
         {
             public List<string> PositionalArgs { get; } = [];
 
-            [CommandlineArg( AllowSpaceDelimitedValue = true )]
+            [CommandLineArg( AllowSpaceDelimitedValue = true )]
             public string Option1 { get; init; } = string.Empty;
 
             public string Option2 { get; init; } = string.Empty;
@@ -58,7 +58,7 @@ namespace SampleArgs
             public static void ShowHelp()
             {
                 Console.WriteLine(
-                    "Sample CommandlineParing app\n" +
+                    "Sample Command line paring app\n" +
                     "Usage:\n" +
                     "    SampeArgs (positionalarg | [option])*\n" +
                     "where:\n" +
