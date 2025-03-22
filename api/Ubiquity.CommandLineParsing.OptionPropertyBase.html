@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class OptionPropertyBase | Command Line Parsing </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class OptionPropertyBase | Command Line Parsing ">
+      
+      <meta name="description" content="Abstract base class for implementing .">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/UbiquityDotNET/CommandLineParsing/new/master/apiSpec/new?filename=Ubiquity_CommandLineParsing_OptionPropertyBase.md&amp;value=---%0Auid%3A%20Ubiquity.CommandLineParsing.OptionPropertyBase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/custom-logo.svg" alt="Command Line Parsing">
+            Command Line Parsing
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+        </div>
+
+        <article data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase">
+
+
+
+  <h1 id="Ubiquity_CommandLineParsing_OptionPropertyBase" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase" class="text-break">
+Class OptionPropertyBase  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/OptionPropertyBase.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Ubiquity.html">Ubiquity</a>.<a class="xref" href="Ubiquity.CommandLineParsing.html">CommandLineParsing</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Ubiquity.CommandlineParsing.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Abstract base class for implementing <a class="xref" href="Ubiquity.CommandLineParsing.IOptionProperty.html">IOptionProperty</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class OptionPropertyBase : IOptionProperty</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">OptionPropertyBase</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Ubiquity.CommandLineParsing.IOptionProperty.html">IOptionProperty</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Ubiquity.CommandLineParsing.CommandLineBinderExtensions.html#Ubiquity_CommandLineParsing_CommandLineBinderExtensions_BindArguments__1___0_System_Collections_Immutable_IImmutableList_Ubiquity_CommandLineParsing_ICommandLineArgument__">CommandLineBinderExtensions.BindArguments&lt;TResult&gt;(TResult, IImmutableList&lt;ICommandLineArgument&gt;)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Ubiquity_CommandLineParsing_OptionPropertyBase__ctor_" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.#ctor*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_OptionPropertyBase__ctor_Ubiquity_CommandLineParsing_CommandLineOption_System_Boolean_System_Boolean_System_Boolean_" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.#ctor(Ubiquity.CommandLineParsing.CommandLineOption,System.Boolean,System.Boolean,System.Boolean)">
+  OptionPropertyBase(CommandLineOption, bool, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/OptionPropertyBase.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Ubiquity.CommandLineParsing.OptionPropertyBase.html">OptionPropertyBase</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected OptionPropertyBase(CommandLineOption option, bool allowSpaceDelimitedValue, bool isCollection, bool requiresValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>option</code> <a class="xref" href="Ubiquity.CommandLineParsing.CommandLineOption.html">CommandLineOption</a></dt>
+    <dd><p>Option this property is for.</p>
+</dd>
+    <dt><code>allowSpaceDelimitedValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Flag indicating if this property allows a space delimited value.</p>
+</dd>
+    <dt><code>isCollection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Flag to indicate if the property is a collection.</p>
+</dd>
+    <dt><code>requiresValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Flag to indicate if the property requires a value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Ubiquity_CommandLineParsing_OptionPropertyBase_AllowSpaceDelimitedValue_" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.AllowSpaceDelimitedValue*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_OptionPropertyBase_AllowSpaceDelimitedValue" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.AllowSpaceDelimitedValue">
+  AllowSpaceDelimitedValue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/OptionPropertyBase.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this property allows a space delimited value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowSpaceDelimitedValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Ubiquity_CommandLineParsing_OptionPropertyBase_AllowSpaceDelimitedValue_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The parser, intentionally, doesn't have knowledge of the semantics of an application's
+choices for using a space as the delimiter between an option and it's value. This property
+informs the binder if it is allowed to consume an immediately following <a class="xref" href="Ubiquity.CommandLineParsing.CommandLineValue.html">CommandLineValue</a>
+as the value for this option. The implementation of, IOptionPropertyProvider normally retrieves
+this information from the <a class="xref" href="Ubiquity.CommandLineParsing.CommandLineArgAttribute.html#Ubiquity_CommandLineParsing_CommandLineArgAttribute_AllowSpaceDelimitedValue">AllowSpaceDelimitedValue</a> attribute
+attached to the property this IOptionProperty represents though it can use whatever means is
+appropriate to the provider.</p>
+</div>
+
+
+
+
+  <a id="Ubiquity_CommandLineParsing_OptionPropertyBase_IsCollection_" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.IsCollection*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_OptionPropertyBase_IsCollection" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.IsCollection">
+  IsCollection
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/OptionPropertyBase.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this property is a collection that accepts multiple values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCollection { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ubiquity_CommandLineParsing_OptionPropertyBase_IsSet_" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.IsSet*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_OptionPropertyBase_IsSet" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.IsSet">
+  IsSet
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/OptionPropertyBase.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this property was set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSet { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Ubiquity_CommandLineParsing_OptionPropertyBase_IsSet_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If <a class="xref" href="Ubiquity.CommandLineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_IsCollection">IsCollection</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> then this must always be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+Otherwise, this is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> until the first call to <a class="xref" href="Ubiquity.CommandLineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_BindValue_">BindValue</a>,
+after which it remains <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>. This is used to prevent setting the value multiple times.</p>
+</div>
+
+
+
+
+  <a id="Ubiquity_CommandLineParsing_OptionPropertyBase_Option_" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.Option*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_OptionPropertyBase_Option" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.Option">
+  Option
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/OptionPropertyBase.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the option to bind to this property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandLineOption Option { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ubiquity.CommandLineParsing.CommandLineOption.html">CommandLineOption</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ubiquity_CommandLineParsing_OptionPropertyBase_RequiresValue_" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.RequiresValue*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_OptionPropertyBase_RequiresValue" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.RequiresValue">
+  RequiresValue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/OptionPropertyBase.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this property requires a value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequiresValue { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Ubiquity_CommandLineParsing_OptionPropertyBase_RequiresValue_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Most options require a value, though simple booleans don't as the presence or absence of the
+option are enough to determine the value.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Ubiquity_CommandLineParsing_OptionPropertyBase_BindValue_" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.BindValue*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_OptionPropertyBase_BindValue" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.BindValue">
+  BindValue()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/OptionPropertyBase.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of the property from <a class="xref" href="Ubiquity.CommandLineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_Option">Option</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BindValue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ubiquity_CommandLineParsing_OptionPropertyBase_BindValue_" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.BindValue*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_OptionPropertyBase_BindValue_System_String_" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.BindValue(System.String)">
+  BindValue(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/OptionPropertyBase.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets a value for the property when the option didn't have a value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BindValue(string newValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>New value for the property.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>If the <a class="xref" href="Ubiquity.CommandLineParsing.CommandLineOption.html#Ubiquity_CommandLineParsing_CommandLineOption_Value">Value</a> is non-null or <a class="xref" href="Ubiquity.CommandLineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_AllowSpaceDelimitedValue">AllowSpaceDelimitedValue</a> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Ubiquity_CommandLineParsing_OptionPropertyBase_InternalSetValue_" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.InternalSetValue*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_OptionPropertyBase_InternalSetValue_System_String_" data-uid="Ubiquity.CommandLineParsing.OptionPropertyBase.InternalSetValue(System.String)">
+  InternalSetValue(string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/OptionPropertyBase.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Abstract method to actually set the value of the property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void InternalSetValue(string? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>value to set on the property.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="Ubiquity_CommandLineParsing_OptionPropertyBase_InternalSetValue_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Implementations should handle value conversion to the proper target type
+via a Type converter. This includes converting to the element type of
+a generic collection.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/OptionPropertyBase.cs/#L14" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (C) 2017-2025, Ubiquity.NET contributors
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

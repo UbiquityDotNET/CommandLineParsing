@@ -1,0 +1,305 @@
+{
+  "source_base_path": "D:/GitHub/Ubiquity.NET/CommandLineParsing/src/Docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.CommandLineArgAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.CommandLineArgAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.CommandLineArgAttribute",
+      "Summary": "<p sourcefile=\"api/Ubiquity.CommandLineParsing.CommandLineArgAttribute.yml\" sourcestartlinenumber=\"1\">Allows accessing a property via the command line parser with a name that is different from the property name.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.CommandLineBinder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.CommandLineBinder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.CommandLineBinder",
+      "Summary": "<p sourcefile=\"api/Ubiquity.CommandLineParsing.CommandLineBinder.yml\" sourcestartlinenumber=\"1\">Type specific command line argument binder.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.CommandLineBinderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.CommandLineBinderExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.CommandLineBinderExtensions",
+      "Summary": "<p sourcefile=\"api/Ubiquity.CommandLineParsing.CommandLineBinderExtensions.yml\" sourcestartlinenumber=\"1\">Utility extension class to simplify parsing/binding operations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.CommandLineOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.CommandLineOption.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.CommandLineOption",
+      "Summary": "<p sourcefile=\"api/Ubiquity.CommandLineParsing.CommandLineOption.yml\" sourcestartlinenumber=\"1\">Result of a single parsed command line option.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.CommandLineParseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.CommandLineParseException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.CommandLineParseException",
+      "Summary": "<p sourcefile=\"api/Ubiquity.CommandLineParsing.CommandLineParseException.yml\" sourcestartlinenumber=\"1\">Exception for errors in parsing or binding command line arguments.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.CommandLineValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.CommandLineValue.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.CommandLineValue",
+      "Summary": "<p sourcefile=\"api/Ubiquity.CommandLineParsing.CommandLineValue.yml\" sourcestartlinenumber=\"1\">Command line argument value.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.EnvironmentEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.EnvironmentEx.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.EnvironmentEx",
+      "Summary": "<p sourcefile=\"api/Ubiquity.CommandLineParsing.EnvironmentEx.yml\" sourcestartlinenumber=\"1\">Provides environment extensions for handling platform differences.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.ICommandLineArgument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.ICommandLineArgument.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.ICommandLineArgument",
+      "Summary": "<p sourcefile=\"api/Ubiquity.CommandLineParsing.ICommandLineArgument.yml\" sourcestartlinenumber=\"1\">Interface for a command line argument.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.ICommandLineParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.ICommandLineParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.ICommandLineParser",
+      "Summary": "<p sourcefile=\"api/Ubiquity.CommandLineParsing.ICommandLineParser.yml\" sourcestartlinenumber=\"1\">Interface for parsing command line arguments.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.IOptionProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.IOptionProperty.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.IOptionProperty",
+      "Summary": "<p sourcefile=\"api/Ubiquity.CommandLineParsing.IOptionProperty.yml\" sourcestartlinenumber=\"1\">Interface for a property that binds a <xref href=\"Ubiquity.CommandLineParsing.CommandLineOption\" data-throw-if-not-resolved=\"false\"></xref> to a property on an object instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.IOptionPropertyProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.IOptionPropertyProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.IOptionPropertyProvider",
+      "Summary": "<p sourcefile=\"api/Ubiquity.CommandLineParsing.IOptionPropertyProvider.yml\" sourcestartlinenumber=\"1\">Interface for an option property provider.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.Monad.Grammar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.Monad.Grammar.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.Monad.Grammar",
+      "Summary": "<p sourcefile=\"api/Ubiquity.CommandLineParsing.Monad.Grammar.yml\" sourcestartlinenumber=\"1\">Static class to provide parser monads for parsing a command line.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.Monad.Parser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.Monad.Parser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.Monad.Parser",
+      "Summary": "<p sourcefile=\"api/Ubiquity.CommandLineParsing.Monad.Parser.yml\" sourcestartlinenumber=\"1\">Implementation of <xref href=\"Ubiquity.CommandLineParsing.ICommandLineParser\" data-throw-if-not-resolved=\"false\"></xref> using the Sprache parser combinator library.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.Monad.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.Monad.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.Monad",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.OptionPropertyBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.OptionPropertyBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.OptionPropertyBase",
+      "Summary": "<p sourcefile=\"api/Ubiquity.CommandLineParsing.OptionPropertyBase.yml\" sourcestartlinenumber=\"1\">Abstract base class for implementing <xref href=\"Ubiquity.CommandLineParsing.IOptionProperty\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider",
+      "Summary": "<p sourcefile=\"api/Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.yml\" sourcestartlinenumber=\"1\"><xref href=\"Ubiquity.CommandLineParsing.IOptionPropertyProvider\" data-throw-if-not-resolved=\"false\"></xref> that uses Reflection to find the properties to bind to.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ubiquity.CommandLineParsing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ubiquity.CommandLineParsing.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Ubiquity.CommandLineParsing",
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/custom-logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/custom-logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
