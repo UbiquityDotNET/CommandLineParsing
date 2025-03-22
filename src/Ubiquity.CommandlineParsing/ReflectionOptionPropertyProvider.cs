@@ -8,6 +8,7 @@ using System;
 using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
+
 using Ubiquity.CommandLineParsing.Properties;
 
 namespace Ubiquity.CommandLineParsing

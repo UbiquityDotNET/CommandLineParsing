@@ -2,7 +2,6 @@
   <Configurations>
     <Platform Name="Any CPU" />
     <Platform Name="x64" />
-    <Platform Name="x86" />
   </Configurations>
   <Folder Name="/Docs/">
     <File Path="Docs/docfx.json" />
@@ -37,7 +36,7 @@
   <Folder Name="/Samples/">
     <Project Path="Samples/SampleArgs.csproj" />
   </Folder>
-  <Project Path="Ubiquity.CommandlineParsing.Monad.UT/Ubiquity.CommandlineParsing.Monad.UT.csproj" DisplayName="Ubiquity.CommandLineParsing.Monad.UT" />
-  <Project Path="Ubiquity.CommandlineParsing.Monad/Ubiquity.CommandlineParsing.Monad.csproj" DisplayName="Ubiquity.CommandLineParsing.Monad" />
-  <Project Path="Ubiquity.CommandlineParsing/Ubiquity.CommandlineParsing.csproj" DisplayName="Ubiquity.CommandLineParsing" />
+  <Project Path="Ubiquity.CommandLineParsing.Monad.UT/Ubiquity.CommandLineParsing.Monad.UT.csproj" DisplayName="Ubiquity.CommandLineParsing.Monad.UT" />
+  <Project Path="Ubiquity.CommandLineParsing.Monad/Ubiquity.CommandLineParsing.Monad.csproj" DisplayName="Ubiquity.CommandLineParsing.Monad" />
+  <Project Path="Ubiquity.CommandLineParsing/Ubiquity.CommandLineParsing.csproj" DisplayName="Ubiquity.CommandLineParsing" />
 </Solution>

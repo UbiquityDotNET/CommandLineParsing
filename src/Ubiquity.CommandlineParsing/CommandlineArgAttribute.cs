@@ -17,7 +17,7 @@ namespace Ubiquity.CommandLineParsing
         /// <remarks>
         /// Marks the attached property for command line argument binding. The name of the
         /// property is the option for the command line. If the LongName property is set
-        /// it is used as the option name.
+        /// it is used as the option name. Blay
         /// </remarks>
         public CommandLineArgAttribute( )
             : this( string.Empty )

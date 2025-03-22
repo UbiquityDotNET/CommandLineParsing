@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CommandLineOption | Command Line Parsing </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CommandLineOption | Command Line Parsing ">
+      
+      <meta name="description" content="Result of a single parsed command line option.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/UbiquityDotNET/CommandLineParsing/new/master/apiSpec/new?filename=Ubiquity_CommandLineParsing_CommandLineOption.md&amp;value=---%0Auid%3A%20Ubiquity.CommandLineParsing.CommandLineOption%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/custom-logo.svg" alt="Command Line Parsing">
+            Command Line Parsing
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+        </div>
+
+        <article data-uid="Ubiquity.CommandLineParsing.CommandLineOption">
+
+
+
+  <h1 id="Ubiquity_CommandLineParsing_CommandLineOption" data-uid="Ubiquity.CommandLineParsing.CommandLineOption" class="text-break">
+Class CommandLineOption  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/CommandLineOption.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Ubiquity.html">Ubiquity</a>.<a class="xref" href="Ubiquity.CommandLineParsing.html">CommandLineParsing</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Ubiquity.CommandLineParsing.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Result of a single parsed command line option.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CommandLineOption : ICommandLineArgument</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CommandLineOption</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Ubiquity.CommandlineParsing.ICommandlineArgument.html">ICommandLineArgument</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Ubiquity.CommandlineParsing.CommandLineBinderExtensions.html#Ubiquity_CommandLineParsing_CommandLineBinderExtensions_BindArguments__1___0_System_Collections_Immutable_IImmutableList_Ubiquity_CommandLineParsing_ICommandLineArgument__">CommandLineBinderExtensions.BindArguments&lt;TResult&gt;(TResult, IImmutableList&lt;ICommandLineArgument&gt;)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Ubiquity_CommandLineParsing_CommandLineOption__ctor_" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.#ctor*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_CommandLineOption__ctor_System_String_System_String_System_String_System_String_Ubiquity_CommandLineParsing_CommandLineValue_" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.#ctor(System.String,System.String,System.String,System.String,Ubiquity.CommandLineParsing.CommandLineValue)">
+  CommandLineOption(string, string, string, string, CommandLineValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/CommandLineOption.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Ubiquity.CommandlineParsing.CommandlineOption.html">CommandLineOption</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandLineOption(string fullText, string switchLeader, string name, string delimiter, CommandLineValue value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Full text of the option from the command line.</p>
+</dd>
+    <dt><code>switchLeader</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text of the token that started the option (i.e. &quot;-&quot;, &quot;--&quot;, &quot;/&quot;).</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the option.</p>
+</dd>
+    <dt><code>delimiter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Delimiter between the option and the value (i.e. &quot;=&quot; or &quot;:&quot;).</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="Ubiquity.CommandlineParsing.CommandlineValue.html">CommandLineValue</a></dt>
+    <dd><p>Value for the option.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Ubiquity_CommandLineParsing_CommandLineOption__ctor_" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.#ctor*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_CommandLineOption__ctor_System_String_System_String_System_String_Ubiquity_CommandLineParsing_CommandLineValue_" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.#ctor(System.String,System.String,System.String,Ubiquity.CommandLineParsing.CommandLineValue)">
+  CommandLineOption(string, string, string, CommandLineValue)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/CommandLineOption.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Ubiquity.CommandlineParsing.CommandlineOption.html">CommandLineOption</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandLineOption(string switchLeader, string name, string delimiter, CommandLineValue value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>switchLeader</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text of the token that started the option (i.e. &quot;-&quot;, &quot;--&quot;, &quot;/&quot;).</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the option.</p>
+</dd>
+    <dt><code>delimiter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Delimiter between the option and the value (i.e. &quot;=&quot; or &quot;:&quot;).</p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="Ubiquity.CommandlineParsing.CommandlineValue.html">CommandLineValue</a></dt>
+    <dd><p>Value for the option.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Ubiquity_CommandLineParsing_CommandLineOption_Delimiter_" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.Delimiter*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_CommandLineOption_Delimiter" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.Delimiter">
+  Delimiter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/CommandLineOption.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the value delimiter, if any.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Delimiter { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Delimiter parsed from the command line.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ubiquity_CommandLineParsing_CommandLineOption_Name_" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.Name*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_CommandLineOption_Name" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.Name">
+  Name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/CommandLineOption.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the name of the option this may be an empty string for parsers that allow that.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of the  option from the command line.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Ubiquity_CommandLineParsing_CommandLineOption_SwitchLeader_" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.SwitchLeader*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_CommandLineOption_SwitchLeader" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.SwitchLeader">
+  SwitchLeader
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/CommandLineOption.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the switch that introduced this option.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SwitchLeader { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Text for the switch leader as a string.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Ubiquity_CommandLineParsing_CommandLineOption_SwitchLeader_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This allows bindings that differentiate on the switch (i.e. - vs. --) to
+distinguish the options. (e.g. -a and --all may represent the same option
+but would be parsed as distinct options).</p>
+</div>
+
+
+
+
+  <a id="Ubiquity_CommandLineParsing_CommandLineOption_Text_" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.Text*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_CommandLineOption_Text" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.Text">
+  Text
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/CommandLineOption.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the full text of argument.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Text { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="Ubiquity_CommandLineParsing_CommandLineOption_Text_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is generally used for debugging and reporting errors to the user so that the actual full text of an invalid
+option is available to aid in clarity for the user.</p>
+<p>For a switch/option the full text of the value includes the leading switch, the name of the option any value separator and
+the value. For positional arguments it includes the full string (without the outermost quotes, if any, to allow spaces, etc.. in
+the value).</p>
+</div>
+
+
+
+
+  <a id="Ubiquity_CommandLineParsing_CommandLineOption_Value_" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.Value*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_CommandLineOption_Value" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.Value">
+  Value
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/CommandLineOption.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the value of the option.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandLineValue Value { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ubiquity.CommandlineParsing.CommandlineValue.html">CommandLineValue</a></dt>
+    <dd><p>Option's value or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no value was provided.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Ubiquity_CommandLineParsing_CommandLineOption_ToString_" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.ToString*"></a>
+
+  <h3 id="Ubiquity_CommandLineParsing_CommandLineOption_ToString" data-uid="Ubiquity.CommandLineParsing.CommandLineOption.ToString">
+  ToString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/CommandLineOption.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string that represents the current object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/UbiquityDotNET/CommandLineParsing/blob/master/src/Ubiquity.CommandLineParsing/CommandLineOption.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright (C) 2017-2025, Ubiquity.NET contributors
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

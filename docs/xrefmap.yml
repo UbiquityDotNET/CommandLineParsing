@@ -1,0 +1,1005 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Ubiquity.CommandLineParsing
+  name: Ubiquity.CommandLineParsing
+  href: api/Ubiquity.CommandlineParsing.html
+  commentId: N:Ubiquity.CommandLineParsing
+  fullName: Ubiquity.CommandLineParsing
+  nameWithType: Ubiquity.CommandLineParsing
+- uid: Ubiquity.CommandLineParsing.CommandLineArgAttribute
+  name: CommandLineArgAttribute
+  href: api/Ubiquity.CommandlineParsing.CommandlineArgAttribute.html
+  commentId: T:Ubiquity.CommandLineParsing.CommandLineArgAttribute
+  fullName: Ubiquity.CommandLineParsing.CommandLineArgAttribute
+  nameWithType: CommandLineArgAttribute
+- uid: Ubiquity.CommandLineParsing.CommandLineArgAttribute.#ctor
+  name: CommandLineArgAttribute()
+  href: api/Ubiquity.CommandlineParsing.CommandlineArgAttribute.html#Ubiquity_CommandLineParsing_CommandLineArgAttribute__ctor
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineArgAttribute.#ctor
+  name.vb: New()
+  fullName: Ubiquity.CommandLineParsing.CommandLineArgAttribute.CommandLineArgAttribute()
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineArgAttribute.New()
+  nameWithType: CommandLineArgAttribute.CommandLineArgAttribute()
+  nameWithType.vb: CommandLineArgAttribute.New()
+- uid: Ubiquity.CommandLineParsing.CommandLineArgAttribute.#ctor(System.String)
+  name: CommandLineArgAttribute(string)
+  href: api/Ubiquity.CommandlineParsing.CommandlineArgAttribute.html#Ubiquity_CommandLineParsing_CommandLineArgAttribute__ctor_System_String_
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineArgAttribute.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Ubiquity.CommandLineParsing.CommandLineArgAttribute.CommandLineArgAttribute(string)
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineArgAttribute.New(String)
+  nameWithType: CommandLineArgAttribute.CommandLineArgAttribute(string)
+  nameWithType.vb: CommandLineArgAttribute.New(String)
+- uid: Ubiquity.CommandLineParsing.CommandLineArgAttribute.#ctor*
+  name: CommandLineArgAttribute
+  href: api/Ubiquity.CommandlineParsing.CommandlineArgAttribute.html#Ubiquity_CommandLineParsing_CommandLineArgAttribute__ctor_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineArgAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Ubiquity.CommandLineParsing.CommandLineArgAttribute.CommandLineArgAttribute
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineArgAttribute.New
+  nameWithType: CommandLineArgAttribute.CommandLineArgAttribute
+  nameWithType.vb: CommandLineArgAttribute.New
+- uid: Ubiquity.CommandLineParsing.CommandLineArgAttribute.AllowSpaceDelimitedValue
+  name: AllowSpaceDelimitedValue
+  href: api/Ubiquity.CommandlineParsing.CommandlineArgAttribute.html#Ubiquity_CommandLineParsing_CommandLineArgAttribute_AllowSpaceDelimitedValue
+  commentId: P:Ubiquity.CommandLineParsing.CommandLineArgAttribute.AllowSpaceDelimitedValue
+  fullName: Ubiquity.CommandLineParsing.CommandLineArgAttribute.AllowSpaceDelimitedValue
+  nameWithType: CommandLineArgAttribute.AllowSpaceDelimitedValue
+- uid: Ubiquity.CommandLineParsing.CommandLineArgAttribute.AllowSpaceDelimitedValue*
+  name: AllowSpaceDelimitedValue
+  href: api/Ubiquity.CommandlineParsing.CommandlineArgAttribute.html#Ubiquity_CommandLineParsing_CommandLineArgAttribute_AllowSpaceDelimitedValue_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineArgAttribute.AllowSpaceDelimitedValue
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.CommandLineArgAttribute.AllowSpaceDelimitedValue
+  nameWithType: CommandLineArgAttribute.AllowSpaceDelimitedValue
+- uid: Ubiquity.CommandLineParsing.CommandLineArgAttribute.LongName
+  name: LongName
+  href: api/Ubiquity.CommandlineParsing.CommandlineArgAttribute.html#Ubiquity_CommandLineParsing_CommandLineArgAttribute_LongName
+  commentId: P:Ubiquity.CommandLineParsing.CommandLineArgAttribute.LongName
+  fullName: Ubiquity.CommandLineParsing.CommandLineArgAttribute.LongName
+  nameWithType: CommandLineArgAttribute.LongName
+- uid: Ubiquity.CommandLineParsing.CommandLineArgAttribute.LongName*
+  name: LongName
+  href: api/Ubiquity.CommandlineParsing.CommandlineArgAttribute.html#Ubiquity_CommandLineParsing_CommandLineArgAttribute_LongName_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineArgAttribute.LongName
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.CommandLineArgAttribute.LongName
+  nameWithType: CommandLineArgAttribute.LongName
+- uid: Ubiquity.CommandLineParsing.CommandLineArgAttribute.ShortName
+  name: ShortName
+  href: api/Ubiquity.CommandlineParsing.CommandlineArgAttribute.html#Ubiquity_CommandLineParsing_CommandLineArgAttribute_ShortName
+  commentId: P:Ubiquity.CommandLineParsing.CommandLineArgAttribute.ShortName
+  fullName: Ubiquity.CommandLineParsing.CommandLineArgAttribute.ShortName
+  nameWithType: CommandLineArgAttribute.ShortName
+- uid: Ubiquity.CommandLineParsing.CommandLineArgAttribute.ShortName*
+  name: ShortName
+  href: api/Ubiquity.CommandlineParsing.CommandlineArgAttribute.html#Ubiquity_CommandLineParsing_CommandLineArgAttribute_ShortName_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineArgAttribute.ShortName
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.CommandLineArgAttribute.ShortName
+  nameWithType: CommandLineArgAttribute.ShortName
+- uid: Ubiquity.CommandLineParsing.CommandLineBinder
+  name: CommandLineBinder
+  href: api/Ubiquity.CommandlineParsing.CommandlineBinder.html
+  commentId: T:Ubiquity.CommandLineParsing.CommandLineBinder
+  fullName: Ubiquity.CommandLineParsing.CommandLineBinder
+  nameWithType: CommandLineBinder
+- uid: Ubiquity.CommandLineParsing.CommandLineBinder.#ctor
+  name: CommandLineBinder()
+  href: api/Ubiquity.CommandlineParsing.CommandlineBinder.html#Ubiquity_CommandLineParsing_CommandLineBinder__ctor
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineBinder.#ctor
+  name.vb: New()
+  fullName: Ubiquity.CommandLineParsing.CommandLineBinder.CommandLineBinder()
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineBinder.New()
+  nameWithType: CommandLineBinder.CommandLineBinder()
+  nameWithType.vb: CommandLineBinder.New()
+- uid: Ubiquity.CommandLineParsing.CommandLineBinder.#ctor(Ubiquity.CommandLineParsing.IOptionPropertyProvider)
+  name: CommandLineBinder(IOptionPropertyProvider)
+  href: api/Ubiquity.CommandlineParsing.CommandlineBinder.html#Ubiquity_CommandLineParsing_CommandLineBinder__ctor_Ubiquity_CommandLineParsing_IOptionPropertyProvider_
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineBinder.#ctor(Ubiquity.CommandLineParsing.IOptionPropertyProvider)
+  name.vb: New(IOptionPropertyProvider)
+  fullName: Ubiquity.CommandLineParsing.CommandLineBinder.CommandLineBinder(Ubiquity.CommandLineParsing.IOptionPropertyProvider)
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineBinder.New(Ubiquity.CommandLineParsing.IOptionPropertyProvider)
+  nameWithType: CommandLineBinder.CommandLineBinder(IOptionPropertyProvider)
+  nameWithType.vb: CommandLineBinder.New(IOptionPropertyProvider)
+- uid: Ubiquity.CommandLineParsing.CommandLineBinder.#ctor*
+  name: CommandLineBinder
+  href: api/Ubiquity.CommandlineParsing.CommandlineBinder.html#Ubiquity_CommandLineParsing_CommandLineBinder__ctor_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineBinder.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Ubiquity.CommandLineParsing.CommandLineBinder.CommandLineBinder
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineBinder.New
+  nameWithType: CommandLineBinder.CommandLineBinder
+  nameWithType.vb: CommandLineBinder.New
+- uid: Ubiquity.CommandLineParsing.CommandLineBinder.BindParseResults(System.Object,System.Collections.Immutable.IImmutableList{Ubiquity.CommandLineParsing.ICommandLineArgument})
+  name: BindParseResults(object, IImmutableList<ICommandLineArgument>)
+  href: api/Ubiquity.CommandlineParsing.CommandlineBinder.html#Ubiquity_CommandLineParsing_CommandLineBinder_BindParseResults_System_Object_System_Collections_Immutable_IImmutableList_Ubiquity_CommandLineParsing_ICommandLineArgument__
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineBinder.BindParseResults(System.Object,System.Collections.Immutable.IImmutableList{Ubiquity.CommandLineParsing.ICommandLineArgument})
+  name.vb: BindParseResults(Object, IImmutableList(Of ICommandLineArgument))
+  fullName: Ubiquity.CommandLineParsing.CommandLineBinder.BindParseResults(object, System.Collections.Immutable.IImmutableList<Ubiquity.CommandLineParsing.ICommandLineArgument>)
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineBinder.BindParseResults(Object, System.Collections.Immutable.IImmutableList(Of Ubiquity.CommandLineParsing.ICommandLineArgument))
+  nameWithType: CommandLineBinder.BindParseResults(object, IImmutableList<ICommandLineArgument>)
+  nameWithType.vb: CommandLineBinder.BindParseResults(Object, IImmutableList(Of ICommandLineArgument))
+- uid: Ubiquity.CommandLineParsing.CommandLineBinder.BindParseResults*
+  name: BindParseResults
+  href: api/Ubiquity.CommandlineParsing.CommandlineBinder.html#Ubiquity_CommandLineParsing_CommandLineBinder_BindParseResults_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineBinder.BindParseResults
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.CommandLineBinder.BindParseResults
+  nameWithType: CommandLineBinder.BindParseResults
+- uid: Ubiquity.CommandLineParsing.CommandLineBinderExtensions
+  name: CommandLineBinderExtensions
+  href: api/Ubiquity.CommandlineParsing.CommandLineBinderExtensions.html
+  commentId: T:Ubiquity.CommandLineParsing.CommandLineBinderExtensions
+  fullName: Ubiquity.CommandLineParsing.CommandLineBinderExtensions
+  nameWithType: CommandLineBinderExtensions
+- uid: Ubiquity.CommandLineParsing.CommandLineBinderExtensions.BindArguments*
+  name: BindArguments
+  href: api/Ubiquity.CommandlineParsing.CommandLineBinderExtensions.html#Ubiquity_CommandLineParsing_CommandLineBinderExtensions_BindArguments_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineBinderExtensions.BindArguments
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.CommandLineBinderExtensions.BindArguments
+  nameWithType: CommandLineBinderExtensions.BindArguments
+- uid: Ubiquity.CommandLineParsing.CommandLineBinderExtensions.BindArguments``1(``0,System.Collections.Immutable.IImmutableList{Ubiquity.CommandLineParsing.ICommandLineArgument})
+  name: BindArguments<TResult>(TResult, IImmutableList<ICommandLineArgument>)
+  href: api/Ubiquity.CommandlineParsing.CommandLineBinderExtensions.html#Ubiquity_CommandLineParsing_CommandLineBinderExtensions_BindArguments__1___0_System_Collections_Immutable_IImmutableList_Ubiquity_CommandLineParsing_ICommandLineArgument__
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineBinderExtensions.BindArguments``1(``0,System.Collections.Immutable.IImmutableList{Ubiquity.CommandLineParsing.ICommandLineArgument})
+  name.vb: BindArguments(Of TResult)(TResult, IImmutableList(Of ICommandLineArgument))
+  fullName: Ubiquity.CommandLineParsing.CommandLineBinderExtensions.BindArguments<TResult>(TResult, System.Collections.Immutable.IImmutableList<Ubiquity.CommandLineParsing.ICommandLineArgument>)
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineBinderExtensions.BindArguments(Of TResult)(TResult, System.Collections.Immutable.IImmutableList(Of Ubiquity.CommandLineParsing.ICommandLineArgument))
+  nameWithType: CommandLineBinderExtensions.BindArguments<TResult>(TResult, IImmutableList<ICommandLineArgument>)
+  nameWithType.vb: CommandLineBinderExtensions.BindArguments(Of TResult)(TResult, IImmutableList(Of ICommandLineArgument))
+- uid: Ubiquity.CommandLineParsing.CommandLineOption
+  name: CommandLineOption
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html
+  commentId: T:Ubiquity.CommandLineParsing.CommandLineOption
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption
+  nameWithType: CommandLineOption
+- uid: Ubiquity.CommandLineParsing.CommandLineOption.#ctor(System.String,System.String,System.String,System.String,Ubiquity.CommandLineParsing.CommandLineValue)
+  name: CommandLineOption(string, string, string, string, CommandLineValue)
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html#Ubiquity_CommandLineParsing_CommandLineOption__ctor_System_String_System_String_System_String_System_String_Ubiquity_CommandLineParsing_CommandLineValue_
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineOption.#ctor(System.String,System.String,System.String,System.String,Ubiquity.CommandLineParsing.CommandLineValue)
+  name.vb: New(String, String, String, String, CommandLineValue)
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption.CommandLineOption(string, string, string, string, Ubiquity.CommandLineParsing.CommandLineValue)
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineOption.New(String, String, String, String, Ubiquity.CommandLineParsing.CommandLineValue)
+  nameWithType: CommandLineOption.CommandLineOption(string, string, string, string, CommandLineValue)
+  nameWithType.vb: CommandLineOption.New(String, String, String, String, CommandLineValue)
+- uid: Ubiquity.CommandLineParsing.CommandLineOption.#ctor(System.String,System.String,System.String,Ubiquity.CommandLineParsing.CommandLineValue)
+  name: CommandLineOption(string, string, string, CommandLineValue)
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html#Ubiquity_CommandLineParsing_CommandLineOption__ctor_System_String_System_String_System_String_Ubiquity_CommandLineParsing_CommandLineValue_
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineOption.#ctor(System.String,System.String,System.String,Ubiquity.CommandLineParsing.CommandLineValue)
+  name.vb: New(String, String, String, CommandLineValue)
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption.CommandLineOption(string, string, string, Ubiquity.CommandLineParsing.CommandLineValue)
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineOption.New(String, String, String, Ubiquity.CommandLineParsing.CommandLineValue)
+  nameWithType: CommandLineOption.CommandLineOption(string, string, string, CommandLineValue)
+  nameWithType.vb: CommandLineOption.New(String, String, String, CommandLineValue)
+- uid: Ubiquity.CommandLineParsing.CommandLineOption.#ctor*
+  name: CommandLineOption
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html#Ubiquity_CommandLineParsing_CommandLineOption__ctor_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineOption.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption.CommandLineOption
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineOption.New
+  nameWithType: CommandLineOption.CommandLineOption
+  nameWithType.vb: CommandLineOption.New
+- uid: Ubiquity.CommandLineParsing.CommandLineOption.Delimiter
+  name: Delimiter
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html#Ubiquity_CommandLineParsing_CommandLineOption_Delimiter
+  commentId: P:Ubiquity.CommandLineParsing.CommandLineOption.Delimiter
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption.Delimiter
+  nameWithType: CommandLineOption.Delimiter
+- uid: Ubiquity.CommandLineParsing.CommandLineOption.Delimiter*
+  name: Delimiter
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html#Ubiquity_CommandLineParsing_CommandLineOption_Delimiter_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineOption.Delimiter
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption.Delimiter
+  nameWithType: CommandLineOption.Delimiter
+- uid: Ubiquity.CommandLineParsing.CommandLineOption.Name
+  name: Name
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html#Ubiquity_CommandLineParsing_CommandLineOption_Name
+  commentId: P:Ubiquity.CommandLineParsing.CommandLineOption.Name
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption.Name
+  nameWithType: CommandLineOption.Name
+- uid: Ubiquity.CommandLineParsing.CommandLineOption.Name*
+  name: Name
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html#Ubiquity_CommandLineParsing_CommandLineOption_Name_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineOption.Name
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption.Name
+  nameWithType: CommandLineOption.Name
+- uid: Ubiquity.CommandLineParsing.CommandLineOption.SwitchLeader
+  name: SwitchLeader
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html#Ubiquity_CommandLineParsing_CommandLineOption_SwitchLeader
+  commentId: P:Ubiquity.CommandLineParsing.CommandLineOption.SwitchLeader
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption.SwitchLeader
+  nameWithType: CommandLineOption.SwitchLeader
+- uid: Ubiquity.CommandLineParsing.CommandLineOption.SwitchLeader*
+  name: SwitchLeader
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html#Ubiquity_CommandLineParsing_CommandLineOption_SwitchLeader_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineOption.SwitchLeader
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption.SwitchLeader
+  nameWithType: CommandLineOption.SwitchLeader
+- uid: Ubiquity.CommandLineParsing.CommandLineOption.Text
+  name: Text
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html#Ubiquity_CommandLineParsing_CommandLineOption_Text
+  commentId: P:Ubiquity.CommandLineParsing.CommandLineOption.Text
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption.Text
+  nameWithType: CommandLineOption.Text
+- uid: Ubiquity.CommandLineParsing.CommandLineOption.Text*
+  name: Text
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html#Ubiquity_CommandLineParsing_CommandLineOption_Text_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineOption.Text
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption.Text
+  nameWithType: CommandLineOption.Text
+- uid: Ubiquity.CommandLineParsing.CommandLineOption.ToString
+  name: ToString()
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html#Ubiquity_CommandLineParsing_CommandLineOption_ToString
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineOption.ToString
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption.ToString()
+  nameWithType: CommandLineOption.ToString()
+- uid: Ubiquity.CommandLineParsing.CommandLineOption.ToString*
+  name: ToString
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html#Ubiquity_CommandLineParsing_CommandLineOption_ToString_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineOption.ToString
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption.ToString
+  nameWithType: CommandLineOption.ToString
+- uid: Ubiquity.CommandLineParsing.CommandLineOption.Value
+  name: Value
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html#Ubiquity_CommandLineParsing_CommandLineOption_Value
+  commentId: P:Ubiquity.CommandLineParsing.CommandLineOption.Value
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption.Value
+  nameWithType: CommandLineOption.Value
+- uid: Ubiquity.CommandLineParsing.CommandLineOption.Value*
+  name: Value
+  href: api/Ubiquity.CommandlineParsing.CommandlineOption.html#Ubiquity_CommandLineParsing_CommandLineOption_Value_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineOption.Value
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.CommandLineOption.Value
+  nameWithType: CommandLineOption.Value
+- uid: Ubiquity.CommandLineParsing.CommandLineParseException
+  name: CommandLineParseException
+  href: api/Ubiquity.CommandlineParsing.CommandlineParseException.html
+  commentId: T:Ubiquity.CommandLineParsing.CommandLineParseException
+  fullName: Ubiquity.CommandLineParsing.CommandLineParseException
+  nameWithType: CommandLineParseException
+- uid: Ubiquity.CommandLineParsing.CommandLineParseException.#ctor
+  name: CommandLineParseException()
+  href: api/Ubiquity.CommandlineParsing.CommandlineParseException.html#Ubiquity_CommandLineParsing_CommandLineParseException__ctor
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineParseException.#ctor
+  name.vb: New()
+  fullName: Ubiquity.CommandLineParsing.CommandLineParseException.CommandLineParseException()
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineParseException.New()
+  nameWithType: CommandLineParseException.CommandLineParseException()
+  nameWithType.vb: CommandLineParseException.New()
+- uid: Ubiquity.CommandLineParsing.CommandLineParseException.#ctor(System.Exception,System.IFormatProvider,System.String,System.Object[])
+  name: CommandLineParseException(Exception, IFormatProvider, string, params object[])
+  href: api/Ubiquity.CommandlineParsing.CommandlineParseException.html#Ubiquity_CommandLineParsing_CommandLineParseException__ctor_System_Exception_System_IFormatProvider_System_String_System_Object___
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineParseException.#ctor(System.Exception,System.IFormatProvider,System.String,System.Object[])
+  name.vb: New(Exception, IFormatProvider, String, ParamArray Object())
+  fullName: Ubiquity.CommandLineParsing.CommandLineParseException.CommandLineParseException(System.Exception, System.IFormatProvider, string, params object[])
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineParseException.New(System.Exception, System.IFormatProvider, String, ParamArray Object())
+  nameWithType: CommandLineParseException.CommandLineParseException(Exception, IFormatProvider, string, params object[])
+  nameWithType.vb: CommandLineParseException.New(Exception, IFormatProvider, String, ParamArray Object())
+- uid: Ubiquity.CommandLineParsing.CommandLineParseException.#ctor(System.IFormatProvider,System.String,System.Object[])
+  name: CommandLineParseException(IFormatProvider, string, params object[])
+  href: api/Ubiquity.CommandlineParsing.CommandlineParseException.html#Ubiquity_CommandLineParsing_CommandLineParseException__ctor_System_IFormatProvider_System_String_System_Object___
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineParseException.#ctor(System.IFormatProvider,System.String,System.Object[])
+  name.vb: New(IFormatProvider, String, ParamArray Object())
+  fullName: Ubiquity.CommandLineParsing.CommandLineParseException.CommandLineParseException(System.IFormatProvider, string, params object[])
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineParseException.New(System.IFormatProvider, String, ParamArray Object())
+  nameWithType: CommandLineParseException.CommandLineParseException(IFormatProvider, string, params object[])
+  nameWithType.vb: CommandLineParseException.New(IFormatProvider, String, ParamArray Object())
+- uid: Ubiquity.CommandLineParsing.CommandLineParseException.#ctor(System.String)
+  name: CommandLineParseException(string)
+  href: api/Ubiquity.CommandlineParsing.CommandlineParseException.html#Ubiquity_CommandLineParsing_CommandLineParseException__ctor_System_String_
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineParseException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Ubiquity.CommandLineParsing.CommandLineParseException.CommandLineParseException(string)
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineParseException.New(String)
+  nameWithType: CommandLineParseException.CommandLineParseException(string)
+  nameWithType.vb: CommandLineParseException.New(String)
+- uid: Ubiquity.CommandLineParsing.CommandLineParseException.#ctor(System.String,System.Exception)
+  name: CommandLineParseException(string, Exception)
+  href: api/Ubiquity.CommandlineParsing.CommandlineParseException.html#Ubiquity_CommandLineParsing_CommandLineParseException__ctor_System_String_System_Exception_
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineParseException.#ctor(System.String,System.Exception)
+  name.vb: New(String, Exception)
+  fullName: Ubiquity.CommandLineParsing.CommandLineParseException.CommandLineParseException(string, System.Exception)
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineParseException.New(String, System.Exception)
+  nameWithType: CommandLineParseException.CommandLineParseException(string, Exception)
+  nameWithType.vb: CommandLineParseException.New(String, Exception)
+- uid: Ubiquity.CommandLineParsing.CommandLineParseException.#ctor*
+  name: CommandLineParseException
+  href: api/Ubiquity.CommandlineParsing.CommandlineParseException.html#Ubiquity_CommandLineParsing_CommandLineParseException__ctor_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineParseException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Ubiquity.CommandLineParsing.CommandLineParseException.CommandLineParseException
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineParseException.New
+  nameWithType: CommandLineParseException.CommandLineParseException
+  nameWithType.vb: CommandLineParseException.New
+- uid: Ubiquity.CommandLineParsing.CommandLineValue
+  name: CommandLineValue
+  href: api/Ubiquity.CommandlineParsing.CommandlineValue.html
+  commentId: T:Ubiquity.CommandLineParsing.CommandLineValue
+  fullName: Ubiquity.CommandLineParsing.CommandLineValue
+  nameWithType: CommandLineValue
+- uid: Ubiquity.CommandLineParsing.CommandLineValue.#ctor(System.String)
+  name: CommandLineValue(string)
+  href: api/Ubiquity.CommandlineParsing.CommandlineValue.html#Ubiquity_CommandLineParsing_CommandLineValue__ctor_System_String_
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineValue.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Ubiquity.CommandLineParsing.CommandLineValue.CommandLineValue(string)
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineValue.New(String)
+  nameWithType: CommandLineValue.CommandLineValue(string)
+  nameWithType.vb: CommandLineValue.New(String)
+- uid: Ubiquity.CommandLineParsing.CommandLineValue.#ctor*
+  name: CommandLineValue
+  href: api/Ubiquity.CommandlineParsing.CommandlineValue.html#Ubiquity_CommandLineParsing_CommandLineValue__ctor_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineValue.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Ubiquity.CommandLineParsing.CommandLineValue.CommandLineValue
+  fullName.vb: Ubiquity.CommandLineParsing.CommandLineValue.New
+  nameWithType: CommandLineValue.CommandLineValue
+  nameWithType.vb: CommandLineValue.New
+- uid: Ubiquity.CommandLineParsing.CommandLineValue.Text
+  name: Text
+  href: api/Ubiquity.CommandlineParsing.CommandlineValue.html#Ubiquity_CommandLineParsing_CommandLineValue_Text
+  commentId: P:Ubiquity.CommandLineParsing.CommandLineValue.Text
+  fullName: Ubiquity.CommandLineParsing.CommandLineValue.Text
+  nameWithType: CommandLineValue.Text
+- uid: Ubiquity.CommandLineParsing.CommandLineValue.Text*
+  name: Text
+  href: api/Ubiquity.CommandlineParsing.CommandlineValue.html#Ubiquity_CommandLineParsing_CommandLineValue_Text_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineValue.Text
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.CommandLineValue.Text
+  nameWithType: CommandLineValue.Text
+- uid: Ubiquity.CommandLineParsing.CommandLineValue.ToString
+  name: ToString()
+  href: api/Ubiquity.CommandlineParsing.CommandlineValue.html#Ubiquity_CommandLineParsing_CommandLineValue_ToString
+  commentId: M:Ubiquity.CommandLineParsing.CommandLineValue.ToString
+  fullName: Ubiquity.CommandLineParsing.CommandLineValue.ToString()
+  nameWithType: CommandLineValue.ToString()
+- uid: Ubiquity.CommandLineParsing.CommandLineValue.ToString*
+  name: ToString
+  href: api/Ubiquity.CommandlineParsing.CommandlineValue.html#Ubiquity_CommandLineParsing_CommandLineValue_ToString_
+  commentId: Overload:Ubiquity.CommandLineParsing.CommandLineValue.ToString
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.CommandLineValue.ToString
+  nameWithType: CommandLineValue.ToString
+- uid: Ubiquity.CommandLineParsing.EnvironmentEx
+  name: EnvironmentEx
+  href: api/Ubiquity.CommandlineParsing.EnvironmentEx.html
+  commentId: T:Ubiquity.CommandLineParsing.EnvironmentEx
+  fullName: Ubiquity.CommandLineParsing.EnvironmentEx
+  nameWithType: EnvironmentEx
+- uid: Ubiquity.CommandLineParsing.EnvironmentEx.CommandLine
+  name: CommandLine
+  href: api/Ubiquity.CommandlineParsing.EnvironmentEx.html#Ubiquity_CommandLineParsing_EnvironmentEx_CommandLine
+  commentId: P:Ubiquity.CommandLineParsing.EnvironmentEx.CommandLine
+  fullName: Ubiquity.CommandLineParsing.EnvironmentEx.CommandLine
+  nameWithType: EnvironmentEx.CommandLine
+- uid: Ubiquity.CommandLineParsing.EnvironmentEx.CommandLine*
+  name: CommandLine
+  href: api/Ubiquity.CommandlineParsing.EnvironmentEx.html#Ubiquity_CommandLineParsing_EnvironmentEx_CommandLine_
+  commentId: Overload:Ubiquity.CommandLineParsing.EnvironmentEx.CommandLine
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.EnvironmentEx.CommandLine
+  nameWithType: EnvironmentEx.CommandLine
+- uid: Ubiquity.CommandLineParsing.ICommandLineArgument
+  name: ICommandLineArgument
+  href: api/Ubiquity.CommandlineParsing.ICommandlineArgument.html
+  commentId: T:Ubiquity.CommandLineParsing.ICommandLineArgument
+  fullName: Ubiquity.CommandLineParsing.ICommandLineArgument
+  nameWithType: ICommandLineArgument
+- uid: Ubiquity.CommandLineParsing.ICommandLineArgument.Text
+  name: Text
+  href: api/Ubiquity.CommandlineParsing.ICommandlineArgument.html#Ubiquity_CommandLineParsing_ICommandLineArgument_Text
+  commentId: P:Ubiquity.CommandLineParsing.ICommandLineArgument.Text
+  fullName: Ubiquity.CommandLineParsing.ICommandLineArgument.Text
+  nameWithType: ICommandLineArgument.Text
+- uid: Ubiquity.CommandLineParsing.ICommandLineArgument.Text*
+  name: Text
+  href: api/Ubiquity.CommandlineParsing.ICommandlineArgument.html#Ubiquity_CommandLineParsing_ICommandLineArgument_Text_
+  commentId: Overload:Ubiquity.CommandLineParsing.ICommandLineArgument.Text
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.ICommandLineArgument.Text
+  nameWithType: ICommandLineArgument.Text
+- uid: Ubiquity.CommandLineParsing.ICommandLineParser
+  name: ICommandLineParser
+  href: api/Ubiquity.CommandlineParsing.ICommandlineParser.html
+  commentId: T:Ubiquity.CommandLineParsing.ICommandLineParser
+  fullName: Ubiquity.CommandLineParsing.ICommandLineParser
+  nameWithType: ICommandLineParser
+- uid: Ubiquity.CommandLineParsing.ICommandLineParser.Parse(System.Collections.Generic.IEnumerable{System.String})
+  name: Parse(IEnumerable<string>)
+  href: api/Ubiquity.CommandlineParsing.ICommandlineParser.html#Ubiquity_CommandLineParsing_ICommandLineParser_Parse_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Ubiquity.CommandLineParsing.ICommandLineParser.Parse(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Parse(IEnumerable(Of String))
+  fullName: Ubiquity.CommandLineParsing.ICommandLineParser.Parse(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: Ubiquity.CommandLineParsing.ICommandLineParser.Parse(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: ICommandLineParser.Parse(IEnumerable<string>)
+  nameWithType.vb: ICommandLineParser.Parse(IEnumerable(Of String))
+- uid: Ubiquity.CommandLineParsing.ICommandLineParser.Parse*
+  name: Parse
+  href: api/Ubiquity.CommandlineParsing.ICommandlineParser.html#Ubiquity_CommandLineParsing_ICommandLineParser_Parse_
+  commentId: Overload:Ubiquity.CommandLineParsing.ICommandLineParser.Parse
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.ICommandLineParser.Parse
+  nameWithType: ICommandLineParser.Parse
+- uid: Ubiquity.CommandLineParsing.IOptionProperty
+  name: IOptionProperty
+  href: api/Ubiquity.CommandlineParsing.IOptionProperty.html
+  commentId: T:Ubiquity.CommandLineParsing.IOptionProperty
+  fullName: Ubiquity.CommandLineParsing.IOptionProperty
+  nameWithType: IOptionProperty
+- uid: Ubiquity.CommandLineParsing.IOptionProperty.AllowSpaceDelimitedValue
+  name: AllowSpaceDelimitedValue
+  href: api/Ubiquity.CommandlineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_AllowSpaceDelimitedValue
+  commentId: P:Ubiquity.CommandLineParsing.IOptionProperty.AllowSpaceDelimitedValue
+  fullName: Ubiquity.CommandLineParsing.IOptionProperty.AllowSpaceDelimitedValue
+  nameWithType: IOptionProperty.AllowSpaceDelimitedValue
+- uid: Ubiquity.CommandLineParsing.IOptionProperty.AllowSpaceDelimitedValue*
+  name: AllowSpaceDelimitedValue
+  href: api/Ubiquity.CommandlineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_AllowSpaceDelimitedValue_
+  commentId: Overload:Ubiquity.CommandLineParsing.IOptionProperty.AllowSpaceDelimitedValue
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.IOptionProperty.AllowSpaceDelimitedValue
+  nameWithType: IOptionProperty.AllowSpaceDelimitedValue
+- uid: Ubiquity.CommandLineParsing.IOptionProperty.BindValue
+  name: BindValue()
+  href: api/Ubiquity.CommandlineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_BindValue
+  commentId: M:Ubiquity.CommandLineParsing.IOptionProperty.BindValue
+  fullName: Ubiquity.CommandLineParsing.IOptionProperty.BindValue()
+  nameWithType: IOptionProperty.BindValue()
+- uid: Ubiquity.CommandLineParsing.IOptionProperty.BindValue(System.String)
+  name: BindValue(string)
+  href: api/Ubiquity.CommandlineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_BindValue_System_String_
+  commentId: M:Ubiquity.CommandLineParsing.IOptionProperty.BindValue(System.String)
+  name.vb: BindValue(String)
+  fullName: Ubiquity.CommandLineParsing.IOptionProperty.BindValue(string)
+  fullName.vb: Ubiquity.CommandLineParsing.IOptionProperty.BindValue(String)
+  nameWithType: IOptionProperty.BindValue(string)
+  nameWithType.vb: IOptionProperty.BindValue(String)
+- uid: Ubiquity.CommandLineParsing.IOptionProperty.BindValue*
+  name: BindValue
+  href: api/Ubiquity.CommandlineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_BindValue_
+  commentId: Overload:Ubiquity.CommandLineParsing.IOptionProperty.BindValue
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.IOptionProperty.BindValue
+  nameWithType: IOptionProperty.BindValue
+- uid: Ubiquity.CommandLineParsing.IOptionProperty.IsCollection
+  name: IsCollection
+  href: api/Ubiquity.CommandlineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_IsCollection
+  commentId: P:Ubiquity.CommandLineParsing.IOptionProperty.IsCollection
+  fullName: Ubiquity.CommandLineParsing.IOptionProperty.IsCollection
+  nameWithType: IOptionProperty.IsCollection
+- uid: Ubiquity.CommandLineParsing.IOptionProperty.IsCollection*
+  name: IsCollection
+  href: api/Ubiquity.CommandlineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_IsCollection_
+  commentId: Overload:Ubiquity.CommandLineParsing.IOptionProperty.IsCollection
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.IOptionProperty.IsCollection
+  nameWithType: IOptionProperty.IsCollection
+- uid: Ubiquity.CommandLineParsing.IOptionProperty.IsSet
+  name: IsSet
+  href: api/Ubiquity.CommandlineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_IsSet
+  commentId: P:Ubiquity.CommandLineParsing.IOptionProperty.IsSet
+  fullName: Ubiquity.CommandLineParsing.IOptionProperty.IsSet
+  nameWithType: IOptionProperty.IsSet
+- uid: Ubiquity.CommandLineParsing.IOptionProperty.IsSet*
+  name: IsSet
+  href: api/Ubiquity.CommandlineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_IsSet_
+  commentId: Overload:Ubiquity.CommandLineParsing.IOptionProperty.IsSet
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.IOptionProperty.IsSet
+  nameWithType: IOptionProperty.IsSet
+- uid: Ubiquity.CommandLineParsing.IOptionProperty.Option
+  name: Option
+  href: api/Ubiquity.CommandlineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_Option
+  commentId: P:Ubiquity.CommandLineParsing.IOptionProperty.Option
+  fullName: Ubiquity.CommandLineParsing.IOptionProperty.Option
+  nameWithType: IOptionProperty.Option
+- uid: Ubiquity.CommandLineParsing.IOptionProperty.Option*
+  name: Option
+  href: api/Ubiquity.CommandlineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_Option_
+  commentId: Overload:Ubiquity.CommandLineParsing.IOptionProperty.Option
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.IOptionProperty.Option
+  nameWithType: IOptionProperty.Option
+- uid: Ubiquity.CommandLineParsing.IOptionProperty.RequiresValue
+  name: RequiresValue
+  href: api/Ubiquity.CommandlineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_RequiresValue
+  commentId: P:Ubiquity.CommandLineParsing.IOptionProperty.RequiresValue
+  fullName: Ubiquity.CommandLineParsing.IOptionProperty.RequiresValue
+  nameWithType: IOptionProperty.RequiresValue
+- uid: Ubiquity.CommandLineParsing.IOptionProperty.RequiresValue*
+  name: RequiresValue
+  href: api/Ubiquity.CommandlineParsing.IOptionProperty.html#Ubiquity_CommandLineParsing_IOptionProperty_RequiresValue_
+  commentId: Overload:Ubiquity.CommandLineParsing.IOptionProperty.RequiresValue
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.IOptionProperty.RequiresValue
+  nameWithType: IOptionProperty.RequiresValue
+- uid: Ubiquity.CommandLineParsing.IOptionPropertyProvider
+  name: IOptionPropertyProvider
+  href: api/Ubiquity.CommandlineParsing.IOptionPropertyProvider.html
+  commentId: T:Ubiquity.CommandLineParsing.IOptionPropertyProvider
+  fullName: Ubiquity.CommandLineParsing.IOptionPropertyProvider
+  nameWithType: IOptionPropertyProvider
+- uid: Ubiquity.CommandLineParsing.IOptionPropertyProvider.GetPropertyForOption(System.Object,Ubiquity.CommandLineParsing.CommandLineOption)
+  name: GetPropertyForOption(object, CommandLineOption)
+  href: api/Ubiquity.CommandlineParsing.IOptionPropertyProvider.html#Ubiquity_CommandLineParsing_IOptionPropertyProvider_GetPropertyForOption_System_Object_Ubiquity_CommandLineParsing_CommandLineOption_
+  commentId: M:Ubiquity.CommandLineParsing.IOptionPropertyProvider.GetPropertyForOption(System.Object,Ubiquity.CommandLineParsing.CommandLineOption)
+  name.vb: GetPropertyForOption(Object, CommandLineOption)
+  fullName: Ubiquity.CommandLineParsing.IOptionPropertyProvider.GetPropertyForOption(object, Ubiquity.CommandLineParsing.CommandLineOption)
+  fullName.vb: Ubiquity.CommandLineParsing.IOptionPropertyProvider.GetPropertyForOption(Object, Ubiquity.CommandLineParsing.CommandLineOption)
+  nameWithType: IOptionPropertyProvider.GetPropertyForOption(object, CommandLineOption)
+  nameWithType.vb: IOptionPropertyProvider.GetPropertyForOption(Object, CommandLineOption)
+- uid: Ubiquity.CommandLineParsing.IOptionPropertyProvider.GetPropertyForOption*
+  name: GetPropertyForOption
+  href: api/Ubiquity.CommandlineParsing.IOptionPropertyProvider.html#Ubiquity_CommandLineParsing_IOptionPropertyProvider_GetPropertyForOption_
+  commentId: Overload:Ubiquity.CommandLineParsing.IOptionPropertyProvider.GetPropertyForOption
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.IOptionPropertyProvider.GetPropertyForOption
+  nameWithType: IOptionPropertyProvider.GetPropertyForOption
+- uid: Ubiquity.CommandLineParsing.Monad
+  name: Ubiquity.CommandLineParsing.Monad
+  href: api/Ubiquity.CommandlineParsing.Monad.html
+  commentId: N:Ubiquity.CommandLineParsing.Monad
+  fullName: Ubiquity.CommandLineParsing.Monad
+  nameWithType: Ubiquity.CommandLineParsing.Monad
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar
+  name: Grammar
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html
+  commentId: T:Ubiquity.CommandLineParsing.Monad.Grammar
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar
+  nameWithType: Grammar
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.BlockString(Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}})
+  name: BlockString(Parser<IEnumerable<char>>)
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_BlockString_Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___
+  commentId: M:Ubiquity.CommandLineParsing.Monad.Grammar.BlockString(Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}})
+  name.vb: BlockString(Parser(Of IEnumerable(Of Char)))
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.BlockString(Sprache.Parser<System.Collections.Generic.IEnumerable<char>>)
+  fullName.vb: Ubiquity.CommandLineParsing.Monad.Grammar.BlockString(Sprache.Parser(Of System.Collections.Generic.IEnumerable(Of Char)))
+  nameWithType: Grammar.BlockString(Parser<IEnumerable<char>>)
+  nameWithType.vb: Grammar.BlockString(Parser(Of IEnumerable(Of Char)))
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.BlockString(Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}},Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}})
+  name: BlockString(Parser<IEnumerable<char>>, Parser<IEnumerable<char>>)
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_BlockString_Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___
+  commentId: M:Ubiquity.CommandLineParsing.Monad.Grammar.BlockString(Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}},Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}})
+  name.vb: BlockString(Parser(Of IEnumerable(Of Char)), Parser(Of IEnumerable(Of Char)))
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.BlockString(Sprache.Parser<System.Collections.Generic.IEnumerable<char>>, Sprache.Parser<System.Collections.Generic.IEnumerable<char>>)
+  fullName.vb: Ubiquity.CommandLineParsing.Monad.Grammar.BlockString(Sprache.Parser(Of System.Collections.Generic.IEnumerable(Of Char)), Sprache.Parser(Of System.Collections.Generic.IEnumerable(Of Char)))
+  nameWithType: Grammar.BlockString(Parser<IEnumerable<char>>, Parser<IEnumerable<char>>)
+  nameWithType.vb: Grammar.BlockString(Parser(Of IEnumerable(Of Char)), Parser(Of IEnumerable(Of Char)))
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.BlockString*
+  name: BlockString
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_BlockString_
+  commentId: Overload:Ubiquity.CommandLineParsing.Monad.Grammar.BlockString
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.BlockString
+  nameWithType: Grammar.BlockString
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.Colon
+  name: Colon
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_Colon
+  commentId: F:Ubiquity.CommandLineParsing.Monad.Grammar.Colon
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.Colon
+  nameWithType: Grammar.Colon
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.CommandLine
+  name: CommandLine
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_CommandLine
+  commentId: P:Ubiquity.CommandLineParsing.Monad.Grammar.CommandLine
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.CommandLine
+  nameWithType: Grammar.CommandLine
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.CommandLine*
+  name: CommandLine
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_CommandLine_
+  commentId: Overload:Ubiquity.CommandLineParsing.Monad.Grammar.CommandLine
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.CommandLine
+  nameWithType: Grammar.CommandLine
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.CommandLineArg
+  name: CommandLineArg
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_CommandLineArg
+  commentId: P:Ubiquity.CommandLineParsing.Monad.Grammar.CommandLineArg
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.CommandLineArg
+  nameWithType: Grammar.CommandLineArg
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.CommandLineArg*
+  name: CommandLineArg
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_CommandLineArg_
+  commentId: Overload:Ubiquity.CommandLineParsing.Monad.Grammar.CommandLineArg
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.CommandLineArg
+  nameWithType: Grammar.CommandLineArg
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.CommonOptionStart
+  name: CommonOptionStart
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_CommonOptionStart
+  commentId: F:Ubiquity.CommandLineParsing.Monad.Grammar.CommonOptionStart
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.CommonOptionStart
+  nameWithType: Grammar.CommonOptionStart
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.Dash
+  name: Dash
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_Dash
+  commentId: F:Ubiquity.CommandLineParsing.Monad.Grammar.Dash
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.Dash
+  nameWithType: Grammar.Dash
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.DoubleDash
+  name: DoubleDash
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_DoubleDash
+  commentId: F:Ubiquity.CommandLineParsing.Monad.Grammar.DoubleDash
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.DoubleDash
+  nameWithType: Grammar.DoubleDash
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.DoubleQuote
+  name: DoubleQuote
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_DoubleQuote
+  commentId: F:Ubiquity.CommandLineParsing.Monad.Grammar.DoubleQuote
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.DoubleQuote
+  nameWithType: Grammar.DoubleQuote
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.Equal
+  name: Equal
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_Equal
+  commentId: F:Ubiquity.CommandLineParsing.Monad.Grammar.Equal
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.Equal
+  nameWithType: Grammar.Equal
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.EqualOrColon
+  name: EqualOrColon
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_EqualOrColon
+  commentId: F:Ubiquity.CommandLineParsing.Monad.Grammar.EqualOrColon
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.EqualOrColon
+  nameWithType: Grammar.EqualOrColon
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.Identifier
+  name: Identifier
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_Identifier
+  commentId: F:Ubiquity.CommandLineParsing.Monad.Grammar.Identifier
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.Identifier
+  nameWithType: Grammar.Identifier
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.IdentifierChar
+  name: IdentifierChar
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_IdentifierChar
+  commentId: F:Ubiquity.CommandLineParsing.Monad.Grammar.IdentifierChar
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.IdentifierChar
+  nameWithType: Grammar.IdentifierChar
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.NonWhiteSpaceChar
+  name: NonWhiteSpaceChar
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_NonWhiteSpaceChar
+  commentId: F:Ubiquity.CommandLineParsing.Monad.Grammar.NonWhiteSpaceChar
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.NonWhiteSpaceChar
+  nameWithType: Grammar.NonWhiteSpaceChar
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.OnMatch*
+  name: OnMatch
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_OnMatch_
+  commentId: Overload:Ubiquity.CommandLineParsing.Monad.Grammar.OnMatch
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.OnMatch
+  nameWithType: Grammar.OnMatch
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.OnMatch``1(Sprache.Parser{``0},System.Action{Sprache.IResult{``0}})
+  name: OnMatch<T>(Parser<T>, Action<IResult<T>>)
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_OnMatch__1_Sprache_Parser___0__System_Action_Sprache_IResult___0___
+  commentId: M:Ubiquity.CommandLineParsing.Monad.Grammar.OnMatch``1(Sprache.Parser{``0},System.Action{Sprache.IResult{``0}})
+  name.vb: OnMatch(Of T)(Parser(Of T), Action(Of IResult(Of T)))
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.OnMatch<T>(Sprache.Parser<T>, System.Action<Sprache.IResult<T>>)
+  fullName.vb: Ubiquity.CommandLineParsing.Monad.Grammar.OnMatch(Of T)(Sprache.Parser(Of T), System.Action(Of Sprache.IResult(Of T)))
+  nameWithType: Grammar.OnMatch<T>(Parser<T>, Action<IResult<T>>)
+  nameWithType.vb: Grammar.OnMatch(Of T)(Parser(Of T), Action(Of IResult(Of T)))
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.Option
+  name: Option
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_Option
+  commentId: F:Ubiquity.CommandLineParsing.Monad.Grammar.Option
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.Option
+  nameWithType: Grammar.Option
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.OptionParser(Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}})
+  name: OptionParser(Parser<IEnumerable<char>>)
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_OptionParser_Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___
+  commentId: M:Ubiquity.CommandLineParsing.Monad.Grammar.OptionParser(Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}})
+  name.vb: OptionParser(Parser(Of IEnumerable(Of Char)))
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.OptionParser(Sprache.Parser<System.Collections.Generic.IEnumerable<char>>)
+  fullName.vb: Ubiquity.CommandLineParsing.Monad.Grammar.OptionParser(Sprache.Parser(Of System.Collections.Generic.IEnumerable(Of Char)))
+  nameWithType: Grammar.OptionParser(Parser<IEnumerable<char>>)
+  nameWithType.vb: Grammar.OptionParser(Parser(Of IEnumerable(Of Char)))
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.OptionParser(Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}},Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}})
+  name: OptionParser(Parser<IEnumerable<char>>, Parser<IEnumerable<char>>)
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_OptionParser_Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___
+  commentId: M:Ubiquity.CommandLineParsing.Monad.Grammar.OptionParser(Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}},Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}})
+  name.vb: OptionParser(Parser(Of IEnumerable(Of Char)), Parser(Of IEnumerable(Of Char)))
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.OptionParser(Sprache.Parser<System.Collections.Generic.IEnumerable<char>>, Sprache.Parser<System.Collections.Generic.IEnumerable<char>>)
+  fullName.vb: Ubiquity.CommandLineParsing.Monad.Grammar.OptionParser(Sprache.Parser(Of System.Collections.Generic.IEnumerable(Of Char)), Sprache.Parser(Of System.Collections.Generic.IEnumerable(Of Char)))
+  nameWithType: Grammar.OptionParser(Parser<IEnumerable<char>>, Parser<IEnumerable<char>>)
+  nameWithType.vb: Grammar.OptionParser(Parser(Of IEnumerable(Of Char)), Parser(Of IEnumerable(Of Char)))
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.OptionParser*
+  name: OptionParser
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_OptionParser_
+  commentId: Overload:Ubiquity.CommandLineParsing.Monad.Grammar.OptionParser
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.OptionParser
+  nameWithType: Grammar.OptionParser
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.PositionalArg
+  name: PositionalArg
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_PositionalArg
+  commentId: P:Ubiquity.CommandLineParsing.Monad.Grammar.PositionalArg
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.PositionalArg
+  nameWithType: Grammar.PositionalArg
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.PositionalArg*
+  name: PositionalArg
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_PositionalArg_
+  commentId: Overload:Ubiquity.CommandLineParsing.Monad.Grammar.PositionalArg
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.PositionalArg
+  nameWithType: Grammar.PositionalArg
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.QuotedString
+  name: QuotedString
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_QuotedString
+  commentId: F:Ubiquity.CommandLineParsing.Monad.Grammar.QuotedString
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.QuotedString
+  nameWithType: Grammar.QuotedString
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.SepAndValue(Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}})
+  name: SepAndValue(Parser<IEnumerable<char>>)
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_SepAndValue_Sprache_Parser_System_Collections_Generic_IEnumerable_System_Char___
+  commentId: M:Ubiquity.CommandLineParsing.Monad.Grammar.SepAndValue(Sprache.Parser{System.Collections.Generic.IEnumerable{System.Char}})
+  name.vb: SepAndValue(Parser(Of IEnumerable(Of Char)))
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.SepAndValue(Sprache.Parser<System.Collections.Generic.IEnumerable<char>>)
+  fullName.vb: Ubiquity.CommandLineParsing.Monad.Grammar.SepAndValue(Sprache.Parser(Of System.Collections.Generic.IEnumerable(Of Char)))
+  nameWithType: Grammar.SepAndValue(Parser<IEnumerable<char>>)
+  nameWithType.vb: Grammar.SepAndValue(Parser(Of IEnumerable(Of Char)))
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.SepAndValue*
+  name: SepAndValue
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_SepAndValue_
+  commentId: Overload:Ubiquity.CommandLineParsing.Monad.Grammar.SepAndValue
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.SepAndValue
+  nameWithType: Grammar.SepAndValue
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.SingleQuote
+  name: SingleQuote
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_SingleQuote
+  commentId: F:Ubiquity.CommandLineParsing.Monad.Grammar.SingleQuote
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.SingleQuote
+  nameWithType: Grammar.SingleQuote
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.Slash
+  name: Slash
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_Slash
+  commentId: F:Ubiquity.CommandLineParsing.Monad.Grammar.Slash
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.Slash
+  nameWithType: Grammar.Slash
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.UnquotedValue
+  name: UnquotedValue
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_UnquotedValue
+  commentId: F:Ubiquity.CommandLineParsing.Monad.Grammar.UnquotedValue
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.UnquotedValue
+  nameWithType: Grammar.UnquotedValue
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.ValueContent
+  name: ValueContent
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_ValueContent
+  commentId: P:Ubiquity.CommandLineParsing.Monad.Grammar.ValueContent
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.ValueContent
+  nameWithType: Grammar.ValueContent
+- uid: Ubiquity.CommandLineParsing.Monad.Grammar.ValueContent*
+  name: ValueContent
+  href: api/Ubiquity.CommandlineParsing.Monad.Grammar.html#Ubiquity_CommandLineParsing_Monad_Grammar_ValueContent_
+  commentId: Overload:Ubiquity.CommandLineParsing.Monad.Grammar.ValueContent
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.Monad.Grammar.ValueContent
+  nameWithType: Grammar.ValueContent
+- uid: Ubiquity.CommandLineParsing.Monad.Parser
+  name: Parser
+  href: api/Ubiquity.CommandlineParsing.Monad.Parser.html
+  commentId: T:Ubiquity.CommandLineParsing.Monad.Parser
+  fullName: Ubiquity.CommandLineParsing.Monad.Parser
+  nameWithType: Parser
+- uid: Ubiquity.CommandLineParsing.Monad.Parser.Parse(System.Collections.Generic.IEnumerable{System.String})
+  name: Parse(IEnumerable<string>)
+  href: api/Ubiquity.CommandlineParsing.Monad.Parser.html#Ubiquity_CommandLineParsing_Monad_Parser_Parse_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Ubiquity.CommandLineParsing.Monad.Parser.Parse(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: Parse(IEnumerable(Of String))
+  fullName: Ubiquity.CommandLineParsing.Monad.Parser.Parse(System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: Ubiquity.CommandLineParsing.Monad.Parser.Parse(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: Parser.Parse(IEnumerable<string>)
+  nameWithType.vb: Parser.Parse(IEnumerable(Of String))
+- uid: Ubiquity.CommandLineParsing.Monad.Parser.Parse*
+  name: Parse
+  href: api/Ubiquity.CommandlineParsing.Monad.Parser.html#Ubiquity_CommandLineParsing_Monad_Parser_Parse_
+  commentId: Overload:Ubiquity.CommandLineParsing.Monad.Parser.Parse
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.Monad.Parser.Parse
+  nameWithType: Parser.Parse
+- uid: Ubiquity.CommandLineParsing.Monad.Parser.ParseCommandLine(System.String)
+  name: ParseCommandLine(string)
+  href: api/Ubiquity.CommandlineParsing.Monad.Parser.html#Ubiquity_CommandLineParsing_Monad_Parser_ParseCommandLine_System_String_
+  commentId: M:Ubiquity.CommandLineParsing.Monad.Parser.ParseCommandLine(System.String)
+  name.vb: ParseCommandLine(String)
+  fullName: Ubiquity.CommandLineParsing.Monad.Parser.ParseCommandLine(string)
+  fullName.vb: Ubiquity.CommandLineParsing.Monad.Parser.ParseCommandLine(String)
+  nameWithType: Parser.ParseCommandLine(string)
+  nameWithType.vb: Parser.ParseCommandLine(String)
+- uid: Ubiquity.CommandLineParsing.Monad.Parser.ParseCommandLine*
+  name: ParseCommandLine
+  href: api/Ubiquity.CommandlineParsing.Monad.Parser.html#Ubiquity_CommandLineParsing_Monad_Parser_ParseCommandLine_
+  commentId: Overload:Ubiquity.CommandLineParsing.Monad.Parser.ParseCommandLine
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.Monad.Parser.ParseCommandLine
+  nameWithType: Parser.ParseCommandLine
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase
+  name: OptionPropertyBase
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html
+  commentId: T:Ubiquity.CommandLineParsing.OptionPropertyBase
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase
+  nameWithType: OptionPropertyBase
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.#ctor(Ubiquity.CommandLineParsing.CommandLineOption,System.Boolean,System.Boolean,System.Boolean)
+  name: OptionPropertyBase(CommandLineOption, bool, bool, bool)
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase__ctor_Ubiquity_CommandLineParsing_CommandLineOption_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:Ubiquity.CommandLineParsing.OptionPropertyBase.#ctor(Ubiquity.CommandLineParsing.CommandLineOption,System.Boolean,System.Boolean,System.Boolean)
+  name.vb: New(CommandLineOption, Boolean, Boolean, Boolean)
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.OptionPropertyBase(Ubiquity.CommandLineParsing.CommandLineOption, bool, bool, bool)
+  fullName.vb: Ubiquity.CommandLineParsing.OptionPropertyBase.New(Ubiquity.CommandLineParsing.CommandLineOption, Boolean, Boolean, Boolean)
+  nameWithType: OptionPropertyBase.OptionPropertyBase(CommandLineOption, bool, bool, bool)
+  nameWithType.vb: OptionPropertyBase.New(CommandLineOption, Boolean, Boolean, Boolean)
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.#ctor*
+  name: OptionPropertyBase
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase__ctor_
+  commentId: Overload:Ubiquity.CommandLineParsing.OptionPropertyBase.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.OptionPropertyBase
+  fullName.vb: Ubiquity.CommandLineParsing.OptionPropertyBase.New
+  nameWithType: OptionPropertyBase.OptionPropertyBase
+  nameWithType.vb: OptionPropertyBase.New
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.AllowSpaceDelimitedValue
+  name: AllowSpaceDelimitedValue
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase_AllowSpaceDelimitedValue
+  commentId: P:Ubiquity.CommandLineParsing.OptionPropertyBase.AllowSpaceDelimitedValue
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.AllowSpaceDelimitedValue
+  nameWithType: OptionPropertyBase.AllowSpaceDelimitedValue
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.AllowSpaceDelimitedValue*
+  name: AllowSpaceDelimitedValue
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase_AllowSpaceDelimitedValue_
+  commentId: Overload:Ubiquity.CommandLineParsing.OptionPropertyBase.AllowSpaceDelimitedValue
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.AllowSpaceDelimitedValue
+  nameWithType: OptionPropertyBase.AllowSpaceDelimitedValue
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.BindValue
+  name: BindValue()
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase_BindValue
+  commentId: M:Ubiquity.CommandLineParsing.OptionPropertyBase.BindValue
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.BindValue()
+  nameWithType: OptionPropertyBase.BindValue()
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.BindValue(System.String)
+  name: BindValue(string)
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase_BindValue_System_String_
+  commentId: M:Ubiquity.CommandLineParsing.OptionPropertyBase.BindValue(System.String)
+  name.vb: BindValue(String)
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.BindValue(string)
+  fullName.vb: Ubiquity.CommandLineParsing.OptionPropertyBase.BindValue(String)
+  nameWithType: OptionPropertyBase.BindValue(string)
+  nameWithType.vb: OptionPropertyBase.BindValue(String)
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.BindValue*
+  name: BindValue
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase_BindValue_
+  commentId: Overload:Ubiquity.CommandLineParsing.OptionPropertyBase.BindValue
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.BindValue
+  nameWithType: OptionPropertyBase.BindValue
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.InternalSetValue(System.String)
+  name: InternalSetValue(string?)
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase_InternalSetValue_System_String_
+  commentId: M:Ubiquity.CommandLineParsing.OptionPropertyBase.InternalSetValue(System.String)
+  name.vb: InternalSetValue(String)
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.InternalSetValue(string?)
+  fullName.vb: Ubiquity.CommandLineParsing.OptionPropertyBase.InternalSetValue(String)
+  nameWithType: OptionPropertyBase.InternalSetValue(string?)
+  nameWithType.vb: OptionPropertyBase.InternalSetValue(String)
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.InternalSetValue*
+  name: InternalSetValue
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase_InternalSetValue_
+  commentId: Overload:Ubiquity.CommandLineParsing.OptionPropertyBase.InternalSetValue
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.InternalSetValue
+  nameWithType: OptionPropertyBase.InternalSetValue
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.IsCollection
+  name: IsCollection
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase_IsCollection
+  commentId: P:Ubiquity.CommandLineParsing.OptionPropertyBase.IsCollection
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.IsCollection
+  nameWithType: OptionPropertyBase.IsCollection
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.IsCollection*
+  name: IsCollection
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase_IsCollection_
+  commentId: Overload:Ubiquity.CommandLineParsing.OptionPropertyBase.IsCollection
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.IsCollection
+  nameWithType: OptionPropertyBase.IsCollection
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.IsSet
+  name: IsSet
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase_IsSet
+  commentId: P:Ubiquity.CommandLineParsing.OptionPropertyBase.IsSet
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.IsSet
+  nameWithType: OptionPropertyBase.IsSet
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.IsSet*
+  name: IsSet
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase_IsSet_
+  commentId: Overload:Ubiquity.CommandLineParsing.OptionPropertyBase.IsSet
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.IsSet
+  nameWithType: OptionPropertyBase.IsSet
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.Option
+  name: Option
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase_Option
+  commentId: P:Ubiquity.CommandLineParsing.OptionPropertyBase.Option
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.Option
+  nameWithType: OptionPropertyBase.Option
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.Option*
+  name: Option
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase_Option_
+  commentId: Overload:Ubiquity.CommandLineParsing.OptionPropertyBase.Option
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.Option
+  nameWithType: OptionPropertyBase.Option
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.RequiresValue
+  name: RequiresValue
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase_RequiresValue
+  commentId: P:Ubiquity.CommandLineParsing.OptionPropertyBase.RequiresValue
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.RequiresValue
+  nameWithType: OptionPropertyBase.RequiresValue
+- uid: Ubiquity.CommandLineParsing.OptionPropertyBase.RequiresValue*
+  name: RequiresValue
+  href: api/Ubiquity.CommandlineParsing.OptionPropertyBase.html#Ubiquity_CommandLineParsing_OptionPropertyBase_RequiresValue_
+  commentId: Overload:Ubiquity.CommandLineParsing.OptionPropertyBase.RequiresValue
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.OptionPropertyBase.RequiresValue
+  nameWithType: OptionPropertyBase.RequiresValue
+- uid: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider
+  name: ReflectionOptionPropertyProvider
+  href: api/Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider.html
+  commentId: T:Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider
+  fullName: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider
+  nameWithType: ReflectionOptionPropertyProvider
+- uid: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.#ctor
+  name: ReflectionOptionPropertyProvider()
+  href: api/Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider.html#Ubiquity_CommandLineParsing_ReflectionOptionPropertyProvider__ctor
+  commentId: M:Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.#ctor
+  name.vb: New()
+  fullName: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.ReflectionOptionPropertyProvider()
+  fullName.vb: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.New()
+  nameWithType: ReflectionOptionPropertyProvider.ReflectionOptionPropertyProvider()
+  nameWithType.vb: ReflectionOptionPropertyProvider.New()
+- uid: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.#ctor(System.StringComparer,System.Boolean,System.Boolean)
+  name: ReflectionOptionPropertyProvider(StringComparer, bool, bool)
+  href: api/Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider.html#Ubiquity_CommandLineParsing_ReflectionOptionPropertyProvider__ctor_System_StringComparer_System_Boolean_System_Boolean_
+  commentId: M:Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.#ctor(System.StringComparer,System.Boolean,System.Boolean)
+  name.vb: New(StringComparer, Boolean, Boolean)
+  fullName: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.ReflectionOptionPropertyProvider(System.StringComparer, bool, bool)
+  fullName.vb: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.New(System.StringComparer, Boolean, Boolean)
+  nameWithType: ReflectionOptionPropertyProvider.ReflectionOptionPropertyProvider(StringComparer, bool, bool)
+  nameWithType.vb: ReflectionOptionPropertyProvider.New(StringComparer, Boolean, Boolean)
+- uid: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.#ctor*
+  name: ReflectionOptionPropertyProvider
+  href: api/Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider.html#Ubiquity_CommandLineParsing_ReflectionOptionPropertyProvider__ctor_
+  commentId: Overload:Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.ReflectionOptionPropertyProvider
+  fullName.vb: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.New
+  nameWithType: ReflectionOptionPropertyProvider.ReflectionOptionPropertyProvider
+  nameWithType.vb: ReflectionOptionPropertyProvider.New
+- uid: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.GetPropertyForOption(System.Object,Ubiquity.CommandLineParsing.CommandLineOption)
+  name: GetPropertyForOption(object, CommandLineOption)
+  href: api/Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider.html#Ubiquity_CommandLineParsing_ReflectionOptionPropertyProvider_GetPropertyForOption_System_Object_Ubiquity_CommandLineParsing_CommandLineOption_
+  commentId: M:Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.GetPropertyForOption(System.Object,Ubiquity.CommandLineParsing.CommandLineOption)
+  name.vb: GetPropertyForOption(Object, CommandLineOption)
+  fullName: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.GetPropertyForOption(object, Ubiquity.CommandLineParsing.CommandLineOption)
+  fullName.vb: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.GetPropertyForOption(Object, Ubiquity.CommandLineParsing.CommandLineOption)
+  nameWithType: ReflectionOptionPropertyProvider.GetPropertyForOption(object, CommandLineOption)
+  nameWithType.vb: ReflectionOptionPropertyProvider.GetPropertyForOption(Object, CommandLineOption)
+- uid: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.GetPropertyForOption*
+  name: GetPropertyForOption
+  href: api/Ubiquity.CommandlineParsing.ReflectionOptionPropertyProvider.html#Ubiquity_CommandLineParsing_ReflectionOptionPropertyProvider_GetPropertyForOption_
+  commentId: Overload:Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.GetPropertyForOption
+  isSpec: "True"
+  fullName: Ubiquity.CommandLineParsing.ReflectionOptionPropertyProvider.GetPropertyForOption
+  nameWithType: ReflectionOptionPropertyProvider.GetPropertyForOption

@@ -8,7 +8,7 @@
         library.
         </Description>
         <Copyright>Copyright (C) Ubiquity.NET Contributors</Copyright>
-        <PackageTags>Command line Arguments</PackageTags>
+        <PackageTags>Command line arguments</PackageTags>
         <Authors>Ubiquity.NET</Authors>
         <Company>Ubiquity.NET</Company>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
