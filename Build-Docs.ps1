@@ -90,7 +90,7 @@ try
         }
 
         Write-Information "Cloning Docs repository"
-        Invoke-Git clone https://github.com/UbiquityDotNET/Llvm.NET.git -b gh-pages $docsOutputPath -q
+        Invoke-Git clone $buildInfo['OfficialGitRemoteUrl'] -b gh-pages $docsOutputPath -q
     }
 
     # remove all contents from 'current' docs to ensure clean generated docs for this release
