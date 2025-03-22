@@ -68,8 +68,6 @@ function Initialize-BuildEnvironment
     $buildInfo = Initialize-CommonBuildEnvironment -FullInit:$FullInit -AllowVsPreReleases:$AllowVsPreReleases
     $buildInfo['OfficialGitRemoteUrl'] = 'https://github.com/UbiquityDotNET/CommandLineParsing.git'
 
-    # override default from common build as this repo is now serving pages from the docs location
-    $buildInfo['DocsOutputPath'] = Join-Path $buildInfo['RepoRootPath'] 'docs'
     if($FullInit)
     {
         Show-FullBuildInfo $buildInfo

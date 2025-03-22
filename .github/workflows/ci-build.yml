@@ -1,6 +1,9 @@
 name: CI Build
 
-on: [push]
+on:
+  push:
+    branches:
+      - 'master'
 
 jobs:
   build:
@@ -15,4 +18,4 @@ jobs:
         global-json-file: global.json
     - name: Build with PowerShell
       shell: pwsh
-      run: .\Build-All.ps1 -Configuration Release -ForceClean
+      run: .\Build-All.ps1 -Configuration Release -ForceClean -BuildMode Source
